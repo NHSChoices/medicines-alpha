@@ -67,15 +67,22 @@
       </div>
     </div>
 
+<!--
+
     <div id="global-cookie-message">
 
         {% block cookie_message %}{% endblock %}
 
     </div>
+-->
     <!--end global-cookie-message-->
 
 
     <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
+        <div class="header__container">
+          <p class="header__logo"><a href="/"><img src="/public/images/nhs-rev-logotype.svg" class="header__img" width="90" height="36" alt="NHS logo" /></a></p>
+          <p class="header__title">Medicines Information Alpha</p>
+        </div>
     </header>
     <!--end header-->
 
