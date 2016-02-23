@@ -1,0 +1,33 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge"><a href="/prednisolone" class="link-no-style">Prednisolone</a></h1>
+      <h2>Side effects</h2>
+      <ul>
+        <li><a href="/prednisolone/side-effects/PIL-side-effects">Option A <span class="print">- PIL side effects</span></a>
+        <li><a href="/prednisolone/side-effects/sprint-1-side-effects-ID-KS">Option B <span class="print">- Sprint 1 side effects ID KS</span></a>
+        <li><a href="/prednisolone/side-effects/sprint-1-side-effects-KB-KS">Option C <span class="print">- Sprint 1 side effects KB KS</span></a>
+      </ul>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/prednisolone">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Prednisolone topics</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
