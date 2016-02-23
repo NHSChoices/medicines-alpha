@@ -1,0 +1,34 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="index">Prednisolone</h1>
+      <ul>
+        <li><a href="/prednisolone/dosage">Dosage</a>
+        <li><a href="/prednisolone/how-to-take-it">How to take it</a></li>
+        <li><a href="/prednisolone/interactions">Interactions</a></li>
+        <li><a href="/prednisolone/side-effects">Side effects</a></li>
+        <li><a href="/prednisolone/when-will-i-feel-better">When will I feel better?</a></li>
+      </ul>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Medicines</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
