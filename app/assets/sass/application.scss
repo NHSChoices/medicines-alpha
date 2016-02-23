@@ -5,12 +5,6 @@
 // Take a look at patterns.scss to see which files are imported.
 @import 'patterns';
 
-// NHS "Sassline" based typography
-@import "typography/variables";
-@import "typography/modular-scale";
-@import "typography/mixins";
-@import "typography/typography";
-
 // If you need to create a page as part of your journey, but without GOV.UK branding
 // See localhost:3000/examples/unbranded/
 .unbranded {
