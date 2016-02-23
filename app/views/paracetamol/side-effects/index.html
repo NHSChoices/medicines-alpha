@@ -1,0 +1,35 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge"><a href="/paracetamol" class="link-no-style">Paracetamol</a></h1>
+      <h2>Side effects</h2>
+      <ul>
+        <li><a href="/paracetamol/side-effects/PIL-side-effects">Option A <span class="print">- PIL side effects</span></a>
+        <li><a href="/paracetamol/side-effects/sprint-1-side-effects-ID-A">Option B <span class="print">- Sprint 1 side effects ID-A</span></a>
+        <li><a href="/paracetamol/side-effects/sprint-1-side-effects-ID-B">Option C <span class="print">- Sprint 1 side effects ID-B</span></a>
+        <li><a href="/paracetamol/side-effects/sprint-1-side-effects-KB">Option D <span class="print">- Sprint 1 side effects KB</span></a>
+        <li><a href="/paracetamol/side-effects/sprint-1-side-effects-medium-length-KB">Option E <span class="print">- Sprint 1 side effects medium length KB</span></a>
+      </ul>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/paracetamol">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Paracetamol topics</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
