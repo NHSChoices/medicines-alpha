@@ -1,0 +1,38 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge"><a href="/paracetamol" class="link-no-style">Paracetamol</a></h1>
+
+      <h2>Paracetamol: other treatment options</h2>
+
+      <p>Other types of painkiller that can be used instead of paracetamol include:</p>
+
+      <ul>
+        <li>non-steroidal anti-inflammatory drugs, or NSAIDs (such as ibuprofen). Some NSAIDs are also available as creams or gels.</li>
+        <li>opioid analgesics (such as codeine)</li>
+      </ul>
+
+      <p>Some of these painkiller options are only available by prescription. Talk to your doctor or pharmacist about the choices that might be most appropriate for you.</p>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/paracetamol/treatment-options">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Other treatment options</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
