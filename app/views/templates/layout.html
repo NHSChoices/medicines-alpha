@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block page_title %}Medicines Information Alpha{% endblock %}</title>
+  <link href="{{ asset_path }}stylesheets/govuk-template.css?0.16.0" media="screen" rel="stylesheet" type="text/css" />
+  <link href="{{ asset_path }}stylesheets/fonts.css?0.16.0" media="all" rel="stylesheet" type="text/css" />
+  <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
+  <link href="/public/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/public/stylesheets/medicines-alpha.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <body class="{% block body_classes %}{% endblock %}">
+    <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    {% block body_start %}{% endblock %}
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">{{ skip_link_message|default('Skip to main content') }}</a>
+      </div>
+    </div>
+
+    <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
+        <div class="header__container">
+          <p class="header__logo"><a href="/"><img src="/public/images/nhs-rev-logotype.svg" class="header__img" width="90" height="36" alt="NHS logo" /></a></p>
+          <p class="header__title">Medicines Information Alpha</p>
+        </div>
+    </header>
+    <!--end header-->
+    {% block after_header %}{% endblock %}
+    {% block content %}{% endblock %}
+    <footer class="group js-footer" id="footer" role="contentinfo">
+    </footer>
+    <!--end footer-->
+
+    <!-- Javascript -->
+    <script src="/public/javascripts/details.polyfill.js"></script>
+    <script src="/public/javascripts/jquery-1.11.3.js"></script>
+    <script src="/public/javascripts/govuk/selection-buttons.js"></script>
+    <script src="/public/javascripts/application.js"></script>
+  </body>
+  </html>
