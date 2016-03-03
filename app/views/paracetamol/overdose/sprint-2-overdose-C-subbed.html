@@ -1,0 +1,35 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge"><a href="/paracetamol" class="link-no-style">Paracetamol</a></h1>
+
+      <h2>Paracetamol overdose</h2>
+
+      <p><em class="strong">Do not exceed the stated dose.</em></p>
+
+      <p><em class="strong">Immediate medical advice should be sought in the event of an overdose, even if you feel well, because of the risk of delayed, serious liver damage.</em></p>
+
+      <p>If you have any further questions on the use of this product, ask your doctor or pharmacist.</p>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/paracetamol/overdose">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Overdose</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
