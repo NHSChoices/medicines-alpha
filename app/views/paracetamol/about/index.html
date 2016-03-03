@@ -1,0 +1,33 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge"><a href="/paracetamol" class="link-no-style">Paracetamol</a></h1>
+      <h2>About</h2>
+      <ul>
+        <li><a href="/paracetamol/about/sprint-2-about-the-medicine-A-subbed">Option A <span class="print">- Sprint 2 about the medicine A subbed</span></a>
+        <li><a href="/paracetamol/about/sprint-2-about-the-medicine-B-subbed">Option B <span class="print">- Sprint 2 about the medicine B subbed</span></a>
+        <li><a href="/paracetamol/about/sprint-2-about-the-medicine-C-subbed">Option C <span class="print">- Sprint 2 about the medicine C subbed</span></a>
+      </ul>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/paracetamol">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Paracetamol topics</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
