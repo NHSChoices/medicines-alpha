@@ -1,0 +1,32 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge"><a href="/prednisolone" class="link-no-style">Prednisolone</a></h1>
+      <h2>Living with prednisolone</h2>
+      <ul>
+        <li><a href="/prednisolone/living-with/living-with-prednisolone-sprint-2-A-subbed">Option A <span class="print">- Living with prednisolone sprint 2 A subbed</span></a></li>
+        <li><a href="/prednisolone/living-with/living-with-prednisolone-sprint-2-B-subbed">Option B <span class="print">- Living with prednisolone sprint 2 B subbed</span></a></li>
+      </ul>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/prednisolone">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Prednisolone topics</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
