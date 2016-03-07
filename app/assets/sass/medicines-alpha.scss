@@ -86,7 +86,7 @@ ul ul {
 
 li {margin-left:1.25em; margin-bottom:10px;}
 
-h2 {
+h2, .content-normal h1 {
   font-size:46px;
   font-weight:bold;
   line-height:1.15;
@@ -98,6 +98,10 @@ h2 {
 .index-topic {font-size:24px;}
 
 h3 {font-size:24px; font-weight:bold; margin-bottom:20px;}
+
+.content-normal h1 {margin-bottom:30px;}
+.content-normal h2 {border-top: 1px solid #b9d2dc; font-size:32px; font-weight:bold; margin-bottom:20px; margin-top:40px; padding-top:40px;}
+h1.page-content-header + h2 {margin-top:30px;}
 
 h4 {font-weight:bold;}
 .strong {font-weight:bold;}
