@@ -1,0 +1,40 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge"><a href="/prednisolone" class="link-no-style">Prednisolone</a></h1>
+
+      <h2>Stopping prednisolone</h2>
+
+      <p>If you have taken prednisolone for more than three weeks or have taken more than 40mg every day for more than a week <em class="strong">do not stop taking the medicine suddenly</em>.</p>
+      <p>Stopping the medicine suddenly may cause your condition to flare up again or lead to potentially dangerous withdrawal symptoms including:</p>
+      <ul>
+        <li>severe fatigue</li>
+        <li>weakness</li>
+        <li>body aches</li>
+        <li>joint pain</li>
+      </ul>
+
+      <p><em class="strong">Gradually reduce the prednisolone dose</em> over a few weeks so that you're less likely to experience withdrawal symptoms.</p>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/prednisolone/stopping">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Stopping prednisolone</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
