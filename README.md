@@ -2,7 +2,7 @@
 
 This is a prototype of the NHS Choices medicines information alpha.
 
-It is built using the GOV.UK prototype kit, details of which are below.
+It is built using the [GOV.UK prototype kit](https://github.com/alphagov/govuk_prototype_kit), details of which are below.
 
 
 # GOV.UK Prototype kit
