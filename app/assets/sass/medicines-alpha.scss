@@ -213,6 +213,14 @@ summary + div {margin-top:0; padding:10px;}
   .content-normal summary h2:after {top:12px;}
 }
 
+.content-shrunk summary {
+  border:0;
+  padding:0;
+}
+
+.content-shrunk h2 {margin-top:25px; padding-top:35px;}
+.content-shrunk summary + div {padding:0;}
+details summary:hover p {text-decoration: underline;}
 
 .print {display:none;}
 
