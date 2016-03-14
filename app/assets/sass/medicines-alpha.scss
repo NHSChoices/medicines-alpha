@@ -1,4 +1,18 @@
-body {}
+@font-face {
+  font-family: 'Frutiger';
+  src: url(/public/fonts/NeueFrutigerComRegular.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url(/public/fonts/NeueFrutigerComBold.woff);
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {font-family: 'Frutiger', arial, Helvetica, sans-serif;}
 #global-header {
   background-color: #0072c6;
   border-bottom: 6px solid #e6f1f9;
@@ -144,6 +158,32 @@ em {font-style: normal;}
 a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
 
 .underline {text-decoration: underline;}
+
+
+.list-nav {
+  font-family: 'Frutiger', arial, Helvetica, sans-serif;
+  -webkit-columns: auto 2;
+   -moz-columns: auto 2;
+        columns: auto 2;
+  list-style-position: outside;
+  list-style-type: decimal;
+  font-size:16px;
+}
+
+@media (max-width: 640px) {
+  .list-nav {
+    -webkit-columns: auto 1;
+     -moz-columns: auto 1;
+          columns: auto 1;
+  }
+}
+
+.list-nav li {
+  line-height:24px;
+  page-break-inside: avoid;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
 
 .print {display:none;}
 
