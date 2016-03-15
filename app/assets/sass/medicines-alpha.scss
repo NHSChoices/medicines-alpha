@@ -219,7 +219,7 @@ summary + div {margin-top:0; padding:10px;}
   padding:0;
 }
 
-.content-shrunk details .arrow {display:inline;}
+.content-shrunk details .arrow, .content-shrunk details summary::-webkit-details-marker {display:inline;}
 .content-shrunk h2 {margin-top:25px; padding-top:35px;}
 .content-shrunk summary + div {margin-top:15px; padding:0;}
 details summary span {text-decoration: underline;}
