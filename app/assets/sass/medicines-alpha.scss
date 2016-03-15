@@ -1,4 +1,18 @@
-body {}
+@font-face {
+  font-family: 'Frutiger';
+  src: url(/public/fonts/NeueFrutigerComRegular.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url(/public/fonts/NeueFrutigerComBold.woff);
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {font-family: 'Frutiger', arial, Helvetica, sans-serif;}
 #global-header {
   background-color: #0072c6;
   border-bottom: 6px solid #e6f1f9;
@@ -144,6 +158,72 @@ em {font-style: normal;}
 a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
 
 .underline {text-decoration: underline;}
+
+
+.list-nav {
+  font-family: 'Frutiger', arial, Helvetica, sans-serif;
+  -webkit-columns: auto 2;
+   -moz-columns: auto 2;
+        columns: auto 2;
+  list-style-position: outside;
+  list-style-type: decimal;
+  font-size:16px;
+}
+
+@media (max-width: 640px) {
+  .list-nav {
+    -webkit-columns: auto 1;
+     -moz-columns: auto 1;
+          columns: auto 1;
+  }
+}
+
+.list-nav li {
+  line-height:24px;
+  page-break-inside: avoid;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+/* concertinas */
+.content-normal summary h2 {border:0; font-size:28px; font-weight:normal; margin:0; padding:0 20px 0 0;}
+
+.content-normal summary h2:after {
+    content: "\002b  ";
+    position:absolute;
+    right:10px;
+    top:22px;
+}
+
+.content-normal summary[aria-expanded='true'] h2:after {
+    content: "\2212  ";
+}
+
+.content-normal summary {border-top: 1px solid #b9d2dc; display:block; padding:20px 10px;}
+details .arrow {display:none;}
+details summary {margin-bottom:0;}
+details summary::-webkit-details-marker {display:none;}
+details summary:focus {border-top:0; outline: 3px solid #b9d2dc;}
+details summary:hover h2 {text-decoration: underline;}
+summary + div {margin-top:0; padding:10px;}
+
+@media (max-width: 640px) {
+  .content-normal h1 {font-size:40px;}
+  .content-normal summary {padding:12px 10px;}
+  .content-normal details summary h2 {font-size:26px;}
+  .content-normal summary h2:after {top:12px;}
+}
+
+.content-shrunk summary {
+  border:0;
+  padding:0;
+}
+
+.content-shrunk details .arrow {display:inline;}
+.content-shrunk details summary::-webkit-details-marker {display:inline;}
+.content-shrunk h2 {margin-top:25px; padding-top:35px;}
+.content-shrunk summary + div {margin-top:15px; padding:0;}
+details summary span {text-decoration: underline;}
 
 .print {display:none;}
 
