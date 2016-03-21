@@ -1,0 +1,66 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds content-normal content-multi">
+      <h1 class="page-content-header"><a href="/citalopram" class="link-no-style">Citalopram</a></h1>
+
+      <nav class="list-nav" role="navigation">
+        <ol>
+          <li><a href="/citalopram/multi-page-a">About citalopram</a></li>
+          <li>Precautions</li>
+          <li><a href="/citalopram/multi-page-a/pregnancy-breastfeeding">Pregancy &amp; breastfeeding</a></li>
+          <li><a href="/citalopram/multi-page-a/other-options">Other options</a></li>
+        </ol>
+      </nav>
+
+      <h2>Precautions</h2>
+
+      <h3>Ask your doctor before taking citalopram</h3>
+      <ul>
+        <li>If you have an <span class="strong">allergy</span> to citalopram or any of its ingredients. Citalopram tablets contain a small amount of lactose</li>
+        <li>If you are taking any <span class="strong">other medicines</span>, including any complementary medicines. Citalopram may not be suitable for you if you already take other medicines which affect your heart rhythm</li>
+        <li>If you're trying to <span class="strong">become pregnant</span>, are already <span class="strong">pregnant</span> or <span class="strong">breast feeding</span></li>
+        <li>If you have <span class="strong">diabetes</span> citalopram can upset its control. Monitor your blood glucose more often for the first few weeks of treatment with citalopram and adjust your diabetes treatment if necessary</li>
+      </ul>
+
+
+      <h3>If you are taking other medicines</h3>
+      <p>Citalopram can interfere with many different medicines to change the way they work or cause unexpected side effects.</p>
+      <p>Make sure your doctor and pharmacist know you’re taking citalopram before starting or stopping any other medicine, including over-the-counter and complementary medicines.</p>
+
+
+      <h3>Taking complementary medicines with citalopram</h3>
+      <p>Make sure that your doctor and pharmacist know you are taking citalopram before starting or stopping <em class="strong">any</em> complementary medicine.</p>
+      <p>Never take the herbal remedy St John's wort (Hypericum perforatum) at the same time as citalopram as this will increase your risk of side effects.</p>
+
+
+      <h3>Alcohol</h3>
+      <p>It's advisable to cut down or preferably completely avoid alcohol while you're taking citalopram.</p>
+
+      <nav role="navigation" class="pagination">
+        <div class="next-page">
+          <a href="/citalopram/multi-page-a/pregnancy-breastfeeding">
+            <span class="prefix">Next page:</span>
+            <span class="title">Pregnancy &amp; breastfeeding</span>
+          </a>
+        </div>
+        <div class="prev-page">
+          <a href="/citalopram/multi-page-a">
+            <span class="prefix">Previous page:</span>
+            <span class="title">About citalopram</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
