@@ -1,0 +1,32 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge"><a href="/citalopram" class="link-no-style">Citalopram</a></h1>
+      <h2>Side effects</h2>
+      <ul>
+        <li><a href="/citalopram/side-effects/side-effects-sprint-3-A-subbed">Option A <span class="print">- side effects sprint 3 A subbed</span></a>
+        <li><a href="/citalopram/side-effects/side-effects-sprint-3-B-subbed">Option B <span class="print">- side effects sprint 3 B subbed</span></a>
+      </ul>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/citalopram">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Citalopram topics</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
