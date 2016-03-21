@@ -1,0 +1,43 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds content-normal content-multi">
+      <h1 class="page-content-header"><a href="/citalopram" class="link-no-style">Citalopram</a></h1>
+
+      <nav class="list-nav" role="navigation">
+        <ol>
+          <li><a href="/citalopram/multi-page-a">About citalopram</a></li>
+          <li><a href="/citalopram/multi-page-a/precautions">Precautions</a></li>
+          <li><a href="/citalopram/multi-page-a/pregnancy-breastfeeding">Pregancy &amp; breastfeeding</a></li>
+          <li>Other options</li>
+        </ol>
+      </nav>
+
+      <h2>Other options</h2>
+
+      <h3>Other treatment options</h3>
+      <p>Antidepressants, including citalopram, are just one of several approaches to treating depression.</p>
+      <p>Other potential treatments include talking therapy (such as cognitive behavioural therapy), exercise programmes and help to get a good night's sleep.</p>
+      <p>Choosing a treatment that's most suitable for you depends on how long you’ve had depression, your initial symptoms, whether you’ve had any previous bouts of depression, whether previous treatment has worked, how likely you are to stick with your treatment, the potential side effects and your preferences and priorities.</p>
+
+      <nav role="navigation" class="pagination">
+        <div class="prev-page">
+          <a href="/citalopram/multi-page-a/pregnancy-breastfeeding">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Pregnancy &amp; breastfeeding</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
