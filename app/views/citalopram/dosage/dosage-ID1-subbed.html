@@ -1,0 +1,48 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge"><a href="/citalopram" class="link-no-style">Citalopram</a></h1>
+
+      <h2>Dosage</h2>
+
+      <p>Citalopram is available as 10mg, 20mg or 40mg tablets. It is also available as oral drops. Four drops is the equivalent of a 10mg tablet.</p>
+
+      <ul>
+        <li>low dose = less than 20mg per day</li>
+        <li>medium dose = 20mg per day</li>
+        <li>high dose = 30-40mg per day</li>
+      </ul>
+
+      <p>If you are <span class="strong">over 65 years</span> or have <span class="strong">liver problems</span> a maximum dose of 20mg daily is recommended.</p>
+
+      <p><em class="strong italic">Always follow the dosage you have been prescribed</em></p>
+
+      <h3>Children</h3>
+      <p>Citalopram is not suitable for children under 12.<br />
+      A standard dose for 12-18 year olds is 10mg per day.</p>
+
+      <h3>Overdose warning!</h3>
+      <p>If you take too much citalopram, contact your doctor immediately for advice. Overdose can be dangerous.</p>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/citalopram/dosage">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Dosage</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

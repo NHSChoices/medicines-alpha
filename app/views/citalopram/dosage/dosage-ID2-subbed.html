@@ -1,0 +1,32 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge"><a href="/citalopram" class="link-no-style">Citalopram</a></h1>
+
+      <h2>Dosage</h2>
+      <p><em class="strong italic">Always follow the dosage you have been prescribed.</em></p>
+
+      <p>If you take too much citalopram, contact your doctor immediately for advice. <em class="strong">Overdose can be dangerous.</em></p>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/citalopram/dosage">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Dosage</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
