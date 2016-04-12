@@ -101,9 +101,11 @@ h3 {font-size:24px; font-weight:bold; margin-bottom:20px;}
 
 .content-normal h1 {margin-bottom:30px;}
 .content-normal h2 {border-top: 1px solid #b9d2dc; font-size:32px; font-weight:bold; margin-bottom:20px; margin-top:40px; padding-top:40px;}
+.content-normal h2.noborder {border-top:0; padding-top:0;}
 h1.page-content-header + h2 {margin-top:30px;}
 .content-multi h3 {margin-top:40px;}
 .content-multi h2 + h3 {margin-top:20px;}
+.header-quick-info {padding:0 15px;}
 
 h4 {font-weight:bold;}
 .strong {font-weight:bold;}
@@ -211,6 +213,24 @@ summary + div {margin-top:0; padding:10px;}
 .content-shrunk h2 {margin-top:25px; padding-top:35px;}
 .content-shrunk summary + div {margin-top:15px; padding:0;}
 details summary span {text-decoration: underline;}
+
+.dl-quick-info dt {font-size:20px;}
+.dl-quick-info dd {margin-bottom:20px;}
+.quick-info-horizontal {border-bottom:1px solid #b9d2dc; border-top:1px solid #b9d2dc; display:table; list-style:none; margin:30px 0 0 0; padding:10px 0;}
+.quick-info-horizontal::after {clear:both; content:""; display:block;}
+.quick-info-horizontal li {border-right:1px solid #b9d2dc; display:table-cell; font-size:16px; margin-left:0; padding:0 12px; width:33%;}
+.quick-info-horizontal li:last-child {border-right:0;}
+.quick-info-horizontal dl {position:relative;}
+.quick-info-horizontal dt {padding-right:20px;}
+.quick-info-horizontal dd {display:inline;}
+.quick-info-horizontal .yesno {left:-99999px; position:absolute;}
+.quick-info-horizontal .icon-tick, .quick-info-horizontal .icon-cross {position:absolute; right:0; top:-5px; font-size:24px;}
+.icon-tick::after {content:" \2713";}
+.icon-cross::after {content:" \2718";}
+
+@media (max-width: 640px) {
+  .dl-quick-info {border-top:1px solid #b9d2dc; margin-top:40px; padding-top:40px;}
+}
 
 .print {display:none;}
 
