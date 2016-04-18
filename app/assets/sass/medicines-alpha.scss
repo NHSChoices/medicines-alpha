@@ -159,6 +159,7 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
   list-style-position: outside;
   list-style-type: decimal;
   font-size:16px;
+  margin:0 10px;
 }
 
 @media (max-width: 640px) {
@@ -248,6 +249,7 @@ details summary span {text-decoration: underline;}
 .main-nav-scrolled .header-sticky {font-size:24px; margin-bottom:10px; margin-top:10px;}
 
 .main-nav-sticky {display:none; margin:0 auto; max-width:960px;}
+.main-nav-sticky ul {margin:0 15px;}
 .main-nav-sticky li.active {}
 
 .dropdown-nav {margin:0 auto; max-width:960px;}
@@ -272,12 +274,13 @@ details summary span {text-decoration: underline;}
   .dropdown-nav {max-width:720px !important; right:15px;}
   .dropdown-nav a {right:15px;}
   .main-nav-sticky {max-width:720px;}
+  #content {margin:0 auto !important; max-width:720px;}
   .column-two-thirds, .column-one-third {float:none; max-width:720px; margin:0 auto; padding:0; width:auto;}
   .column-one-third {border-top:1px solid #b9d2dc; margin-top:40px; padding-top:40px;}
 }
 
 @media (max-width: 768px) {
-  #content {margin:0 15px;}
+  #content {margin:0 15px !important;}
   .column-two-thirds {max-width:100%; padding:0 15px;}
   .main-nav-sticky {max-width:100%; padding:0 15px;}
 }
