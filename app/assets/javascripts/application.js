@@ -124,4 +124,60 @@ $(document).ready(function() {
   toggleContent.showHideRadioToggledContent();
   toggleContent.showHideCheckboxToggledContent();
 
+
+  // Sticky nav
+  var mn = $('.main-nav-sticky'),
+      mns = 'main-nav-scrolled',
+      ms = 'main-nav-show',
+      hdr = $('.header-sticky a'),
+      hdrWrap = $('.header__wrap'),
+      hdrHeight = $(hdrWrap).height(),
+      hdrVal = $(hdr).text(),
+      offset = 100;
+
+  $(mn).scrollspy({ offset: -80 });
+
+  $(window).scroll(function() {
+    if( $(this).scrollTop() > hdrHeight ) {
+      hdrWrap.addClass(mns);
+      mn.addClass(ms);
+      var text = $(mn).find('li.active a').text();
+      if (text) {
+        $(hdr).text(text);
+      } else {
+        $(hdr).text(hdrVal);
+      }
+      offset = 50;
+    } else {
+      hdrWrap.removeClass(mns);
+      mn.removeClass(ms);
+      $(mn).find('li').removeClass('active');
+      $(hdr).text(hdrVal);
+      offset = 100;
+    }
+  });
+
+  $('.toggle-nav').on('click', function() {
+    $('.main-nav-sticky').slideToggle();
+  });
+
+  $('.main-nav-sticky a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    $('.main-nav-sticky').hide();
+
+    console.log(offset);
+
+    var target = $(this.hash);
+    var $target = $(target);
+
+    $('html, body').animate({
+        scrollTop: target.offset().top - offset
+    }, 1000);
+
+    $(mn).find('li').removeClass('active');
+    $(this).parent().addClass('active');
+
+  });
+
+
 });

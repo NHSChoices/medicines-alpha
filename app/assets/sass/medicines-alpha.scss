@@ -94,6 +94,8 @@ h2, .content-normal h1 {
   margin-top:30px;
 }
 
+.sr-only {border:none; clip:rect(0,0,0,0px); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px;}
+
 .index {font-size:46px; font-weight:bold; margin-bottom:20px; margin-top:30px;}
 .index-topic {font-size:24px;}
 
@@ -157,6 +159,7 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
   list-style-position: outside;
   list-style-type: decimal;
   font-size:16px;
+  margin:0 10px;
 }
 
 @media (max-width: 640px) {
@@ -228,8 +231,59 @@ details summary span {text-decoration: underline;}
 .icon-tick::after {content:" \2713";}
 .icon-cross::after {content:" \2718";}
 
+
+/* sticky nav */
+.header__content {
+  margin:0 auto;
+  max-width:960px;
+  position:relative;
+}
+.header-sticky {
+  font-size:46px;
+  font-weight:bold;
+  line-height:1.15;
+  margin-bottom:5px;
+  margin-top:30px;
+}
+.main-nav-scrolled {background:#ededed; box-shadow: 0 5px 5px #999; position:fixed; top:0; width:100%; z-index:1;}
+.main-nav-scrolled .header-sticky {font-size:24px; margin-bottom:10px; margin-top:10px;}
+
+.main-nav-sticky {display:none; margin:0 auto; max-width:960px;}
+.main-nav-sticky ul {margin:0 10px;}
+.main-nav-sticky li.active {}
+
+.dropdown-nav {margin:0 auto; max-width:960px;}
+.dropdown-nav a {background-color:#0072c6; display:block; height:23px; padding-top:1px; position:absolute; right:0; top:2px; width:29px;}
+.burger-bar {
+    background-color: #fff;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    display: block;
+    height: 2px;
+    margin-left: 8px;
+    margin-top: 4px;
+    width: 14px;
+}
+
 @media (max-width: 640px) {
   .dl-quick-info {border-top:1px solid #b9d2dc; margin-top:40px; padding-top:40px;}
+}
+
+@media (max-width: 1000px) {
+  .header__container, .header__content, .header-quick-info {margin:0 auto; max-width:720px; padding:0 15px;}
+  .dropdown-nav {max-width:720px !important; right:15px;}
+  .dropdown-nav a {right:15px;}
+  .main-nav-sticky {max-width:720px;}
+  #content {margin:0 auto !important; max-width:720px;}
+  .column-two-thirds, .column-one-third {float:none; max-width:720px; margin:0 auto; padding:0; width:auto;}
+  .column-one-third {border-top:1px solid #b9d2dc; margin-top:40px; padding-top:40px;}
+}
+
+@media (max-width: 768px) {
+  #content {margin:0 15px !important;}
+  .header__content {max-width:100%; padding:0 15px;}
+  .column-two-thirds {max-width:100%; padding:0 15px;}
+  .main-nav-sticky {max-width:100%; padding:0 15px;}
 }
 
 .print {display:none;}
