@@ -249,7 +249,7 @@ details summary span {text-decoration: underline;}
 .main-nav-scrolled .header-sticky {font-size:24px; margin-bottom:10px; margin-top:10px;}
 
 .main-nav-sticky {display:none; margin:0 auto; max-width:960px;}
-.main-nav-sticky ul {margin:0 15px;}
+.main-nav-sticky ul {margin:0 10px;}
 .main-nav-sticky li.active {}
 
 .dropdown-nav {margin:0 auto; max-width:960px;}
@@ -281,6 +281,7 @@ details summary span {text-decoration: underline;}
 
 @media (max-width: 768px) {
   #content {margin:0 15px !important;}
+  .header__content {max-width:100%; padding:0 15px;}
   .column-two-thirds {max-width:100%; padding:0 15px;}
   .main-nav-sticky {max-width:100%; padding:0 15px;}
 }
