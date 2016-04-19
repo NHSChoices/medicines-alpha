@@ -268,6 +268,7 @@ details summary span {text-decoration: underline;}
 .callout {background:#e6f1f9; border-left:2px solid #0072c6; font-weight:bold; padding:15px 15px 10px 15px;}
 .content-layout .quick-info-horizontal {margin-bottom:30px;}
 .more-concertina details .arrow {display:none;}
+.more-concertina details summary::-webkit-details-marker {display:none;}
 .more-concertina summary h2 {font-size:19px;}
 .more-concertina summary h2::after {top:14px;}
 .more-concertina {background:#f8f8f8; padding:5px 10px;}
