@@ -283,6 +283,17 @@ details summary span {text-decoration: underline;}
 .ul-quick-info li {margin:0;}
 .key-facts {margin-bottom:0;}
 
+.ul-quick-info {
+  -webkit-columns: auto 2;
+   -moz-columns: auto 2;
+        columns: auto 2;
+        background:#f8f8f8; padding:10px 10px 0 10px;
+}
+.ul-quick-info dt {float:left; padding-right:10px;}
+.ul-quick-info dd {margin-bottom:10px;}
+.quick-info-nested {border:0; margin-top:20px; padding-top:0;}
+
+
 /* footer */
 #global-footer {color:#bdbcbc;}
 .footer__container {margin:0 auto; max-width:960px;}
@@ -304,15 +315,6 @@ details summary span {text-decoration: underline;}
   #content {margin:0 auto !important; max-width:720px;}
   .column-two-thirds, .column-one-third {float:none; max-width:720px; margin:0 auto; padding:0; width:auto;}
   .column-one-third {border-top:1px solid #b9d2dc; margin-top:40px; padding-top:40px;}
-  .ul-quick-info {
-    -webkit-columns: auto 2;
-     -moz-columns: auto 2;
-          columns: auto 2;
-          background:#f8f8f8; padding:10px 10px 0 10px;
-  }
-  .ul-quick-info dt {float:left; padding-right:10px;}
-  .ul-quick-info dd {margin-bottom:10px;}
-  .quick-info-nested {border:0; margin-top:20px; padding-top:0;}
 }
 
 @media (max-width: 768px) {
