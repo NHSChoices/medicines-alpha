@@ -186,7 +186,7 @@ $(document).ready(function() {
   });
 
   $('summary').on('click', function(e) {
-    if ($(this).parent().attr('open') === 'open') {
+    if ($(this).find('span').text() === 'More information') {
       $(this).find('span').text('Less information');
     } else {
       $(this).find('span').text('More information');
