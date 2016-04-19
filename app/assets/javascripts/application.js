@@ -179,5 +179,12 @@ $(document).ready(function() {
 
   });
 
+  $('summary').on('click', function(e) {
+    if ($(this).parent().attr('open') === 'open') {
+      $(this).find('span').text('Less information');
+    } else {
+      $(this).find('span').text('More information');
+    }
+  });
 
 });
