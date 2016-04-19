@@ -279,6 +279,9 @@ details summary span {text-decoration: underline;}
 .list-nav-layout {border-bottom:1px solid #b9d2dc; margin-bottom:30px; padding:0 0 30px 0;}
 .list-nav-layout ul {list-style-type:none; margin-left:0; margin-right:0;}
 .list-nav-layout ul li {margin-left:2px;}
+.ul-quick-info {list-style:none; margin:0; padding:0;}
+.ul-quick-info li {margin:0;}
+.key-facts {margin-bottom:0;}
 
 /* footer */
 #global-footer {color:#bdbcbc;}
@@ -287,7 +290,10 @@ details summary span {text-decoration: underline;}
 
 @media (max-width: 640px) {
   .dl-quick-info {border-top:1px solid #b9d2dc; margin-top:40px; padding-top:40px;}
+  .ul-quick-info .dl-quick-info {border:0; margin:0; padding:0;}
+  .ul-quick-info .dl-quick-info dt {float:none; font-size:16px; padding-right:0;}
   .content-layout .more-concertina details h2 {font-size:19px;}
+
 }
 
 @media (max-width: 1000px) {
@@ -296,15 +302,24 @@ details summary span {text-decoration: underline;}
   .dropdown-nav a {right:15px;}
   .main-nav-sticky {display:none; max-width:720px;}
   #content {margin:0 auto !important; max-width:720px;}
-  x.list-nav-layout {padding-bottom:15px !important; padding-top:0 !important;}
   .column-two-thirds, .column-one-third {float:none; max-width:720px; margin:0 auto; padding:0; width:auto;}
   .column-one-third {border-top:1px solid #b9d2dc; margin-top:40px; padding-top:40px;}
+  .ul-quick-info {
+    -webkit-columns: auto 2;
+     -moz-columns: auto 2;
+          columns: auto 2;
+          background:#f8f8f8; padding:10px 10px 0 10px;
+  }
+  .ul-quick-info dt {float:left; padding-right:10px;}
+  .ul-quick-info dd {margin-bottom:10px;}
+  .quick-info-nested {border:0; margin-top:20px; padding-top:0;}
 }
 
 @media (max-width: 768px) {
   #content {margin:0 15px !important;}
   .header__content {max-width:100%; padding:0 15px;}
   .column-two-thirds {max-width:100%; padding:0 15px;}
+  .ul-quick-info {max-width:100%; margin:0 15px;}
   .main-nav-sticky {max-width:100%; margin:0 15px;}
   .list-nav-layout {margin-bottom:20px; padding-bottom:20px;}
 }
