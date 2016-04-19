@@ -99,7 +99,7 @@ h2, .content-normal h1 {
 .index {font-size:46px; font-weight:bold; margin-bottom:20px; margin-top:30px;}
 .index-topic {font-size:24px;}
 
-h3 {font-size:24px; font-weight:bold; margin-bottom:20px;}
+h3 {font-size:24px; font-weight:bold; margin-bottom:20px; margin-top:30px;}
 
 .content-normal h1 {margin-bottom:30px;}
 .content-normal h2 {border-top: 1px solid #b9d2dc; font-size:32px; font-weight:bold; margin-bottom:20px; margin-top:40px; padding-top:40px;}
@@ -242,17 +242,17 @@ details summary span {text-decoration: underline;}
   font-size:46px;
   font-weight:bold;
   line-height:1.15;
-  margin-bottom:5px;
+  margin-bottom:15px;
   margin-top:30px;
 }
 .main-nav-scrolled {background:#ededed; box-shadow: 0 5px 5px #999; position:fixed; top:0; width:100%; z-index:1;}
 .main-nav-scrolled .header-sticky {font-size:24px; margin-bottom:10px; margin-top:10px;}
 
-.main-nav-sticky {display:none; margin:0 auto; max-width:960px;}
+.main-nav-sticky {margin:0 auto; max-width:960px;}
 .main-nav-sticky ul {margin:0 10px;}
 .main-nav-sticky li.active {}
 
-.dropdown-nav {margin:0 auto; max-width:960px;}
+.dropdown-nav {display:none; margin:0 auto; max-width:960px;}
 .dropdown-nav a {background-color:#0072c6; display:block; height:23px; padding-top:1px; position:absolute; right:0; top:2px; width:29px;}
 .burger-bar {
     background-color: #fff;
@@ -265,16 +265,29 @@ details summary span {text-decoration: underline;}
     width: 14px;
 }
 
+.callout {background:#e6f1f9; border-left:2px solid #0072c6; font-weight:bold; padding:15px 15px 10px 15px;}
+.content-layout .quick-info-horizontal {margin-bottom:30px;}
+.more-concertina details .arrow {display:none;}
+.more-concertina summary h2 {font-size:19px;}
+.more-concertina summary h2::after {top:14px;}
+.more-concertina {background:#f8f8f8; padding:5px 10px;}
+.more-concertina details {margin-bottom:10px;}
+.more-concertina details h2 {border-top:1px dotted #ccc; padding-top:10px;}
+.more-concertina details:first-child h2 {border-top:0;}
+.list-nav-layout {padding:0 0 20px 0;}
+
 @media (max-width: 640px) {
   .dl-quick-info {border-top:1px solid #b9d2dc; margin-top:40px; padding-top:40px;}
+  .content-layout .more-concertina details h2 {font-size:19px;}
 }
 
 @media (max-width: 1000px) {
   .header__container, .header__content, .header-quick-info {margin:0 auto; max-width:720px; padding:0 15px;}
-  .dropdown-nav {max-width:720px !important; right:15px;}
+  .dropdown-nav {display:block; max-width:720px !important; right:15px;}
   .dropdown-nav a {right:15px;}
-  .main-nav-sticky {max-width:720px;}
+  .main-nav-sticky {display:none; max-width:720px;}
   #content {margin:0 auto !important; max-width:720px;}
+  .list-nav-layout {padding-bottom:15px !important; padding-top:0 !important;}
   .column-two-thirds, .column-one-third {float:none; max-width:720px; margin:0 auto; padding:0; width:auto;}
   .column-one-third {border-top:1px solid #b9d2dc; margin-top:40px; padding-top:40px;}
 }

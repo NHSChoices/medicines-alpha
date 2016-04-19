@@ -126,6 +126,7 @@ $(document).ready(function() {
 
 
   // Sticky nav
+  /*
   var mn = $('.main-nav-sticky'),
       mns = 'main-nav-scrolled',
       ms = 'main-nav-show',
@@ -156,6 +157,7 @@ $(document).ready(function() {
       offset = 100;
     }
   });
+  */
 
   $('.toggle-nav').on('click', function() {
     $('.main-nav-sticky').slideToggle();
@@ -163,15 +165,13 @@ $(document).ready(function() {
 
   $('.main-nav-sticky a[href^="#"]').on('click', function(e) {
     e.preventDefault();
-    $('.main-nav-sticky').hide();
-
-    console.log(offset);
+    //$('.main-nav-sticky').hide();
 
     var target = $(this.hash);
     var $target = $(target);
 
     $('html, body').animate({
-        scrollTop: target.offset().top - offset
+        scrollTop: target.offset().top
     }, 1000);
 
     $(mn).find('li').removeClass('active');
