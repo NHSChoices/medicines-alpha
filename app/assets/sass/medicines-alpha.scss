@@ -310,6 +310,12 @@ details summary span {text-decoration: underline;}
           padding-right:0;
   }
 
+  .ul-quick-info:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+
   .ul-quick-info li {float:left; margin-right:5%; width:45%;}
 
   .ul-quick-info .dl-quick-info {border:0; margin:0; padding:0;}
