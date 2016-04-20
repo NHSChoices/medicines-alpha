@@ -287,8 +287,10 @@ details summary span {text-decoration: underline;}
   -webkit-columns: auto 2;
    -moz-columns: auto 2;
         columns: auto 2;
-        background:#f8f8f8; padding:10px 10px 0 10px;
+        background:#f8f8f8;
+        padding:10px 10px 0 10px;
 }
+
 .ul-quick-info dt {float:left; padding-right:10px;}
 .ul-quick-info dd {margin-bottom:10px;}
 .quick-info-nested {border:0; margin-top:20px; padding-top:0;}
@@ -301,6 +303,15 @@ details summary span {text-decoration: underline;}
 
 @media (max-width: 640px) {
   .dl-quick-info {border-top:1px solid #b9d2dc; margin-top:40px; padding-top:40px;}
+  .ul-quick-info {
+    -webkit-columns: auto 1;
+     -moz-columns: auto 1;
+          columns: auto 1;
+          padding-right:0;
+  }
+
+  .ul-quick-info li {float:left; margin-right:5%; width:45%;}
+
   .ul-quick-info .dl-quick-info {border:0; margin:0; padding:0;}
   .ul-quick-info .dl-quick-info dt {float:none; font-size:16px; padding-right:0;}
   .content-layout .more-concertina details h2 {font-size:19px;}
@@ -321,7 +332,7 @@ details summary span {text-decoration: underline;}
   #content {margin:0 15px !important;}
   .header__content {max-width:100%; padding:0 15px;}
   .column-two-thirds {max-width:100%; padding:0 15px;}
-  .ul-quick-info {max-width:100%; margin:0 15px;}
+  .ul-quick-info {max-width:100%;}
   .main-nav-sticky {max-width:100%; margin:0 15px;}
   .list-nav-layout {margin-bottom:20px; padding-bottom:20px;}
 }
