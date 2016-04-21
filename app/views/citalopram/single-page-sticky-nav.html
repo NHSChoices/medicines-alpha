@@ -231,6 +231,7 @@
 </main>
 
 <script>
+$(document).ready(function() {
 // Sticky nav
 var mn = $('.main-nav-sticky'),
     mns = 'main-nav-scrolled',
@@ -241,7 +242,7 @@ var mn = $('.main-nav-sticky'),
     hdrVal = $(hdr).text(),
     offset = 100;
 
-$(mn).scrollspy({ offset: -80 });
+$(mn).scrollspy({ offset: -90 });
 
 $(window).scroll(function() {
   if( $(this).scrollTop() > hdrHeight ) {
