@@ -1,3 +1,8 @@
+// Colours
+$nhs-blue: #0072c6;
+$separator: #b9d2dc;
+
+
 body {}
 #global-header {
   background-color: #0072c6;
@@ -9,6 +14,11 @@ body {}
   content:"";
   display:block;
 }
+
+
+/**
+ * Header
+ */
 
 .header__container {
   margin:0 auto;
@@ -34,6 +44,15 @@ body {}
   margin-left:15px;
   margin-top:22px;
 }
+
+.header__main {
+  font-size:46px;
+  font-weight:bold;
+  line-height:1.15;
+  margin-bottom:15px;
+  margin-top:30px;
+}
+
 
 @media (max-width: 1020px) {
   .header__container {
@@ -67,6 +86,29 @@ body {}
   font-weight:normal;
 }
 
+
+/**
+ * Navigation
+ */
+.nav {border-bottom:1px solid $separator; margin-bottom:20px;}
+  .nav__header-wrap {border-top:1px solid $separator; padding:10px 0; position:relative;}
+    .nav__header {font-size:19px; line-height:1em; margin:0; padding:0; width:80%;}
+    .nav__toggle {display:block; height:25px; padding:2px; position:absolute; right:0; top:5px; width:31px;}
+      .nav__burger-bar {background-color:$nhs-blue; border-radius:1px; display:block; height:3px; margin-left:4px; margin-top:4px; width:23px;}
+  .nav__list-wrap {display:none; border-top:1px dotted $separator;}
+    .nav__list {list-style:none; margin:10px 0 15px 0;}
+      .nav__list-item {margin-left:0;}
+      .nav__list-link {}
+
+
+/**
+ * Helpers
+ */
+.sr-only {border:none; clip:rect(0,0,0,0px); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px;}
+a.link__unstyled {color:#0b0c0c; cursor:text; text-decoration:none;}
+.clear:after {clear:both; content:""; display:block;}
+
+
 #global-footer {
   background-color: #231f20;
   border-top: 6px solid #656263;
@@ -94,7 +136,6 @@ h2, .content-normal h1 {
   margin-top:30px;
 }
 
-.sr-only {border:none; clip:rect(0,0,0,0px); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px;}
 
 .index {font-size:46px; font-weight:bold; margin-bottom:20px; margin-top:30px;}
 .index-topic {font-size:24px;}
@@ -160,6 +201,10 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
   list-style-type: decimal;
   font-size:16px;
   margin:0 10px;
+}
+
+.list-nav-bullets {
+  list-style-type:disc;
 }
 
 @media (max-width: 640px) {
