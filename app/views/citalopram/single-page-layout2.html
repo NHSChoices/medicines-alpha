@@ -385,6 +385,12 @@
       }
     });
 
+    $(window).resize(function() {
+      if ($(window).width() >= 1280) {
+        $(navWrap).show();
+      }
+    });
+
   }());
 
 
