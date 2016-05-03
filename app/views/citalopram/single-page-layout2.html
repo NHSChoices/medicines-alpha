@@ -359,16 +359,20 @@
   // toggle the dropdown menu from the burger menu
   var toggleMenu = (function() {
 
-    var navToggle = '.nav__toggle',
+    var navHeaderWrap = '.nav__header-wrap',
+        navHeaderWrapToggled = 'nav__header-wrap-toggled',
+        navToggle = '.nav__toggle',
         navWrap = '.nav__list-wrap',
         navShow = 'nav__list-wrap-show',
         navListItem = '.nav__list-link';
 
     $(navToggle).on('click', function() {
       if ($(navWrap).css('display') === 'block') {
+        $(navHeaderWrap).removeClass(navHeaderWrapToggled);
         $(navWrap).slideUp();
         $(navWrap).removeClass(navShow);
       } else {
+        $(navHeaderWrap).addClass(navHeaderWrapToggled);
         $(navWrap).slideDown();
         $(navWrap).addClass(navShow);
       }
