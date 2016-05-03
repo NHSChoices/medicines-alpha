@@ -230,8 +230,7 @@ a.link__unstyled {color:#0b0c0c; cursor:text; text-decoration:none;}
  */
 .more-info .arrow {display:inline;}
 summary + div {padding:0 !important;}
-
-
+.content details summary::-webkit-details-marker {display:inline;}
 
 /**
  * Concertinas
