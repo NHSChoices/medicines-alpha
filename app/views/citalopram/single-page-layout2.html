@@ -6,41 +6,45 @@
 
 {% block content %}
 
-<div class="header__wrap">
-  <div class="header__content">
-    <h1 class="header__main"><a href="/citalopram" class="link__unstyled">Citalopram</a></h1>
+<div class="header__nav-container clear">
+
+  <div class="header__wrap">
+    <div class="header__content">
+      <h1 class="header__main"><a href="/citalopram" class="link__unstyled">Citalopram</a></h1>
+    </div>
   </div>
+
+  <nav id="nav" class="nav" role="navigation">
+    <div class="nav__header-wrap">
+      <h2 class="nav__header"><span>Citalopram</span> contents</h2>
+      <div class="nav__dropdown">
+        <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
+      </div>
+    </div>
+    <div id="nav__list-wrap" class="nav__list-wrap" aria-hidden="true">
+      <ul class=nav__list>
+        <li class="nav__list-item"><a href="#key-facts" class="nav__list-link">Key facts</a></li>
+        <li class="nav__list-item"><a href="#how-when" class="nav__list-link">How to take</a></li>
+        <li class="nav__list-item"><a href="#side-effects" class="nav__list-link">Side effects</a></li>
+        <li class="nav__list-item"><a href="#not-be-able" class="nav__list-link">Safety precautions</a></li>
+        <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link">Taking with other medicines</a></li>
+        <li class="nav__list-item"><a href="#common-questions" class="nav__list-link">Common questions</a></li>
+        <li class="nav__list-item"><a href="#pregnancy" class="nav__list-link">Pregnancy advice</a></li>
+        <li class="nav__list-item"><a href="#more" class="nav__list-link">More about citalopram</a></li>
+      </ul>
+    </div>
+  </nav>
 </div>
 
 <main id="content" role="main">
   <div class="grid-row">
-    <div class="column-two-thirds">
 
-      <nav id="nav" class="nav" role="navigation">
-        <div class="nav__header-wrap">
-          <h2 class="nav__header">Citalopram contents</h2>
-          <div class="nav__dropdown">
-            <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
-          </div>
-        </div>
-        <div id="nav__list-wrap" class="nav__list-wrap" aria-hidden="true">
-          <ul class=nav__list>
-            <li class="nav__list-item"><a href="#key-facts" class="nav__list-link">Key facts</a></li>
-            <li class="nav__list-item"><a href="#how-when" class="nav__list-link">How to take</a></li>
-            <li class="nav__list-item"><a href="#side-effects" class="nav__list-link">Side effects</a></li>
-            <li class="nav__list-item"><a href="#not-be-able" class="nav__list-link">Safety precautions</a></li>
-            <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link">Taking with other medicines</a></li>
-            <li class="nav__list-item"><a href="#common-questions" class="nav__list-link">Common questions</a></li>
-            <li class="nav__list-item"><a href="#pregnancy" class="nav__list-link">Pregnancy advice</a></li>
-            <li class="nav__list-item"><a href="#more" class="nav__list-link">More about citalopram</a></li>
-          </ul>
-        </div>
-      </nav>
+    <div class="column-two-thirds">
 
       <p>Citalopram is a type of antidepressant that is often used to treat depression and also sometimes for panic attacks.</p>
       <p>Citalopram helps many people recover from depression, and it has fewer unwanted effects than other antidepressants.</p>
 
-      <h2 id="key-facts" class="noborder">Key facts:</h2>
+      <h2 id="key-facts" class="content__h2 noborder">Key facts:</h2>
       <ul class="key-facts">
         <li>You can continue to drink alcohol in moderation while taking citalopram</li>
         <li>It usually takes 4-6 weeks to feel the full benefits of citalopram</li>
@@ -49,32 +53,32 @@
         <li>Citalopram can cause withdrawal symptoms so don’t stop taking it unless your doctor asks you to</li>
       </ul>
 
-    <div class="quick-info-nested">
-      <ul class="ul-quick-info">
-        <li><dl class="dl-quick-info">
-          <dt class="strong">Drug class:</dt>
-          <dd><abbr title="Selective serotonin reuptake inhibitor">SSRI</abbr></dd>
-        </dl></li>
-        <li><dl class="dl-quick-info">
-          <dt class="strong">Availability:</dt>
-          <dd>Prescription only</dd>
-        </dl></li>
-        <li><dl class="dl-quick-info">
-          <dt class="strong">Available as:</dt>
-          <dd>Tablets, oral drops</dd>
-        </dl></li>
-        <li><dl class="dl-quick-info">
-          <dt class="strong">Common brandnames</dt>
-          <dd>Cipramil</dd>
-        </dl></li>
-      </ul>
-    </div>
+      <div class="quick-info-nested">
+        <ul class="ul-quick-info">
+          <li><dl class="dl-quick-info">
+            <dt class="strong">Drug class:</dt>
+            <dd><abbr title="Selective serotonin reuptake inhibitor">SSRI</abbr></dd>
+          </dl></li>
+          <li><dl class="dl-quick-info">
+            <dt class="strong">Availability:</dt>
+            <dd>Prescription only</dd>
+          </dl></li>
+          <li><dl class="dl-quick-info">
+            <dt class="strong">Available as:</dt>
+            <dd>Tablets, oral drops</dd>
+          </dl></li>
+          <li><dl class="dl-quick-info">
+            <dt class="strong">Common brandnames</dt>
+            <dd>Cipramil</dd>
+          </dl></li>
+        </ul>
+      </div>
 
-      <h2 id="how-when">How and when to take</h2>
+      <h2 class="content__h2 content__h2--separator" id="how-when">How and when to take</h2>
       <p>Citalopram should be taken once a day. You can choose to take it at any time of day, as long as you stick to the same time every day. You can take citalopram with or without food.</p>
 
       <details role="group">
-        <summary role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="true">
+        <summary class="more-info" role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="true">
           <span>More information</span>
         </summary>
         <div id="details-content-1" aria-hidden="false">
@@ -98,11 +102,11 @@
         </div>
       </details>
 
-      <h2 id="side-effects">Side effects</h2>
+      <h2 class="content__h2 content__h2--separator" id="side-effects">Side effects</h2>
       <p>Not everyone will get side effects with citalopram, but common ones include sleep problems, dry mouth, sweating a lot and feeling tired.</p>
 
       <details role="group">
-        <summary role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="true">
+        <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="true">
           <span>More information</span>
         </summary>
         <div id="details-content-3" aria-hidden="false">
@@ -170,7 +174,7 @@
       </details>
 
 
-      <h2 id="not-be-able">Who may not be able to take citalopram</h2>
+      <h2 class="content__h2 content__h2--separator" id="not-be-able">Who may not be able to take citalopram</h2>
       <p>Tell your doctor before starting to take citalopram if you:</p>
       <ul>
         <li>have an allergy to citalopram or any of its ingredients (citalopram tablets contain lactose)</li>
@@ -181,8 +185,8 @@
       </ul>
 
 
-      <h2 id="common-questions">Common questions</h2>
-      <div class="more-concertina">
+      <h2 class="content__h2 content__h2--separator" id="common-questions">Common questions</h2>
+      <div class="concertinas">
         <details role="group">
           <summary role="button" aria-controls="questions-1" tabindex="0" aria-expanded="false">
             <h2>Can I drink alcohol with citalopram?</h2>
@@ -253,11 +257,11 @@
       </div>
 
 
-      <h2 id="taking-with-others">Taking citalopram with other medicines</h2>
+      <h2 class="content__h2 content__h2--separator" id="taking-with-others">Taking citalopram with other medicines</h2>
       <p class="callout">Tell your doctor and pharmacist that you are taking citalopram before starting or stopping any other prescription or over the counter medicine.</p>
 
       <details role="group">
-        <summary role="button" aria-controls="details-content-7" tabindex="0" aria-expanded="true">
+        <summary  class="more-info" role="button" aria-controls="details-content-7" tabindex="0" aria-expanded="true">
           <span>More information</span>
         </summary>
         <div id="details-content-7" aria-hidden="false">
@@ -268,11 +272,11 @@
       </details>
 
 
-      <h2 id="pregnancy">Before, during and after pregnancy</h2>
+      <h2 class="content__h2 content__h2--separator" id="pregnancy">Before, during and after pregnancy</h2>
       <p>No antidepressants are considered completely safe to take in pregnancy or while breastfeeding, but your doctor will want to prescribe citalopram when the benefits to you of taking the medicine outweigh the risks.</p>
 
       <details role="group">
-        <summary role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="true">
+        <summary class="more-info" role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="true">
           <span>More information</span>
         </summary>
         <div id="details-content-9" aria-hidden="false">
@@ -286,8 +290,8 @@
       </details>
 
 
-      <h2 id="more">More about citalopram</h2>
-      <div class="more-concertina">
+      <h2 class="content__h2 content__h2--separator" id="more">More about citalopram</h2>
+      <div class="concertinas">
         <details role="group">
           <summary role="button" aria-controls="more-1" tabindex="0" aria-expanded="false">
             <h2>How citalopram works</h2>
@@ -349,5 +353,79 @@
 
   </div>
 </main>
+
+<script type="text/javascript">
+
+  // toggle the dropdown menu from the burger menu
+  var toggleMenu = (function() {
+
+    var navToggle = '.nav__toggle',
+        navWrap = '.nav__list-wrap',
+        navShow = 'nav__list-wrap-show',
+        navListItem = '.nav__list-link';
+
+    $(navToggle).on('click', function() {
+      if ($(navWrap).css('display') === 'block') {
+        $(navWrap).slideUp();
+        $(navWrap).removeClass(navShow);
+      } else {
+        $(navWrap).slideDown();
+        $(navWrap).addClass(navShow);
+      }
+    });
+
+    $(navListItem).on('click', function() {
+      if ($(window).width() < 1280) {
+        $(navWrap).slideUp();
+        $(navWrap).removeClass(navShow);
+      }
+    });
+
+  }());
+
+
+  // scroll to internal content
+  var scrollToContent = (function() {
+    $('a.nav__list-link[href^="#"]').on('click', function(e) {
+      e.preventDefault();
+      var target = $(this.hash);
+      var $target = $(target);
+
+      if ($('.nav--sticky').length) {
+        offset = $('.nav__header-wrap').outerHeight() + 10; // take account of the height of the sticky menu plus a little extra
+      } else {
+        offset = $('.header__nav-container').height();
+      }
+
+      // Scroll to
+      $('html, body').animate({
+          scrollTop: target.offset().top - offset
+      }, 1000);
+    });
+  }());
+
+
+  // make the nav sticky
+  var stickyNav = (function() {
+    var nav = $('.nav'),
+        navList = $('.nav__list'),
+        navSticky = 'nav--sticky',
+        navListShow = 'nav__list--show',
+        headerWrap = $('.header__wrap'),
+        topOffset = $('header').height() + $(headerWrap).height();
+
+    $(window).scroll(function() {
+      if( $(this).scrollTop() > topOffset ) {
+        $(nav).addClass(navSticky);
+        $(navList).addClass(navListShow);
+      } else {
+        $(nav).removeClass(navSticky);
+        $(navList).removeClass(navListShow);
+      }
+    });
+
+  }());
+
+</script>
 
 {% endblock %}

@@ -163,11 +163,6 @@ $(document).ready(function() {
     $('.main-nav-sticky').slideToggle();
   });
 
-  $('.nav__toggle').on('click', function() {
-    $('.nav__list-wrap').slideToggle();
-  });
-
-
   $(window).resize(function() {
     if ($('.dropdown-nav').css('display') === 'none') {
       $('.main-nav-sticky').show();
