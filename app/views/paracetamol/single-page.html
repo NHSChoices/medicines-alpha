@@ -1,0 +1,359 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<div class="header__nav-container clear">
+
+  <div class="header__wrap">
+    <div class="header__content">
+      <h1 class="header__main"><a href="/paracetamol" class="link__unstyled">Paracetamol</a></h1>
+    </div>
+  </div>
+
+  <nav id="nav" class="nav" role="navigation">
+    <div class="nav__header-wrap">
+      <h2 class="nav__header"><span>Paracetamol</span> contents</h2>
+      <div class="nav__dropdown">
+        <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
+      </div>
+    </div>
+    <div id="nav__list-wrap" class="nav__list-wrap" aria-hidden="true">
+      <ul class="nav__list nav__list-column3">
+        <li class="nav__list-item"><a href="#key-facts" class="nav__list-link">Key facts</a></li>
+        <li class="nav__list-item"><a href="#how-when" class="nav__list-link">How to take it</a></li>
+        <!-- <li class="nav__list-item"><a href="#side-effects" class="nav__list-link">Side effects</a></li>
+        <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link">Taking with other medicines</a></li> -->
+        <li class="nav__list-item"><a href="#common-questions" class="nav__list-link">Common questions</a></li>
+        <li class="nav__list-item"><a href="#not-be-able" class="nav__list-link">Before using it</a></li>
+        <li class="nav__list-item"><a href="#for-children" class="nav__list-link">For children</a></li>
+        <li class="nav__list-item"><a href="#more" class="nav__list-link">More info</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<main id="content" role="main" class="content">
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <p>Paracetamol is a widely used painkiller that is available over the counter without a prescription to treat aches and pain. It can also be used to reduce fever.</p>
+      <p>It's available as tablets, capsules, soluble tablets and suppositories. And as an oral liquid suspension for babies and children.</p>
+      <p>Paracetamol is also available combined with other painkillers and anti-sickness medicines and is an ingredient in a wide range of cold and flu remedies.</p>
+
+      <h2 id="key-facts" class="content__h2 noborder">Key facts:</h2>
+      <ul class="key-facts">
+        <li>Never take more than the recommended dose of paracetamol</li>
+        <li>Make sure you know if any other medicines that you take contain paracetamol</li>
+        <li>Taking too much paracetamol can cause potentially fatal liver damage</li>
+        <li>Paracetamol is safe to take in pregnancy and while breastfeeding</li>
+      </ul>
+
+      <h2 class="content__h2 content__h2--separator" id="how-when">How to take it</h2>
+      <p>Paracetamol can be taken <em class="strong">when you need it</em> for pain relief or to reduce fever up to a maximum of four times a day. Repeat doses must be at least four hours apart.</p>
+      <p>For some people who are in constant pain paracetamol can be <em class="strong">taken regularly</em> up to four times a day with doses spread out as evenly as possible.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-1" aria-hidden="false">
+          <h3>How much to take</h3>
+          <p>The recommended dose of paracetamol for an adult is ONE or TWO 500mg tablets or capsules at a time.</p>
+          <p>The recommended dose for children depends on their age and can be found on the packaging. If you aren't sure check with your pharmacist or doctor.</p>
+
+          <p>For adults and children:</p>
+          <ul>
+            <li>the recommended dose should not be taken more than four times in 24 hours</li>
+            <li>doses should never be less than 4 hours apart</li>
+          </ul>
+          <p>The total maximum dose of paracetamol for an adult is EIGHT 500mg doses in 24 hours.</p>
+          <p>The total maximum dose for children depends on the child's age and can be found on the packaging. If you aren't sure check with your pharmacist or doctor.</p>
+          <p>You may be advised to take lower doses of paracetamol if you:</p>
+          <ul>
+            <li>have liver or kidney problems</li>
+            <li>are very thin</li>
+            <li>regularly drink more than the recommended amount of alcohol</li>
+          </ul>
+
+          <h3>What if I take too much?</h3>
+          <p>An overdose of paracetamol can cause very serious and sometimes fatal liver problems. Some people have needed a liver transplant to overcome the damage caused by taking too much.</p>
+          <p>Accidental overdose happens most often in people taking more than the recommended dose in 24 hours. Even taking one or two more tablets than recommended can cause serious liver damage and possibly death.</p>
+          <p>Overdose can also happen when people are not aware they are taking more than one medicine with paracetamol in it.</p>
+          <p>People who have taken an overdose of paracetamol (accidentally or intentionally) may need to go to hospital urgently, depending on the amount of paracetamol they've taken and whether there are other risk factors which increase the chances of liver damage. Early symptoms of paracetamol overdose are:</p>
+
+          <ul>
+            <li>nausea and vomiting (which usually settles within 24 hours)</li>
+            <li>pain and tenderness on the right side below the ribs (which may not appear until 3 or 4 days after the overdose)</li>
+          </ul>
+
+          <p class="callout">Talk to your doctor or pharmacist if you are unsure whether any other medicine you are taking also contains paracetamol.</p>
+
+          <h3>What if I miss a dose?</h3>
+          <p>If you take paracetamol regularly and miss a dose take it as soon as you remember. If it's close to the time for your next dose when you remember, then skip the missed dose and go back to taking it at the normal time.</p>
+          <p class="callout">Do not take double doses or paracetamol at the same time or extra doses to catch up.</p>
+        </div>
+      </details>
+
+
+      <h2 class="content__h2 content__h2--separator" id="common-questions">Common questions</h2>
+      <div class="concertinas">
+        <details role="group">
+          <summary role="button" aria-controls="questions-1" tabindex="0" aria-expanded="false">
+            <h2>Can I drink alcohol with paracetamol?</h2>
+          </summary>
+          <div id="questions-1" aria-hidden="true">
+          <p>It’s advised that you cut down or stop drinking alcohol completely while you take paracetamol.</p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="questions-2" tabindex="0" aria-expanded="false">
+            <h2>Can I take complementary remedies with paracetamol?</h2>
+          </summary>
+          <div id="questions-2" aria-hidden="true">
+          <p>Check with your doctor or pharmacist if you’re taking the herbal medicine, St John’s Wort, for depression as you may need to reduce your paracetamol dose.</p>
+          <p>Otherwise, paracetamol is not generally affected by also taking complementary medicines.</p>
+          </div>
+        </details>
+
+      </div>
+
+
+      <h2 class="content__h2 content__h2--separator" id="not-be-able">Who may not be able to take paracetamol</h2>
+      <p>Paracetamol needs to be taken with extra care by some people.</p>
+      <p>Check with your doctor or pharmacist what dose of paracetamol is safe if you:</p>
+      <ul>
+        <li>Are very thin</li>
+        <li>Have a history of liver or kidney problems</li>
+        <li>Regularly drink more than the maximum recommended amount</li>
+        <li>Take medicine for epilepsy</li>
+        <li>Take medicine for tuberculosis (TB)</li>
+      </ul>
+
+
+      <h2 class="content__h2 content__h2--separator" id="for-children">For children</h2>
+      <p>If you’re giving paracetamol to a child make sure you use the measuring spoon supplied with the medicine to correctly measure the amount of liquid.</p>
+
+
+      <!-- <h2 class="content__h2 content__h2--separator" id="side-effects">Side effects</h2>
+      <p>Salbutamol is a safe medicine if you use it properly. As it's usually delivered directly to the lungs, it's less likely to cause side effects.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-3" aria-hidden="false">
+          <h3>Common side effects</h3>
+          <p>It is possible, particularly after a lot of salbutamol, to:</p>
+          <ul>
+            <li>feel shaky</li>
+            <li>feel nervous and excitable</li>
+            <li>get a headache</li>
+            <li>get muscle cramps</li>
+          </ul>
+
+          <p>These side effects should soon pass.</p>
+          <p>Contact your doctor or get medical help if these or any other side effects bother you or don’t go away.</p>
+
+          <h3>Serious side effects</h3>
+          <p>It happens rarely, but some people may have very serious side effects when taking salbutamol.</p>
+
+          <p><em class="strong">Tell a doctor straight away if you develop:</em></p>
+          <ul>
+            <li>low potassium levels: warning signs include muscle pain or weakness, muscle cramps, or a heartbeat that doesn't feel normal</li>
+            <li>very bad dizziness or passing out</li>
+            <li>chest pain, a fast heartbeat or a heartbeat that doesn't feel normal</li>
+            <li>very bad headache</li>
+          </ul>
+
+          <h3>Serious allergic reaction</h3>
+          <p class="callout">It’s rare to have an allergic reaction to salbutamol but if this happens, stop taking the medicine and contact a doctor straight away.</p>
+          <p>The warning signs of an allergic reaction are:</p>
+          <ul>
+            <li>skin rash</li>
+            <li>wheezing</li>
+            <li>tightness in the chest or throat</li>
+            <li>having trouble breathing or talking</li>
+            <li>unusual hoarseness</li>
+            <li>swelling of the mouth, face, lips, tongue or throat</li>
+          </ul>
+
+          <h3>Coping with side effects</h3>
+          <p>Some of the common side effects of salbutamol will gradually improve as your body gets used to it.</p>
+          <p><span class="strong">What to do about feeling shaky:</span> see if your asthma or COPD symptoms get better with just one puff of your inhaler rather than two. If you find you need two puffs for symptom relief, be reassured that the shakiness will wear off after a short time.</p>
+          <p><span class="strong">What to do about dizziness:</span> if salbutamol makes you feel dizzy when you stand up, try getting up very slowly or staying seated until you feel better again.</p>
+          <p><span class="strong">Take care driving or using tools or machines:</span> if you get side effects such as dizziness, a fast or uneven heart rate, muscle cramps or muscle pain, or if you simply feel a bit shaky, until these symptoms pass.</p>
+        </div>
+      </details>
+
+
+
+
+      <h2 class="content__h2 content__h2--separator" id="taking-with-others">Taking salbutamol with other medicines</h2>
+      <p>Some medicines can be affected by salbutamol.</p>
+      <p>If you're taking other prescribed medicine that may interact with salbutamol your doctor will decide whether the benefits of taking both medicines outweighs the risks.</p>
+      <p class="callout">Tell your doctor and pharmacist that you're taking salbutamol before starting or stopping any other prescription or over the counter medicines.</p>
+
+
+      <h2 class="content__h2 content__h2--separator" id="pregnancy">Before, during and after pregnancy</h2>
+      <p>Although salbutamol isn't officially approved for use during pregnancy and while breastfeeding, it's generally considered safe to use.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-9" aria-hidden="false">
+          <h3>Taking salbutamol in pregnancy</h3>
+          <p>If you have asthma, it's likely that your doctor will recommend that you use your salbutamol inhaler during pregnancy to keep your asthma under control.</p>
+          <p>The risks of uncontrolled asthma during pregnancy are much higher than the risks of using medicines to prevent asthma attacks.</p>
+          <p>Although most women with asthma have healthy babies, having uncontrolled asthma attacks can prevent your baby from getting enough oxygen and increase your risk of problems during pregnancy.</p>
+          <p class="callout">See your doctor as soon as possible if you intend to become pregnant or if you have found out that you are pregnant to discuss your asthma medicine.</p>
+
+          <h3>Salbutamol and breastfeeding</h3>
+          <p>Salbutamol may pass into breast milk in very small amounts.</p>
+          <p>In general salbutamol inhalers can be used as normal while breastfeeding because the amount of medicine that passes into breast milk after using the inhaler is so small that it's unlikely to harm the baby.</p>
+          <p>For safety, consult your doctor for advice if you intend to breastfeed while taking salbutamol.</p>
+        </div>
+      </details>
+      -->
+
+      <h2 class="content__h2 content__h2--separator" id="more">More about paracetamol</h2>
+      <div class="concertinas">
+        <details role="group">
+          <summary role="button" aria-controls="more-1" tabindex="0" aria-expanded="false">
+            <h2>When will I feel better?</h2>
+          </summary>
+          <div id="more-1" aria-hidden="true">
+          	<p>Paracetamol takes up to an hour to work as a painkiller and to bring down a high temperature.</p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-2" tabindex="0" aria-expanded="false">
+            <h2>Long term dangers</h2>
+          </summary>
+          <div id="more-2" aria-hidden="true">
+          	<p>Research has indicated that if you take paracetamol regularly for many years you are slightly more likely to have a heart attack, bleeding inside the digestive system or kidney problems.</p>
+            <p>But it isn’t clear whether the increased risk is due to other health or lifestyle differences rather than long-term use of paracetamol. </p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-3" tabindex="0" aria-expanded="false">
+            <h2>Pregnancy and breastfeeding</h2>
+          </summary>
+          <div id="more-3" aria-hidden="true">
+          	<p>Paracetamol is safe to take in pregnancy and while breastfeeding.</p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-4" tabindex="0" aria-expanded="false">
+            <h2>Other treatments</h2>
+          </summary>
+          <div id="more-4" aria-hidden="true">
+          	<p>There are a number of different types of painkiller that you can use instead of paracetamol including:</p>
+            <ul><li>	Ibuprofen</li>
+            <li>Codeine</li></ul>
+
+            <p>Ibuprofen and ibuprofen-like painkillers are sometimes available as creams or gels that you rub onto a specific part of the body that is painful.</p>
+            <p>Some painkillers are only available by prescription so talk to your doctor or pharmacist about the other treatment options that might be more suitable for you.</p>
+          </div>
+        </details>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<script type="text/javascript">
+
+  // toggle the dropdown menu from the burger menu
+  var toggleMenu = (function() {
+
+    var navHeaderWrap = '.nav__header-wrap',
+        navHeaderWrapToggled = 'nav__header-wrap-toggled',
+        navToggle = '.nav__toggle',
+        navWrap = '.nav__list-wrap',
+        navShow = 'nav__list-wrap-show',
+        navListItem = '.nav__list-link';
+
+    $(navToggle).on('click', function() {
+      if ($(navWrap).css('display') === 'block') {
+        $(navHeaderWrap).removeClass(navHeaderWrapToggled);
+        $(navWrap).slideUp();
+        $(navWrap).removeClass(navShow);
+      } else {
+        $(navHeaderWrap).addClass(navHeaderWrapToggled);
+        $(navWrap).slideDown();
+        $(navWrap).addClass(navShow);
+      }
+    });
+
+    $(navListItem).on('click', function() {
+      if ($(window).width() < 1280) {
+        $(navWrap).slideUp();
+        $(navWrap).removeClass(navShow);
+      }
+    });
+
+    $(window).resize(function() {
+      if ($(window).width() >= 1280) {
+        $(navWrap).show();
+      }
+    });
+
+  }());
+
+
+  // scroll to internal content
+  var scrollToContent = (function() {
+    $('a.nav__list-link[href^="#"]').on('click', function(e) {
+      e.preventDefault();
+      var target = $(this.hash);
+      var $target = $(target);
+
+      if ($('.nav--sticky').length) {
+        offset = $('.nav__header-wrap').outerHeight() + 10; // take account of the height of the sticky menu plus a little extra
+      } else {
+        offset = $('.header__nav-container').height();
+      }
+
+      // Scroll to
+      $('html, body').animate({
+          scrollTop: target.offset().top - offset
+      }, 1000);
+    });
+  }());
+
+
+  // make the nav sticky
+  var stickyNav = (function() {
+    var nav = $('.nav'),
+        navList = $('.nav__list'),
+        navSticky = 'nav--sticky',
+        navListShow = 'nav__list--show',
+        headerWrap = $('.header__wrap'),
+        topOffset = $('header').height() + $(headerWrap).height();
+
+    $(window).scroll(function() {
+      if( $(this).scrollTop() > topOffset ) {
+        $(nav).addClass(navSticky);
+        $(navList).addClass(navListShow);
+      } else {
+        $(nav).removeClass(navSticky);
+        $(navList).removeClass(navListShow);
+      }
+    });
+
+  }());
+
+</script>
+
+{% endblock %}
