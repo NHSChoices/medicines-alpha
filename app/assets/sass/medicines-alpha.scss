@@ -247,6 +247,25 @@ summary + div {padding:0 !important;}
 .concertinas details:first-child h2 {border-top:0;}
 
 
+/**
+ * Responsive videos
+ */
+
+.videoWrapper {
+  height:0;
+  margin-bottom:20px;
+ 	padding-bottom:56.25%; /* 16:9 */
+ 	padding-top:25px;
+  position:relative;
+}
+.videoWrapper iframe {
+  height:100%;
+  left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+
 
 
 #global-footer {
