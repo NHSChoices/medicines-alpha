@@ -359,35 +359,54 @@
   // toggle the dropdown menu from the burger menu
   var toggleMenu = (function() {
 
-    var navHeaderWrap = '.nav__header-wrap',
-        navHeaderWrapToggled = 'nav__header-wrap-toggled',
-        navToggle = '.nav__toggle',
-        navWrap = '.nav__list-wrap',
-        navShow = 'nav__list-wrap-show',
-        navListItem = '.nav__list-link';
+    var $nav = $('.nav'),
+        navSticky = '.nav--sticky',
+        navStickyOpenClass = 'nav--stickyOpen',
+        navNonStickyOpenClass = 'nav--nonStickyOpen',
+        $navHeaderWrap = $('.nav__header-wrap'),
+        navHeaderWrapToggledClass = 'nav__header-wrap-toggled',
+        $navToggle = $('.nav__toggle'),
+        $navWrap = $('.nav__list-wrap'),
+        navShowClass = 'nav__list-wrap-show',
+        $navListItem = $('.nav__list-link');
 
-    $(navToggle).on('click', function() {
-      if ($(navWrap).css('display') === 'block') {
-        $(navHeaderWrap).removeClass(navHeaderWrapToggled);
-        $(navWrap).slideUp();
-        $(navWrap).removeClass(navShow);
+    $navToggle.on('click', function() {
+
+      if ($(navSticky).length) {
+        if ($navWrap.css('display') === 'block') {
+          $nav.removeClass(navStickyOpenClass);
+        } else {
+          $nav.addClass(navStickyOpenClass);
+        }
+      } else { // if menu is open when not sticky, then you scroll the page to make sticky, if you scroll back up to the top, needs to remember menu status
+        if ($navWrap.css('display') === 'block') {
+          $nav.removeClass(navNonStickyOpenClass);
+        } else {
+          $nav.addClass(navNonStickyOpenClass);
+        }
+      }
+
+      if ($navWrap.css('display') === 'block') {
+        $navHeaderWrap.removeClass(navHeaderWrapToggledClass);
+        $navWrap.slideUp();
+        $navWrap.removeClass(navShowClass);
       } else {
-        $(navHeaderWrap).addClass(navHeaderWrapToggled);
-        $(navWrap).slideDown();
-        $(navWrap).addClass(navShow);
+        $navHeaderWrap.addClass(navHeaderWrapToggledClass);
+        $navWrap.slideDown();
+        $navWrap.addClass(navShowClass);
       }
     });
 
-    $(navListItem).on('click', function() {
+    $navListItem.on('click', function() {
       if ($(window).width() < 1280) {
-        $(navWrap).slideUp();
-        $(navWrap).removeClass(navShow);
+        $navWrap.slideUp();
+        $navWrap.removeClass(navShowClass);
       }
     });
 
     $(window).resize(function() {
       if ($(window).width() >= 1280) {
-        $(navWrap).show();
+        $navWrap.show();
       }
     });
 
@@ -396,18 +415,33 @@
 
   // scroll to internal content
   var scrollToContent = (function() {
+    var navSticky = '.nav--sticky',
+        navHeaderWrap = '.nav__header-wrap',
+        headerNavContainer = '.header__nav-container',
+        $nav = $('.nav'),
+        navStickyOpenClass = 'nav--stickyOpen',
+        navHeaderWrapToggledClass = 'nav__header-wrap-toggled',
+        navListWrapShowClass = 'nav__list-wrap-show',
+        $navHeaderWrap = $('.nav__header-wrap'),
+        $navListWrap = $('.nav__list-wrap');
+
     $('a.nav__list-link[href^="#"]').on('click', function(e) {
       e.preventDefault();
       var target = $(this.hash);
       var $target = $(target);
 
-      if ($('.nav--sticky').length) {
-        offset = $('.nav__header-wrap').outerHeight() + 10; // take account of the height of the sticky menu plus a little extra
+      if ($(navSticky).length) {
+        offset = $(navHeaderWrap).outerHeight() + 10; // take account of the height of the sticky menu plus a little extra
       } else {
-        offset = $('.header__nav-container').height();
+        offset = $(headerNavContainer).height();
       }
 
-      // Scroll to
+      // scrolling down will automatically make the menu sticky, so close it if opened
+      $nav.removeClass(navStickyOpenClass);
+      $navHeaderWrap.removeClass(navHeaderWrapToggledClass);
+      $navListWrap.removeClass(navListWrapShowClass);
+
+      // scroll to
       $('html, body').animate({
           scrollTop: target.offset().top - offset
       }, 1000);
@@ -417,20 +451,47 @@
 
   // make the nav sticky
   var stickyNav = (function() {
-    var nav = $('.nav'),
-        navList = $('.nav__list'),
-        navSticky = 'nav--sticky',
-        navListShow = 'nav__list--show',
+    var $nav = $('.nav'),
+        $navList = $('.nav__list'),
+        navStickyClass = 'nav--sticky',
+        navListShowClass = 'nav__list--show',
+        navNonStickyOpen = '.nav--nonStickyOpen',
+        navStickyOpen = '.nav--stickyOpen',
+        $navListWrap = $('.nav__list-wrap'),
+        navListWrapShow = '.nav__list-wrap-show',
+        navListWrapShowClass = 'nav__list-wrap-show',
+        $navHeaderWrap = $('.nav__header-wrap'),
+        navHeaderWrapToggledClass = 'nav__header-wrap-toggled',
         headerWrap = $('.header__wrap'),
         topOffset = $('header').height() + $(headerWrap).height();
 
     $(window).scroll(function() {
       if( $(this).scrollTop() > topOffset ) {
-        $(nav).addClass(navSticky);
-        $(navList).addClass(navListShow);
+
+        if ( ($(navNonStickyOpen).length) && ($(navListWrapShow).length) ) { // if menu was open when not sticky, when it goes sticky, then close it
+          $navListWrap.removeClass(navListWrapShowClass).hide();
+        }
+
+        if ($(navStickyOpen).length) { // if menu was open when sticky, have it open when becoming sticky again
+          $navListWrap.addClass(navListWrapShowClass).show();
+        }
+
+        $nav.addClass(navStickyClass);
+        $navList.addClass(navListShowClass);
+
       } else {
-        $(nav).removeClass(navSticky);
-        $(navList).removeClass(navListShow);
+
+        if ($(navStickyOpen).length) {
+          $navListWrap.removeClass(navListWrapShowClass).hide();
+        }
+
+        if ($(navNonStickyOpen).length) {
+          $navHeaderWrap.addClass(navHeaderWrapToggledClass);
+          $navListWrap.addClass(navListWrapShowClass).show();
+        }
+
+        $nav.removeClass(navStickyClass);
+        $navList.removeClass(navListShowClass);
       }
     });
 
