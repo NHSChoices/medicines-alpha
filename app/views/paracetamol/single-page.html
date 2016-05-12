@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <nav id="nav" class="nav" role="navigation">
+  <nav class="nav" role="navigation">
     <div class="nav__header-wrap">
       <h2 class="nav__header"><span>Paracetamol</span> contents</h2>
       <div class="nav__dropdown">
@@ -288,54 +288,28 @@
 
 <script type="text/javascript">
 
+  var init = (function() {
+    // duplicate nav for sticky version
+    var navInjected = $('.nav').clone().addClass('nav--injected').removeClass('nav').insertAfter('.nav');
+  }());
+
+
   // toggle the dropdown menu from the burger menu
   var toggleMenu = (function() {
 
-    var $nav = $('.nav'),
-        navSticky = '.nav--sticky',
-        navStickyOpenClass = 'nav--stickyOpen',
-        navNonStickyOpenClass = 'nav--nonStickyOpen',
-        $navHeaderWrap = $('.nav__header-wrap'),
-        navHeaderWrapToggledClass = 'nav__header-wrap-toggled',
-        $navToggle = $('.nav__toggle'),
-        $navWrap = $('.nav__list-wrap'),
-        navShowClass = 'nav__list-wrap-show',
-        $navListItem = $('.nav__list-link');
+    var $navToggle = $('.nav__toggle'),
+        navSticky = '.nav--sticky';
 
     $navToggle.on('click', function() {
-
       if ($(navSticky).length) {
-        if ($navWrap.css('display') === 'block') {
-          $nav.removeClass(navStickyOpenClass);
-        } else {
-          $nav.addClass(navStickyOpenClass);
-        }
-      } else { // if menu is open when not sticky, then you scroll the page to make sticky, if you scroll back up to the top, needs to remember menu status
-        if ($navWrap.css('display') === 'block') {
-          $nav.removeClass(navNonStickyOpenClass);
-        } else {
-          $nav.addClass(navNonStickyOpenClass);
-        }
-      }
-
-      if ($navWrap.css('display') === 'block') {
-        $navHeaderWrap.removeClass(navHeaderWrapToggledClass);
-        $navWrap.slideUp();
-        $navWrap.removeClass(navShowClass);
+        $navWrap = $('.nav--sticky .nav__list-wrap');
       } else {
-        $navHeaderWrap.addClass(navHeaderWrapToggledClass);
-        $navWrap.slideDown();
-        $navWrap.addClass(navShowClass);
+        $navWrap = $('.nav .nav__list-wrap');
       }
+      $navWrap.slideToggle();
     });
 
-    $navListItem.on('click', function() {
-      if ($(window).width() < 1280) {
-        $navWrap.slideUp();
-        $navWrap.removeClass(navShowClass);
-      }
-    });
-
+    // show nav at bigger screen size
     $(window).resize(function() {
       if ($(window).width() >= 1280) {
         $navWrap.show();
@@ -347,14 +321,8 @@
 
   // scroll to internal content
   var scrollToContent = (function() {
+
     var navSticky = '.nav--sticky',
-        navHeaderWrap = '.nav__header-wrap',
-        headerNavContainer = '.header__nav-container',
-        $nav = $('.nav'),
-        navStickyOpenClass = 'nav--stickyOpen',
-        navHeaderWrapToggledClass = 'nav__header-wrap-toggled',
-        navListWrapShowClass = 'nav__list-wrap-show',
-        $navHeaderWrap = $('.nav__header-wrap'),
         $navListWrap = $('.nav__list-wrap');
 
     $('a.nav__list-link[href^="#"]').on('click', function(e) {
@@ -362,20 +330,20 @@
       var target = $(this.hash);
       var $target = $(target);
 
-      if ($(navSticky).length) {
-        offset = $(navHeaderWrap).outerHeight() + 10; // take account of the height of the sticky menu plus a little extra
+      if ($target.hasClass('noborder')) {
+        extraOffset = 55;
       } else {
-        offset = $(headerNavContainer).height();
+        extraOffset = 20;
       }
 
-      // scrolling down will automatically make the menu sticky, so close it if opened
-      $nav.removeClass(navStickyOpenClass);
-      $navHeaderWrap.removeClass(navHeaderWrapToggledClass);
-      $navListWrap.removeClass(navListWrapShowClass);
+      if ($(navSticky).length) {
+        $navListWrap.hide();
+      }
 
       // scroll to
       $('html, body').animate({
-          scrollTop: target.offset().top - offset
+          //scrollTop: target.offset().top - offset
+        scrollTop: target.offset().top - extraOffset
       }, 1000);
     });
   }());
@@ -383,48 +351,26 @@
 
   // make the nav sticky
   var stickyNav = (function() {
-    var $nav = $('.nav'),
-        $navList = $('.nav__list'),
-        navStickyClass = 'nav--sticky',
-        navListShowClass = 'nav__list--show',
-        navNonStickyOpen = '.nav--nonStickyOpen',
-        navStickyOpen = '.nav--stickyOpen',
-        $navListWrap = $('.nav__list-wrap'),
-        navListWrapShow = '.nav__list-wrap-show',
-        navListWrapShowClass = 'nav__list-wrap-show',
-        $navHeaderWrap = $('.nav__header-wrap'),
-        navHeaderWrapToggledClass = 'nav__header-wrap-toggled',
-        headerWrap = $('.header__wrap'),
-        topOffset = $('header').height() + $(headerWrap).height();
+    var $navListWrapNonSticky  = $('.nav .nav__list-wrap'),
+        topOffset = $('header').height() + $('.disclaimer').height() + $('.header__wrap').height() + $('.nav').height() + 30,  // 30 is the top margin of the H1
+        $nav = $('.nav'),
+        $navInjected = $('.nav--injected'),
+        navStickyClass = 'nav--sticky';
 
     $(window).scroll(function() {
-      if( $(this).scrollTop() > topOffset ) {
 
-        if ( ($(navNonStickyOpen).length) && ($(navListWrapShow).length) ) { // if menu was open when not sticky, when it goes sticky, then close it
-          $navListWrap.removeClass(navListWrapShowClass).hide();
-        }
-
-        if ($(navStickyOpen).length) { // if menu was open when sticky, have it open when becoming sticky again
-          $navListWrap.addClass(navListWrapShowClass).show();
-        }
-
-        $nav.addClass(navStickyClass);
-        $navList.addClass(navListShowClass);
-
+      if ($navListWrapNonSticky.css('display') === 'block') {
+        newTopOffset = topOffset + $nav.height() - 60;
       } else {
-
-        if ($(navStickyOpen).length) {
-          $navListWrap.removeClass(navListWrapShowClass).hide();
-        }
-
-        if ($(navNonStickyOpen).length) {
-          $navHeaderWrap.addClass(navHeaderWrapToggledClass);
-          $navListWrap.addClass(navListWrapShowClass).show();
-        }
-
-        $nav.removeClass(navStickyClass);
-        $navList.removeClass(navListShowClass);
+        newTopOffset = topOffset;
       }
+
+      if( $(this).scrollTop() > newTopOffset ) {
+        $navInjected.addClass(navStickyClass);
+      } else {
+        $navInjected.removeClass(navStickyClass);
+      }
+
     });
 
   }());
