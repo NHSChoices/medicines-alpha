@@ -1,6 +1,7 @@
 // Colours
 $nhs-blue: #0072c6;
-$separator: #b9d2dc;
+$separator: #dcdcdc;
+$lightblue-bg: #f1f7fc;
 
 
 body {}
@@ -90,7 +91,7 @@ body {}
  * Disclaimer
  */
 .disclaimer {font-size:14px; margin:15px auto 0 auto;}
-.disclaimer p {border-bottom:1px solid #b9d2c2; margin:0 15px; padding-bottom:15px;}
+.disclaimer p {border-bottom:1px solid $separator; margin:0 15px; padding-bottom:15px;}
 
 @media (min-width: 720px) {
  .disclaimer {max-width:770px;}
@@ -222,8 +223,9 @@ a.link__unstyled {color:#0b0c0c; cursor:text; text-decoration:none;}
  * Typography
  */
 .content__h2 {font-size:32px; font-weight:bold;}
-.content__h2--separator {border-top:1px solid #b9d2c2; margin-top:25px; padding-top:35px;}
-
+.content__h2--separator {border-top:1px solid $separator; margin-top:25px; padding-top:35px;}
+.content__h2--inconcertina {margin-bottom:10px; margin-top:10px;}
+.content__h2--outconcertina {margin-bottom:15px;}
 
 /**
  * Details/summary
@@ -235,11 +237,12 @@ summary + div {padding:0 !important;}
 /**
  * Concertinas
  */
-.concertinas {background:#f8f8f8; padding:5px 10px;}
+.concertinas--separator {border-top:1px solid $separator; margin-top:20px; padding-top:25px;}
+.concertinas--bg {background:$lightblue-bg; padding:5px 10px;}
 .concertinas details .arrow {display:none;}
 .concertinas details summary::-webkit-details-marker {display:none;}
 .concertinas summary {display:block; margin:0; padding:0;}
-.concertinas summary h2 {font-size:19px; font-weight:normal; margin:0;}
+.concertinas summary h2 {font-size:21px; font-weight:normal; margin:0;}
 .concertinas summary h2::after {content:"+ "; position:absolute; right:10px; top:12px;}
 .concertinas summary[aria-expanded="true"] h2::after {content:"- ";}
 .concertinas summary + div {margin-top:15px; padding:0;}
