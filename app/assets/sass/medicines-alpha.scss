@@ -191,13 +191,13 @@ body {}
   .nav--sticky .nav__list-wrap {padding:0 0 5px 0;}
   .nav {margin:0;}
   .nav__list {
-    background:#ededed;
+    background:#e6f1f9;
     -webkit-columns: auto 1;
      -moz-columns: auto 1;
           columns: auto 1;
-    padding:5px;
+    padding:10px 5px;
   }
-  .nav--sticky .nav__list {padding-top:0;}
+  .nav--sticky .nav__list {background:#ededed; padding-top:0;}
   .nav__list-item {display:inline;}
   .nav__list-link {border-right:1px solid #fff; padding:0 10px;}
   .nav__list-item:last-child .nav__list-link {border-right:0;}
