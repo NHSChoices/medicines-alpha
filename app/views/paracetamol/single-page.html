@@ -175,9 +175,9 @@
 
 
 
-      <div class="concertinas concertinas--separator">
+      <div class="concertinas concertinas--separator" id="common-questions">
         <div class="concertinas--bg">
-          <h2 class="content__h2 content__h2--inconcertina" id="common-questions">Common questions</h2>
+          <h2 class="content__h2 content__h2--inconcertina">Common questions</h2>
           <details role="group">
             <summary role="button" aria-controls="questions-1" tabindex="0" aria-expanded="false">
               <h2>Can I drink alcohol with paracetamol?</h2>
@@ -313,7 +313,7 @@
     // show nav at bigger screen size
     $(window).resize(function() {
       if ($(window).width() >= 1280) {
-        $navWrap.show();
+        $('.nav .nav__list-wrap').show();
       }
     });
 
@@ -337,13 +337,12 @@
         extraOffset = 20;
       }
 
-      if ($(navSticky).length) {
+      if ( ($(navSticky).length) && ($(window).width() < 1280) ) {
         $navListWrap.hide();
       }
 
       // scroll to
       $('html, body').animate({
-          //scrollTop: target.offset().top - offset
         scrollTop: target.offset().top - extraOffset
       }, 1000);
     });
@@ -352,21 +351,35 @@
 
   // make the nav sticky
   var stickyNav = (function() {
-    var $navListWrapNonSticky  = $('.nav .nav__list-wrap'),
-        topOffset = $('header').height() + $('.disclaimer').height() + $('.header__wrap').height() + $('.nav').height() + 30,  // 30 is the top margin of the H1
-        $nav = $('.nav'),
+    var $navToggle = $('.nav__toggle'),
+        $navListWrapNonSticky  = $('.nav .nav__list-wrap'),
         $navInjected = $('.nav--injected'),
-        navStickyClass = 'nav--sticky';
+        navStickyClass = 'nav--sticky',
+        headerNavContainer = '.header__nav-container',
+        headerDislaimerHeights = $('header').height() + $('.disclaimer').height();
+        topOffset = headerDislaimerHeights  + $(headerNavContainer).height();
+
+    $navToggle.on('click', function() {
+      // reset offset height if menu has been toggled. Need to let the animation finish first before measuring heights
+      interval = setTimeout(function() {
+        topOffset = headerDislaimerHeights  + $(headerNavContainer).height();
+      }, 1000);
+    });
+
+    $(window).resize(function() {
+      // reset offset height if window has been resized
+      topOffset = headerDislaimerHeights  + $(headerNavContainer).height();
+    });
+
 
     $(window).scroll(function() {
 
+      // reset offset height if menu has been opened
       if ($navListWrapNonSticky.css('display') === 'block') {
-        newTopOffset = topOffset + $nav.height() - 60;
-      } else {
-        newTopOffset = topOffset;
+        topOffset = headerDislaimerHeights  + $(headerNavContainer).height();
       }
 
-      if( $(this).scrollTop() > newTopOffset ) {
+      if( $(this).scrollTop() > topOffset ) {
         $navInjected.addClass(navStickyClass);
       } else {
         $navInjected.removeClass(navStickyClass);
