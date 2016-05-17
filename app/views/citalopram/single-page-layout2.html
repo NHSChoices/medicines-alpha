@@ -1,39 +1,43 @@
 {% extends "templates/layout.html" %}
 
 {% block page_title %}
-  NHS Medicines alpha
+  Citalopram - NHS Medicines alpha
 {% endblock %}
 
 {% block content %}
 
 <div class="header__nav-container clear">
-
-  <div class="header__wrap">
-    <div class="header__content">
-      <h1 class="header__main"><a href="/citalopram" class="link__unstyled">Citalopram</a></h1>
-    </div>
-  </div>
-
-  <nav id="nav" class="nav" role="navigation">
-    <div class="nav__header-wrap">
-      <h2 class="nav__header"><span>Citalopram</span> contents</h2>
-      <div class="nav__dropdown">
-        <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
+  <div class="header__nav-container-wrap clear">
+    <div class="header__wrap">
+      <div class="header__content">
+        <h1 class="header__main"><a href="/citalopram" class="link__unstyled">Citalopram</a></h1>
       </div>
     </div>
-    <div id="nav__list-wrap" class="nav__list-wrap" aria-hidden="true">
-      <ul class=nav__list>
-        <li class="nav__list-item"><a href="#key-facts" class="nav__list-link">Key facts</a></li>
-        <li class="nav__list-item"><a href="#how-when" class="nav__list-link">How to take</a></li>
-        <li class="nav__list-item"><a href="#side-effects" class="nav__list-link">Side effects</a></li>
-        <li class="nav__list-item"><a href="#not-be-able" class="nav__list-link">Safety precautions</a></li>
-        <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link">Taking with other medicines</a></li>
-        <li class="nav__list-item"><a href="#common-questions" class="nav__list-link">Common questions</a></li>
-        <li class="nav__list-item"><a href="#pregnancy" class="nav__list-link">Pregnancy advice</a></li>
-        <li class="nav__list-item"><a href="#more" class="nav__list-link">More about citalopram</a></li>
-      </ul>
-    </div>
-  </nav>
+
+    <nav id="nav" class="nav" role="navigation">
+      <div class="nav__header-wrap">
+        <h2 class="nav__header"><span class="nav__header-title">Citalopram</span> <span class="nav__header-text">contents</span></h2>
+        <div class="nav__dropdown">
+          <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
+        </div>
+      </div>
+      <div id="nav__list-wrap" class="nav__list-wrap" aria-hidden="true">
+        <ul class="nav__list nav__list-nomore">
+          <li class="nav__list-item"><a href="#key-facts" class="nav__list-link">Key facts</a></li>
+          <li class="nav__list-item"><a href="#how-when" class="nav__list-link">How to take</a></li>
+          <li class="nav__list-item"><a href="#side-effects" class="nav__list-link">Side effects</a></li>
+          <li class="nav__list-item"><a href="#not-be-able" class="nav__list-link">Safety precautions</a></li>
+          <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link">Taking with other medicines</a></li>
+          <li class="nav__list-item"><a href="#common-questions" class="nav__list-link">Common questions</a></li>
+          <li class="nav__more arrow-down" aria-hidden="true"><a href="" class="nav__more-link" role="button">More</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#pregnancy" class="nav__list-link">Pregnancy advice</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#more" class="nav__list-link">More about citalopram</a></li>
+        </ul>
+        <ul class="nav__list nav__list-more">
+        </ul>
+      </div>
+    </nav>
+  </div>
 </div>
 
 <main id="content" role="main" class="content">
@@ -358,8 +362,21 @@
 <script type="text/javascript">
 
   var init = (function() {
+
     // duplicate nav for sticky version
     var navInjected = $('.nav').clone().addClass('nav--injected').removeClass('nav').insertAfter('.nav');
+
+    // Move 'more' items
+    if ( ($(window).width() >= 1024) && ($(window).width() <= 1279) ) {
+      $('.nav .nav__list-more-item').appendTo($('.nav .nav__list-more'));
+      $('.nav--injected .nav__list-more-item').appendTo($('.nav--injected .nav__list-more'));
+    }
+
+    // show nav at bigger screen size
+    if ($(window).width() >= 1280) {
+      $('.nav .nav__list-wrap').show();
+    }
+
   }());
 
 
@@ -378,10 +395,70 @@
       $navWrap.slideToggle();
     });
 
-    // show nav at bigger screen size
     $(window).resize(function() {
+
+      // Move 'more' items
+      if ( ($(window).width() >= 1024) && ($(window).width() <= 1279) ) {
+
+        // non sticky, move items from first list to more list
+        if ($('.nav .nav__list-nomore .nav__list-more-item').length) {
+          $('.nav .nav__list-nomore .nav__list-more-item').appendTo($('.nav .nav__list-more'));
+        }
+
+        // injected menu, move items from first list to more list
+        if ($('.nav--injected .nav__list-nomore .nav__list-more-item').length) {
+          $('.nav--injected .nav__list-more-item').appendTo($('.nav--injected .nav__list-more'));
+        }
+
+        // if menu is sticky, move items from first list to more list
+        if ($('.nav--sticky .nav__list-nomore .nav__list-more-item').length) {
+          $('.nav--sticky .nav__list-nomore .nav__list-more-item').appendTo($('.nav--sticky .nav__list-more'));
+        }
+
+      } else {
+
+        // non sticky, move items from more list to the first list
+        if ($('.nav .nav__list-more .nav__list-more-item').length) {
+          $('.nav .nav__list-more .nav__list-more-item').appendTo($('.nav .nav__list-nomore'));
+        }
+
+        // injected menu, move items from more menu to the first list
+        if ($('.nav--injected .nav__list-more .nav__list-more-item').length) {
+          $('.nav--injected .nav__list-more .nav__list-more-item').appendTo($('.nav--injected .nav__list-nomore'));
+        }
+
+        // if menu is sticky, more items from more menu to the first list
+        if ($('.nav--sticky .nav__list-more .nav__list-more-item').length) {
+          $('.nav--sticky .nav--list-more .nav__list-more-item').appendTo($('.nav--sticky .nav__list-nomore'));
+          $('.nav--sticky .nav__list-wrap').hide();
+        }
+
+        // reset the more/less link
+        if ($('.nav__more').hasClass('arrow-up')) {
+          $('.nav__more').removeClass('arrow-up').addClass('arrow-down').find('.nav__more-link').text('More');
+        }
+
+        // hide the more list
+        $('.nav__list-more').hide();
+      }
+
+
+      // if resizing menu
+      if ($(window).width() < 1024) {
+        if ( ($('.nav__list-more-item').css('display') === 'none') || ($('.nav__list-more-item').css('display') == 'inline') ) {
+          $('.nav__list-more-item').css('display', 'block');
+        }
+      }
       if ($(window).width() >= 1280) {
-        $('.nav .nav__list-wrap').show();
+        if ( ($('.nav__list-more-item').css('display') === 'none') || ($('.nav__list-more-item').css('display') == 'block') ) {
+          $('.nav__list-more-item').css('display', 'inline');
+        }
+      }
+
+
+      // show nav at bigger screen size
+      if ($(window).width() >= 1024) {
+        $('.nav__list-wrap').show();
       }
     });
 
@@ -451,6 +528,29 @@
         $navInjected.addClass(navStickyClass);
       } else {
         $navInjected.removeClass(navStickyClass);
+      }
+
+    });
+
+  }());
+
+  // Show/hide more menu at tablet landscape/small desktop view (1024-1279px)
+  var moreNav = (function() {
+    var navList = '.nav__list',
+        $navMorelink = $('.nav__more-link'),
+        arrowDownClass = 'arrow-down',
+        arrowUpClass = 'arrow-up';
+
+    $navMorelink.on('click', function(e) {
+      e.preventDefault();
+      if ($(this).text() === 'More') {
+        $(this).closest(navList).next(navList).show();
+        $(this).text('Less');
+        $(this).parent().removeClass(arrowDownClass).addClass(arrowUpClass);
+      } else {
+        $(this).closest(navList).next(navList).hide();
+        $(this).text('More');
+        $(this).parent().removeClass(arrowUpClass).addClass(arrowDownClass);
       }
 
     });

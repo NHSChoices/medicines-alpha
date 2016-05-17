@@ -50,7 +50,7 @@ body {}
   font-size:46px;
   font-weight:bold;
   line-height:1.15;
-  margin:30px 15px 15px 15px;
+  margin:30px 0 15px 0;
 }
 
 
@@ -105,51 +105,63 @@ body {}
  .disclaimer {max-width:1310px;}
 }
 
+
+/**
+  * Header nav container
+  */
+.header__nav-container {margin:0 auto;}
+.header__nav-container-wrap {border-bottom:1px solid $separator; margin:0 15px;}
+
+@media (min-width: 720px) {
+ .header__nav-container {max-width:770px;}
+}
+
+@media (min-width: 1024px) {
+ .header__nav-container {max-width:990px;}
+}
+
+@media (min-width: 1280px) {
+ .header__nav-container {max-width:1310px;}
+}
+
 /**
  * Navigation
  */
-.nav {border-bottom:1px solid $separator; margin:0 15px;}
 .nav--injected {left:-99999px; position:absolute;}
 .nav--sticky {background:#ededed; box-shadow: 0 5px 5px #999; left:0; margin:0; position:fixed; top:0; width:100%; z-index:1;}
   .nav__header-wrap {border-top:1px solid $separator; padding:10px 0; position:relative;}
     .nav__header {font-size:19px; line-height:1em; margin:0; padding:0; width:80%;}
+    .nav--sticky .nav__header-text {display:none;}
     .nav__toggle {display:block; height:25px; padding:2px; position:absolute; right:0; top:5px; width:31px;}
       .nav__burger-bar {background-color:$nhs-blue; border-radius:1px; display:block; height:3px; margin-left:4px; margin-top:4px; width:23px;}
-  .nav__list-wrap {display:none; border-top:1px dotted $separator;}
+  .nav__list-wrap {display:none; border-top:1px solid $separator;}
     .nav__list {list-style:none; margin:10px 0 15px 0;}
+    .nav__list-more {border-top:2px solid #fff; display:none; margin:0; padding:0;}
       .nav__list-item {margin-left:0;}
+      .nav__more {display:none;}
 
 
 @media (max-width: 1023px) {
-  .nav--sticky .nav__header-wrap, .nav__list-wrap, .header__nav-container {margin:0 auto; max-width:740px;}
   .header__content {padding:0;}
+  .nav--sticky .nav__header-wrap, .nav--sticky .nav__list-wrap {margin:0 auto; max-width:740px;}
 
 }
 
 @media (min-width: 641px) {
   .header__wrap {width:75%; float:left;}
-  .header__main {margin-bottom:0; margin-left:0;}
-  .nav {border-bottom:0; margin:0;}
-  .nav__header-wrap {border:1px solid $separator; float:right; margin-top:43px;}
+  .header__main {margin-bottom:0;}
+  .nav {border-bottom:0;}
+  .nav__header-wrap {border:0; float:right; margin-top:43px;}
   .nav__header {padding-left:10px; padding-right:45px; text-align:right; text-transform:capitalize; width:auto;}
   .nav__list-wrap {clear:left;}
-  .nav__header span {display:none;}
+  .nav__header-title {display:none;}
   .nav__toggle {margin-right:5px;}
   .nav__list-wrap-show {border-bottom:1px solid #b9d2dc; border-top:1px solid #b9d2dc;}
   .nav__list {margin-bottom:0;}
-  .nav--sticky {margin:0;}
-  .nav--sticky .nav__header-wrap {border:0; float:none;}
+  .nav--sticky .nav__header-wrap {border:0; float:none; margin-top:0;}
   .nav--sticky .nav__header {padding-left:0;}
-  .nav--sticky .nav__header span {display:inline; float:left;}
-}
-
-@media (max-width: 720px) {
-  .nav--sticky .nav__header-wrap, .nav--sticky .nav__list-wrap {margin:0 15px; max-width:100%;}
-}
-
-@media (min-width: 641px) and (max-width: 750px) {
-  .header__main {margin-left:10px;}
-  .nav {margin:0 15px;}
+  .nav--sticky .nav__header-title {display:inline; float:left;}
+  .nav--sticky .nav__header-text {display:inline;}
 }
 
 @media (min-width: 721px) {
@@ -160,32 +172,11 @@ body {}
   }
 }
 
-@media (min-width: 1024px) and (max-width:1279px) {
-  .nav__list {
-    -webkit-columns: auto 4;
-     -moz-columns: auto 4;
-          columns: auto 4;
-  }
-  .nav__list-column3 {
-    -webkit-columns: auto 3;
-     -moz-columns: auto 3;
-          columns: auto 3;
-  }
-  .header__main {margin-left:15px;}
-  .header__nav-container {margin:0 auto; max-width:990px;}
-  .nav--sticky .nav__header-wrap, .nav--sticky .nav__list-wrap {margin:0 auto; max-width:960px;}
-  .nav__header-wrap {margin-right:15px;}
-  .nav__list-wrap {margin:0 15px;}
+@media (max-width: 768px) {
+  .nav--sticky .nav__header-wrap, .nav--sticky .nav__list-wrap {margin:0 15px; max-width:100%;}
 }
 
-@media (min-width: 1280px) {
-
-  .header__container, .header__nav-container {margin:0 auto; max-width:1280px; padding:0 15px;}
-  .footer__container {max-width:1280px !important; padding:0 15px;}
-  .nav--sticky .nav__header-wrap, .nav--sticky .nav__list-wrap {margin:0 auto; max-width:1280px;}
-  .header__main {margin-left:0;}
-  .header__wrap {width:100%;}
-  .header__content {margin:0 !important; max-width:100% !important;}
+@media (min-width: 1024px) {
   .nav__header-wrap {display:none;}
   .nav__list-wrap {border:0; display:block; padding:10px 0 0 0;}
   .nav--sticky .nav__list-wrap {padding:0 0 5px 0;}
@@ -197,10 +188,34 @@ body {}
           columns: auto 1;
     padding:10px 5px;
   }
-  .nav--sticky .nav__list {background:#ededed; padding-top:0;}
+  .nav__list-more {margin:0; padding:0;}
+  .nav--sticky .nav__list {background:#ededed; padding-left:0; padding-top:0;}
+  .nav--sticky .nav__list li:first-child a {padding-left:0;}
   .nav__list-item {display:inline;}
   .nav__list-link {border-right:1px solid #fff; padding:0 10px;}
   .nav__list-item:last-child .nav__list-link {border-right:0;}
+
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .nav--sticky .nav__header-wrap, .nav--sticky .nav__list-wrap {margin:0 auto; max-width:960px;}
+  .nav__more {display:inline;}
+  .nav__more-link {cursor:pointer;}
+  .nav__more-link:hover {text-decoration:underline;}
+  .arrow-up:after {content: " \25b2";}
+  .arrow-down:after {content: " \25bc";}
+  .nav__list-more-item {/* display:none; */ float:left; margin:10px 0;}
+}
+
+@media (min-width: 1280px) {
+  .nav__list-more-item {display:inline;}
+  .nav--sticky .nav__list-wrap {margin:0 auto; max-width:1280px; padding:0 15px;}
+  .header__container {margin:0 auto; max-width:1280px;}
+  .footer__container {max-width:1280px !important; padding:0 15px;}
+  .header__main {margin-left:0;}
+  .header__wrap {width:100%;}
+  .header__content {margin:0 !important; max-width:100% !important;}
+
 
   #global-footer {
     margin-top:50px;
