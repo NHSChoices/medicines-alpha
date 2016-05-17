@@ -18,19 +18,19 @@
       <div class="nav__header-wrap">
         <h2 class="nav__header"><span class="nav__header-title">Paracetamol</span> <span class="nav__header-text">contents</span></h2>
         <div class="nav__dropdown">
-          <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle" onclick="trackHTML('Burger menu')"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
+          <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle" onclick="try {trackHTML('Burger menu toggle');} catch(e) {}"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
         </div>
       </div>
       <div id="nav__list-wrap" class="nav__list-wrap" aria-hidden="true">
         <ul class="nav__list nav__list-nomore nav__list-column3">
-          <li class="nav__list-item"><a href="#key-facts" class="nav__list-link" onclick="trackHTML('Key facts')">Key facts</a></li>
-          <li class="nav__list-item"><a href="#how-when" class="nav__list-link" onclick="trackHTML('How much to take')">How much to take</a></li>
-          <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link" onclick="trackHTML('Taking with other medicines')">Taking with other medicines</a></li>
-          <li class="nav__list-item"><a href="#side-effects" class="nav__list-link" onclick="trackHTML('Side effects')">Side effects</a></li>
-          <li class="nav__list-item"><a href="#common-questions" class="nav__list-link" onclick="trackHTML('Common questions')">Common questions</a></li>
-          <li class="nav__more arrow-down" aria-hidden="true"><a href="" class="nav__more-link" role="button"  onclick="trackHTML('More')">More</a></li>
-          <li class="nav__list-item nav__list-more-item"><a href="#not-be-able" class="nav__list-link" onclick="trackHTML('Before using it')">Before using it</a></li>
-          <li class="nav__list-item nav__list-more-item"><a href="#more" class="nav__list-link" onclick="trackHTML('More info')">More info</a></li>
+          <li class="nav__list-item"><a href="#key-facts" class="nav__list-link" onclick="try {trackHTML('Key facts');} catch(e) {}">Key facts</a></li>
+          <li class="nav__list-item"><a href="#how-when" class="nav__list-link" onclick="try {trackHTML('How much to take');} catch(e) {}">How much to take</a></li>
+          <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link" onclick="try {trackHTML('Taking with other medicines');} catch(e) {}">Taking with other medicines</a></li>
+          <li class="nav__list-item"><a href="#side-effects" class="nav__list-link" onclick="try {trackHTML('Side effects');} catch(e) {}">Side effects</a></li>
+          <li class="nav__list-item"><a href="#common-questions" class="nav__list-link" onclick="try {trackHTML('Common questions');} catch(e) {}">Common questions</a></li>
+          <li class="nav__more arrow-down" aria-hidden="true"><a href="" class="nav__more-link" role="button"  onclick="try {trackHTML('More');} catch(e) {}">More</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#not-be-able" class="nav__list-link" onclick="try {trackHTML('Before using it');} catch(e) {}">Before using it</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#more" class="nav__list-link" onclick="try {trackHTML('More info');} catch(e) {}">More info</a></li>
         </ul>
         <ul class="nav__list nav__list-more">
         </ul>
@@ -68,7 +68,7 @@
       <p>Paracetamol can also be present in other medicines. Make sure you do not take any other medicines containing paracetamol at the same time.</p>
 
       <details role="group">
-        <summary class="more-info" role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="true" onclick="trackHTML('How to take it - More')">
+        <summary class="more-info" role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="true" onclick="try {trackHTML('How to take it - More');} catch(e) {}">
           <span>More information</span>
         </summary>
         <div id="details-content-1" aria-hidden="false">
@@ -116,7 +116,7 @@
       <p>For safety, talk to your doctor or pharmacist before adding in another type of medicine including ones you buy like herbal remedies and supplements.</p>
 
       <details role="group">
-        <summary class="more-info" role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="true" onclick="trackHTML('Mixing paracetamol - More')">
+        <summary class="more-info" role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="true" onclick="try {trackHTML('Mixing paracetamol - More');} catch(e) {}">
           <span>More information</span>
         </summary>
         <div id="details-content-9" aria-hidden="false">
@@ -153,7 +153,7 @@
       <p>Most people have no side effects. Very occasionally, you can get an upset stomach, bleeding problems or have an allergic reaction.</p>
 
       <details role="group">
-        <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="true" onclick="trackHTML('Side effects - More')">
+        <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="true" onclick="try {trackHTML('Side effects - More');} catch(e) {}">
           <span>More information</span>
         </summary>
         <div id="details-content-3" aria-hidden="false">
@@ -187,7 +187,7 @@
         <div class="concertinas--bg">
           <h2 class="content__h2 content__h2--inconcertina">Common questions</h2>
           <details role="group">
-            <summary role="button" aria-controls="questions-1" tabindex="0" aria-expanded="false" onclick="trackHTML('CQ - Can I drink alcohol')">
+            <summary role="button" aria-controls="questions-1" tabindex="0" aria-expanded="false" onclick="try {trackHTML('CQ - Can I drink alcohol');} catch(e) {}">
               <h2>Can I drink alcohol with paracetamol?</h2>
             </summary>
             <div id="questions-1" aria-hidden="true">
@@ -196,7 +196,7 @@
           </details>
 
           <details role="group">
-            <summary role="button" aria-controls="questions-2" tabindex="0" aria-expanded="false" onclick="trackHTML('CQ - Can I take ibuprofen')">
+            <summary role="button" aria-controls="questions-2" tabindex="0" aria-expanded="false" onclick="try {trackHTML('CQ - Can I take ibuprofen');} catch(e) {}">
               <h2>Can I take ibuprofen with paracetamol?</h2>
             </summary>
             <div id="questions-2" aria-hidden="true">
@@ -205,7 +205,7 @@
           </details>
 
           <details role="group">
-            <summary role="button" aria-controls="questions-3" tabindex="0" aria-expanded="false" onclick="trackHTML('CQ - Take while pregnant or breastfeeding')">
+            <summary role="button" aria-controls="questions-3" tabindex="0" aria-expanded="false" onclick="try {trackHTML('CQ - Take while pregnant or breastfeeding');} catch(e) {}">
               <h2>Can I take paracetamol while I'm pregnant or breastfeeding?</h2>
             </summary>
             <div id="questions-3" aria-hidden="true">
@@ -214,7 +214,7 @@
           </details>
 
           <details role="group">
-            <summary role="button" aria-controls="questions-4" tabindex="0" aria-expanded="false" onclick="trackHTML('CQ - Complementary remedies')">
+            <summary role="button" aria-controls="questions-4" tabindex="0" aria-expanded="false" onclick="try {trackHTML('CQ - Complementary remedies');} catch(e) {}">
               <h2>Can I take complementary remedies with paracetamol?</h2>
             </summary>
             <div id="questions-4" aria-hidden="true">
@@ -224,7 +224,7 @@
           </details>
 
           <details role="group">
-            <summary role="button" aria-controls="questions-5" tabindex="0" aria-expanded="false" onclick="trackHTML('CQ - Are there any foods to avoid')">
+            <summary role="button" aria-controls="questions-5" tabindex="0" aria-expanded="false" onclick="try {trackHTML('CQ - Are there any foods to avoid');} catch(e) {}">
               <h2>Are there any foods I should avoid?</h2>
             </summary>
             <div id="questions-5" aria-hidden="true">
@@ -251,7 +251,7 @@
       <h2 class="content__h2 content__h2--separator content__h2--outconcertina" id="more">More about paracetamol</h2>
       <div class="concertinas">
         <details role="group">
-          <summary role="button" aria-controls="more-1" tabindex="0" aria-expanded="false" onclick="trackHTML('More about - When will I feel better')">
+          <summary role="button" aria-controls="more-1" tabindex="0" aria-expanded="false" onclick="try {trackHTML('More about - When will I feel better');} catch(e) {}">
             <h2>When will I feel better?</h2>
           </summary>
           <div id="more-1" aria-hidden="true">
@@ -260,7 +260,7 @@
         </details>
 
         <details role="group">
-          <summary role="button" aria-controls="more-2" tabindex="0" aria-expanded="false" onclick="trackHTML('More about - Long-term dangers')">
+          <summary role="button" aria-controls="more-2" tabindex="0" aria-expanded="false" onclick="try {trackHTML('More about - Long-term dangers');} catch(e) {}">
             <h2>Long-term dangers</h2>
           </summary>
           <div id="more-2" aria-hidden="true">
@@ -270,7 +270,7 @@
         </details>
 
         <details role="group">
-          <summary role="button" aria-controls="more-3" tabindex="0" aria-expanded="false" onclick="trackHTML('More about - Other treatments')">
+          <summary role="button" aria-controls="more-3" tabindex="0" aria-expanded="false" onclick="try {trackHTML('More about - Other treatments');} catch(e) {}">
             <h2>Other treatments</h2>
           </summary>
           <div id="more-3" aria-hidden="true">
@@ -491,5 +491,7 @@
 </script>
 
 <script type="text/javascript" charset="utf-8" src="https://cdn3.userzoom.com/uz.js?cuid=AE08A9785B32E2119DA70022196C4538"></script>
+
+
 
 {% endblock %}
