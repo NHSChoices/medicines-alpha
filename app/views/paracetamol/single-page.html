@@ -18,20 +18,19 @@
       <div class="nav__header-wrap">
         <h2 class="nav__header"><span class="nav__header-title">Paracetamol</span> <span class="nav__header-text">contents</span></h2>
         <div class="nav__dropdown">
-          <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
+          <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle" onclick="trackHTML('Burger menu')"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
         </div>
       </div>
       <div id="nav__list-wrap" class="nav__list-wrap" aria-hidden="true">
         <ul class="nav__list nav__list-nomore nav__list-column3">
-          <li class="nav__list-item"><a href="#key-facts" class="nav__list-link">Key facts</a></li>
-          <li class="nav__list-item"><a href="#how-when" class="nav__list-link">How to take it</a></li>
-          <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link">Taking with other medicines</a></li>
-          <li class="nav__list-item"><a href="#side-effects" class="nav__list-link">Side effects</a></li>
-          <li class="nav__list-item"><a href="#common-questions" class="nav__list-link">Common questions</a></li>
-          <li class="nav__list-item"><a href="#not-be-able" class="nav__list-link">Before using it</a></li>
-          <li class="nav__more arrow-down" aria-hidden="true"><a href="" class="nav__more-link" role="button">More</a></li>
-          <li class="nav__list-item nav__list-more-item"><a href="#for-children" class="nav__list-link">For children</a></li>
-          <li class="nav__list-item nav__list-more-item"><a href="#more" class="nav__list-link">More info</a></li>
+          <li class="nav__list-item"><a href="#key-facts" class="nav__list-link" onclick="trackHTML('Key facts')">Key facts</a></li>
+          <li class="nav__list-item"><a href="#how-when" class="nav__list-link" onclick="trackHTML('How much to take')">How much to take</a></li>
+          <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link" onclick="trackHTML('Taking with other medicines')">Taking with other medicines</a></li>
+          <li class="nav__list-item"><a href="#side-effects" class="nav__list-link" onclick="trackHTML('Side effects')">Side effects</a></li>
+          <li class="nav__list-item"><a href="#common-questions" class="nav__list-link" onclick="trackHTML('Common questions')">Common questions</a></li>
+          <li class="nav__more arrow-down" aria-hidden="true"><a href="" class="nav__more-link" role="button"  onclick="trackHTML('More')">More</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#not-be-able" class="nav__list-link" onclick="trackHTML('Before using it')">Before using it</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#more" class="nav__list-link" onclick="trackHTML('More info')">More info</a></li>
         </ul>
         <ul class="nav__list nav__list-more">
         </ul>
@@ -46,39 +45,34 @@
     <div class="column-two-thirds">
 
       <p>Paracetamol is a widely used painkiller that is available over the counter without a prescription to treat aches and pain. It can also be used to reduce fever.</p>
-      <p>It's available as tablets, capsules, soluble tablets and suppositories. There is also an oral liquid suspension for babies and children.</p>
       <p>Paracetamol is also available combined with other painkillers and anti-sickness medicines and is an ingredient in a wide range of cold and flu remedies.</p>
-      <p>Paracetamol is also called by its brand names Alvedon; Calpol; Disprol; Hedex; Mandanol; Medinol; Panadol.</p>
 
       <h2 id="key-facts" class="content__h2 noborder">Key facts:</h2>
       <ul class="key-facts">
-        <li>You can take a dose of paracetamol every 4-6 hours up to four times a day.</li>
-        <li>Never take more than the recommended dose of paracetamol. Taking too much can damage your liver.</li>
-        <li>Do not take paracetamol with any other paracetamol-containing medicines</li>
-        <li>If you are giving paracetamol to a child, check the label to make sure you are giving the correct dose for their age.</li>
-        <li>Paracetamol is safe to take in pregnancy and while breastfeeding at recommended doses</li>
+        <li>Paracetamol takes up to an hour to work</li>
+        <li>The usual dose of paracetamol is one or two 500mg tablets</li>
+        <li>Never take more than eight 500mg tablets in 24 hours</li>
+        <li>Do not take paracetamol with other paracetamol-containing medicines</li>
+        <li>Paracetamol is generally safe to take in pregnancy and while breastfeeding at recommended doses</li>
       </ul>
 
-      <h2 class="content__h2 content__h2--separator" id="how-when">How to take it</h2>
-      <p>Paracetamol can be taken <em class="strong">when you need it</em> for pain relief or to reduce fever up to a maximum of four times a day. Repeat doses must be at least four hours apart.</p>
-      <p>For some people who are in constant pain paracetamol can be <em class="strong">taken regularly</em> up to four times a day with doses spread out as evenly as possible.</p>
+      <h2 class="content__h2 content__h2--separator" id="how-when">How much to take</h2>
+      <ul>
+        <li>adults can take ONE or TWO 500mg tablets or capsules at a time</li>
+        <li>up to a <em class="strong">maximum of four times in 24 hours</em></li>
+        <li>space out doses at least four hours apart</li>
+      </ul>
+
+      <p><span class="strong">The total maximum dose of paracetamol for an adult is EIGHT 500mg doses in 24 hours.</span></p>
+      <p>For people who are in constant pain, paracetamol can be <span class="strong">taken regularly</span> up to four times in 24 hours with doses spread out as evenly as possible.</p>
+      <p>Paracetamol can also be present in other medicines. Make sure you do not take any other medicines containing paracetamol at the same time.</p>
 
       <details role="group">
-        <summary class="more-info" role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="true">
+        <summary class="more-info" role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="true" onclick="trackHTML('How to take it - More')">
           <span>More information</span>
         </summary>
         <div id="details-content-1" aria-hidden="false">
-          <h3>How much to take</h3>
-          <p>The recommended dose of paracetamol for an adult is ONE or TWO 500mg tablets or capsules at a time.</p>
-          <p>The recommended dose for children depends on their age and can be found on the packaging. If you aren't sure check with your pharmacist or doctor.</p>
 
-          <p>For adults and children:</p>
-          <ul>
-            <li>the recommended dose should not be taken more than four times in 24 hours</li>
-            <li>doses should never be less than four hours apart</li>
-          </ul>
-          <p>The total maximum dose of paracetamol for an adult is EIGHT 500mg doses in 24 hours.</p>
-          <p>The total maximum dose for children depends on the child's age and can be found on the packaging. If you aren't sure check with your pharmacist or doctor.</p>
           <p>You may be advised to take lower doses of paracetamol if you:</p>
           <ul>
             <li>have liver or kidney problems</li>
@@ -86,22 +80,32 @@
             <li>regularly drink more than the recommended amount of alcohol</li>
           </ul>
 
+          <h3>For children</h3>
+          <p>The total maximum dose for children depends on the child's age. You can find out the correct dose on the packet. If you aren't sure check with your pharmacist or doctor.</p>
+          <p>If you're giving paracetamol to a child make sure you use the measuring spoon supplied with the medicine to correctly measure the amount of liquid.</p>
+
           <h3>What if I take too much?</h3>
-          <p>An overdose of paracetamol can cause very serious and sometimes fatal liver problems. Some people have needed a liver transplant to overcome the damage caused by taking too much.</p>
-          <p>Accidental overdose happens most often in people taking more than the recommended dose in 24 hours. Even taking one or two more tablets than recommended can cause serious liver damage and possibly death.</p>
-          <p>Overdose can also happen when people are not aware they are taking more than one medicine with paracetamol in it.</p>
-          <p>People who have taken an overdose of paracetamol (accidentally or intentionally) may need to go to hospital urgently, depending on the amount of paracetamol they've taken and whether there are other risk factors that increase the chances of liver damage. Early symptoms of paracetamol overdose are:</p>
+          <p>An overdose of paracetamol can cause very serious and sometimes fatal liver problems.</p>
+          <p>Accidental overdose happens most often in people taking more than the daily recommended dose.</p>
+          <p>Even taking one or two more tablets than recommended can cause serious liver damage and possibly death.</p>
+          <p>Overdose can also happen if you are not aware you are taking more than one medicine with paracetamol in it.</p>
+
+          <p class="callout">Talk to your doctor or pharmacist if you are unsure whether any other medicine you are taking also contains paracetamol.</p>
+
+          <p>Early symptoms of paracetamol overdose are:</p>
 
           <ul>
             <li>nausea and vomiting (which usually settles within 24 hours)</li>
             <li>pain and tenderness on the right side below the ribs (which may not appear until three or four days after the overdose)</li>
           </ul>
 
-          <p class="callout">Talk to your doctor or pharmacist if you are unsure whether any other medicine you are taking also contains paracetamol.</p>
+          <p class="callout">If you think you may have taken too much paracetamol, go straight to your nearest hospital A&amp;E department.</p>
 
-          <h3>What if I miss a dose?</h3>
-          <p>If you take paracetamol regularly and miss a dose take it as soon as you remember. If it's close to the time for your next dose when you remember, then skip the missed dose and go back to taking it at the normal time.</p>
+          <h3>What if I miss a prescribed dose?</h3>
+          <p>If you take paracetamol regularly and miss a dose take it as soon as you remember. If it's close to the time for your next dose when you remember, then skip the missed dose.</p>
+
           <p class="callout">Do not take double doses of paracetamol at the same time or extra doses to catch up.</p>
+
         </div>
       </details>
 
@@ -112,7 +116,7 @@
       <p>For safety, talk to your doctor or pharmacist before adding in another type of medicine including ones you buy like herbal remedies and supplements.</p>
 
       <details role="group">
-        <summary class="more-info" role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="true">
+        <summary class="more-info" role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="true" onclick="trackHTML('Mixing paracetamol - More')">
           <span>More information</span>
         </summary>
         <div id="details-content-9" aria-hidden="false">
@@ -149,7 +153,7 @@
       <p>Most people have no side effects. Very occasionally, you can get an upset stomach, bleeding problems or have an allergic reaction.</p>
 
       <details role="group">
-        <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="true">
+        <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="true" onclick="trackHTML('Side effects - More')">
           <span>More information</span>
         </summary>
         <div id="details-content-3" aria-hidden="false">
@@ -183,41 +187,51 @@
         <div class="concertinas--bg">
           <h2 class="content__h2 content__h2--inconcertina">Common questions</h2>
           <details role="group">
-            <summary role="button" aria-controls="questions-1" tabindex="0" aria-expanded="false">
+            <summary role="button" aria-controls="questions-1" tabindex="0" aria-expanded="false" onclick="trackHTML('CQ - Can I drink alcohol')">
               <h2>Can I drink alcohol with paracetamol?</h2>
             </summary>
             <div id="questions-1" aria-hidden="true">
-            <p>It’s advised that you cut down or stop drinking alcohol completely while you take paracetamol.</p>
+            <p>It's advised that you cut down or stop drinking alcohol completely while you take paracetamol.</p>
             </div>
           </details>
 
           <details role="group">
-            <summary role="button" aria-controls="questions-2" tabindex="0" aria-expanded="false">
-              <h2>Can I take complementary remedies with paracetamol?</h2>
+            <summary role="button" aria-controls="questions-2" tabindex="0" aria-expanded="false" onclick="trackHTML('CQ - Can I take ibuprofen')">
+              <h2>Can I take ibuprofen with paracetamol?</h2>
             </summary>
             <div id="questions-2" aria-hidden="true">
-            <p>Check with your doctor or pharmacist if you’re taking the herbal medicine St John’s Wort for depression as you may need to reduce your paracetamol dose.</p>
+            <p>Yes, you can take ibuprofen with paracetamol.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-3" tabindex="0" aria-expanded="false" onclick="trackHTML('CQ - Take while pregnant or breastfeeding')">
+              <h2>Can I take paracetamol while I'm pregnant or breastfeeding?</h2>
+            </summary>
+            <div id="questions-3" aria-hidden="true">
+            <p>Yes. Paracetamol is considered safe to take in pregnancy and while breastfeeding at the recommended doses.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-4" tabindex="0" aria-expanded="false" onclick="trackHTML('CQ - Complementary remedies')">
+              <h2>Can I take complementary remedies with paracetamol?</h2>
+            </summary>
+            <div id="questions-4" aria-hidden="true">
+            <p>Check with your doctor or pharmacist if you're taking the herbal medicine St John's Wort for depression as you may need to reduce your paracetamol dose.</p>
             <p>Otherwise, paracetamol is not generally affected by also taking complementary medicines.</p>
             </div>
           </details>
 
           <details role="group">
-            <summary role="button" aria-controls="questions-3" tabindex="0" aria-expanded="false">
-              <h2>Can I drive or cycle while taking paracetamol?</h2>
-            </summary>
-            <div id="questions-3" aria-hidden="true">
-            <p>Yes, if you take paracetamol at recommended doses, it won't affect your ability to drive or ride a bike.</p>
-            </div>
-          </details>
-
-          <details role="group">
-            <summary role="button" aria-controls="questions-4" tabindex="0" aria-expanded="false">
+            <summary role="button" aria-controls="questions-5" tabindex="0" aria-expanded="false" onclick="trackHTML('CQ - Are there any foods to avoid')">
               <h2>Are there any foods I should avoid?</h2>
             </summary>
-            <div id="questions-4" aria-hidden="true">
+            <div id="questions-5" aria-hidden="true">
             <p>No. Paracetamol is not affected by any foods.</p>
             </div>
           </details>
+
         </div>
       </div>
 
@@ -234,15 +248,10 @@
       </ul>
 
 
-      <h2 class="content__h2 content__h2--separator" id="for-children">For children</h2>
-      <p>If you’re giving paracetamol to a child make sure you use the measuring spoon supplied with the medicine to correctly measure the amount of liquid.</p>
-
-
-
       <h2 class="content__h2 content__h2--separator content__h2--outconcertina" id="more">More about paracetamol</h2>
       <div class="concertinas">
         <details role="group">
-          <summary role="button" aria-controls="more-1" tabindex="0" aria-expanded="false">
+          <summary role="button" aria-controls="more-1" tabindex="0" aria-expanded="false" onclick="trackHTML('More about - When will I feel better')">
             <h2>When will I feel better?</h2>
           </summary>
           <div id="more-1" aria-hidden="true">
@@ -251,35 +260,25 @@
         </details>
 
         <details role="group">
-          <summary role="button" aria-controls="more-2" tabindex="0" aria-expanded="false">
+          <summary role="button" aria-controls="more-2" tabindex="0" aria-expanded="false" onclick="trackHTML('More about - Long-term dangers')">
             <h2>Long-term dangers</h2>
           </summary>
           <div id="more-2" aria-hidden="true">
-          	<p>Research has indicated that if you take paracetamol regularly for many years you are slightly more likely to have a heart attack, bleeding inside the digestive system or kidney problems.</p>
-            <p>But it isn’t clear whether the increased risk is due to other health or lifestyle differences rather than long-term use of paracetamol. </p>
+          	<p>Research has suggested that if you take paracetamol regularly for many years you are slightly more likely to have a heart attack, bleeding inside the digestive system or kidney problems.</p>
+            <p>But it isn't clear whether the increased risk is due to other health or lifestyle differences rather than long-term use of paracetamol.</p>
           </div>
         </details>
 
         <details role="group">
-          <summary role="button" aria-controls="more-3" tabindex="0" aria-expanded="false">
-            <h2>Pregnancy and breastfeeding</h2>
-          </summary>
-          <div id="more-3" aria-hidden="true">
-          	<p>Paracetamol is safe to take in pregnancy and while breastfeeding.</p>
-          </div>
-        </details>
-
-        <details role="group">
-          <summary role="button" aria-controls="more-4" tabindex="0" aria-expanded="false">
+          <summary role="button" aria-controls="more-3" tabindex="0" aria-expanded="false" onclick="trackHTML('More about - Other treatments')">
             <h2>Other treatments</h2>
           </summary>
-          <div id="more-4" aria-hidden="true">
-          	<p>There are a number of different types of painkiller that you can use instead of paracetamol including:</p>
+          <div id="more-3" aria-hidden="true">
+            <p>There are a number of different types of painkiller that you can use instead of paracetamol including:</p>
             <ul>
               <li>ibuprofen</li>
               <li>codeine</li>
             </ul>
-
             <p>Ibuprofen and ibuprofen-like painkillers are sometimes available as creams or gels that you rub onto a specific part of the body that is painful.</p>
             <p>Some painkillers are only available by prescription so talk to your doctor or pharmacist about the other treatment options that might be more suitable for you.</p>
           </div>
@@ -414,7 +413,7 @@
         extraOffset = 20;
       }
 
-      if ( ($(navSticky).length) && ($(window).width() < 1280) ) {
+      if ( ($(navSticky).length) && ($(window).width() < 1024) ) {
         $navListWrap.hide();
       }
 
