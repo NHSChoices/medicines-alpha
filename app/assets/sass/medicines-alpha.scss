@@ -2,6 +2,7 @@
 $nhs-blue: #0072c6;
 $separator: #dcdcdc;
 $lightblue-bg: #f1f7fc;
+$icon-blue: #0065b6;
 
 
 body {}
@@ -272,6 +273,16 @@ summary + div {padding:0 !important;}
 .concertinas details h2 {border-top:1px dotted #ccc; padding-bottom:10px; padding-top:10px;}
 .concertinas details:first-child h2 {border-top:0;}
 
+
+/**
+  * PIL disclaimer
+  */
+
+.disclaimer__info {border:2px solid $icon-blue; margin-bottom:40px; margin-top:40px; padding:15px; position:relative;}
+  .disclaimer__info-icon {left:20px; position:absolute;}
+    .disclaimer__info-round {background:$icon-blue; border:.1em solid $icon-blue; border-radius:50%; color:#fff; display:inline-block; font-family:serif; font-size:1.6em; font-weight:bold; font-style:italic; padding-left:.5em; text-transform:lowercase; width:.8em;}
+    .disclaimer__info-hide {display:none;}
+  .disclaimer__info-text {color:$icon-blue; margin:0 0 0 4em;}
 
 /**
  * Responsive videos
