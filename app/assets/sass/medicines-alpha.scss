@@ -200,11 +200,11 @@ body {}
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   .nav--sticky .nav__header-wrap, .nav--sticky .nav__list-wrap {margin:0 auto; max-width:960px;}
-  .nav__more {display:inline;}
-  .nav__more-link {cursor:pointer;}
+  .nav__more {display:inline; margin-left:.5em;}
+  a.nav__more-link {color:#005ea5; cursor:pointer;}
   .nav__more-link:hover {text-decoration:underline;}
-  .arrow-up:after {content: " \25b2"; font-size:.75em;}
-  .arrow-down:after {content: " \25bc"; font-size:.75em;}
+  .arrow-up:after {content: " \25b2"; font-size:.75em; padding-left:5px;}
+  .arrow-down:after {content: " \25bc"; font-size:.75em; padding-left:5px;}
   .nav__list-more-item {/* display:none; */ float:left; margin:10px 0;}
 }
 
