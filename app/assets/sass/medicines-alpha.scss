@@ -3,6 +3,7 @@ $nhs-blue: #0072c6;
 $separator: #dcdcdc;
 $lightblue-bg: #f1f7fc;
 $icon-blue: #0065b6;
+$light-grey: #f1f1f1;
 
 
 body {}
@@ -276,14 +277,35 @@ summary + div > h3 {margin-top:0;}
 
 
 /**
-  * PIL disclaimer
-  */
-
+ * PIL disclaimer
+ */
 .disclaimer__info {border:2px solid $icon-blue; margin-bottom:40px; margin-top:40px; padding:15px; position:relative;}
   .disclaimer__info-icon {left:20px; position:absolute;}
     .disclaimer__info-round {background:$icon-blue; border:.1em solid $icon-blue; border-radius:50%; color:#fff; display:inline-block; font-family:serif; font-size:1.6em; font-weight:bold; font-style:italic; padding-left:.5em; text-transform:lowercase; width:.8em;}
     .disclaimer__info-hide {display:none;}
   .disclaimer__info-text {color:$icon-blue; margin:0 0 0 4em;}
+
+/**
+ * Module box
+ */
+.module {margin-top:40px;}
+.module--bg {background:$light-grey; padding:15px;}
+  .module__header {font-size:24px; margin:0 0 15px 0;}
+  .module__header--bordertop {border-top:1px solid $separator; padding-top:30px;}
+    .header-text__small {font-size:14px;}
+  .module__list {list-style:none; margin:0 0 30px 0;}
+  .module__list-nomarginbottom {margin-bottom:0;}
+    .module__list-item {margin-left:0;}
+
+@media (min-width: 641px) {
+  .module {box-sizing:border-box; display:table; width:100%;}
+  .module__row {display:table-row;}
+    .module__col {border-right:1px solid $separator; display:table-cell; padding-right:5%; width:45%;}
+    .module__col:last-child {border-right:0; padding-left:5%; padding-right:0;}
+      .module__header--nobordertop {border:0; padding:0;}
+      .module__list {margin:0;}
+}
+
 
 /**
  * Responsive videos
