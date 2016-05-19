@@ -314,7 +314,12 @@
   var init = (function() {
 
     // duplicate nav for sticky version
-    var navInjected = $('.nav').clone().addClass('nav--injected').removeClass('nav').insertAfter('.nav');
+    var $navInjected = $('.nav').clone().addClass('nav--injected').removeClass('nav').insertAfter('.nav');
+
+    // change tracking string for sticky nav for userzoom
+    $navInjected.html(function(index, html) {
+        return html.replace(/top nav/g, 'sticky nav');
+    });
 
     // Move 'more' items
     if ( ($(window).width() >= 1024) && ($(window).width() <= 1279) ) {
