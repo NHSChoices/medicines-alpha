@@ -255,7 +255,8 @@ a.link__unstyled {color:#0b0c0c; cursor:text; text-decoration:none;}
  * Details/summary
  */
 .more-info .arrow {display:inline;}
-summary + div {padding:0 !important;}
+summary + div {padding:15px 0 0 0!important;}
+summary + div > h3 {margin-top:0;}
 .content details summary::-webkit-details-marker {display:inline;}
 
 /**
@@ -266,12 +267,12 @@ summary + div {padding:0 !important;}
 .concertinas details .arrow {display:none;}
 .concertinas details summary::-webkit-details-marker {display:none;}
 .concertinas summary {display:block; margin:0; padding:0;}
-.concertinas summary h2 {font-size:21px; font-weight:normal; margin:0;}
-.concertinas summary h2::after {content:"+ "; position:absolute; right:10px; top:12px;}
-.concertinas summary[aria-expanded="true"] h2::after {content:"- ";}
-.concertinas summary + div {margin-top:15px; padding:0;}
-.concertinas details h2 {border-top:1px dotted #ccc; padding-bottom:10px; padding-top:10px;}
-.concertinas details:first-child h2 {border-top:0;}
+.concertinas summary h3 {font-size:21px; font-weight:normal; line-height:1.15; margin:0;}
+.concertinas summary h3::after {content:"+ "; position:absolute; right:10px; top:12px;}
+.concertinas summary[aria-expanded="true"] h3::after {content:"- ";}
+.concertinas summary + div {margin-top:10px; padding:0 !important;}
+.concertinas details h3 {border-top:1px dotted #ccc; padding-bottom:10px; padding-top:10px;}
+.concertinas details:first-child h3 {border-top:0;}
 
 
 /**
