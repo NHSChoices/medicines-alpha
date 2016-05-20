@@ -134,7 +134,7 @@
 
         if (openAttr === true) {
           twisty.className = 'arrow arrow-open';
-          twisty.appendChild(document.createTextNode('\u25bc'));
+          twisty.appendChild(document.createTextNode('\u25b2'));
         } else {
           twisty.className = 'arrow arrow-closed';
           twisty.appendChild(document.createTextNode('\u25ba'));
@@ -168,7 +168,7 @@
       }
 
       if (summary.__twisty) {
-        summary.__twisty.firstChild.nodeValue = (expanded ? '\u25ba' : '\u25bc');
+        summary.__twisty.firstChild.nodeValue = (expanded ? '\u25ba' : '\u25b2');
         summary.__twisty.setAttribute('class', (expanded ? 'arrow arrow-closed' : 'arrow arrow-open'));
       }
 
