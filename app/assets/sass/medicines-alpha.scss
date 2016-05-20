@@ -7,7 +7,6 @@ $light-grey: #f5f5f5;
 $dark-grey: #ccc;
 
 
-
 body {}
 #global-header {
   background-color: #0072c6;
@@ -261,7 +260,7 @@ a.link__unstyled {color:#0b0c0c; cursor:text; text-decoration:none;}
  */
 .more-info .arrow {display:inline;}
 summary + div {padding:15px 0 0 0!important;}
-summary + div > h3 {margin-top:0;}
+summary + div > h3:first-child {margin-top:0;}
 .content details summary::-webkit-details-marker {display:inline;}
 
 /**
