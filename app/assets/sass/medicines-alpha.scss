@@ -30,15 +30,17 @@ body {}
 }
 
 .header__logo {
+  background:url("/public/images/logotype-nhs-colour.png") no-repeat;
   display:block;
   float:left;
-  height:36px;
+  height:32px;
   margin:15px 0;
-  width:90px;
+  width:79px;
+
 }
 
 .header__img {
-  display:block;
+  display:none;
 }
 
 .header__title {
