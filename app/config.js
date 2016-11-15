@@ -11,6 +11,6 @@ module.exports = {
   port: '3000',
 
   // Enable or disable password protection on production
-  useAuth: 'true'
+  useAuth: 'false'
 
 };
