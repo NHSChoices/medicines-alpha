@@ -194,3 +194,48 @@ $(document).ready(function() {
   });
 
 });
+
+
+// print for summary details
+
+// Set up before/after handlers
+var beforePrint = function() {
+    // replace details elements with divs
+    $('details').replaceWith(function(){
+        return $("<div class='details' />").append($(this).contents());
+    });
+
+    $('summary').replaceWith(function(){
+        return $("<div class='summary' />").append($(this).contents());
+    });
+
+};
+var afterPrint = function() {
+    //$("details").removeAttr('open');
+    //$('.details').contents().unwrap().wrap('<details />');
+
+    $('.details').replaceWith(function(){
+        return $("<details />").append($(this).contents());
+    });
+
+    $('.summary').replaceWith(function(){
+        return $("<summary />").append($(this).contents());
+    });
+
+};
+
+if ('matchMedia' in window) {
+    // Chrome, Firefox, and IE 10 support mediaMatch listeners
+    window.matchMedia('print').addListener(function(media) {
+        if (media.matches) {
+            beforePrint();
+        } else {
+            // Fires immediately, so wait for the first mouse movement
+            $(document).one('mouseover', afterPrint);
+        }
+    });
+} else {
+    // IE and Firefox fire before/after events
+    $(window).on('beforeprint', beforePrint);
+    $(window).on('afterprint', afterPrint);
+}
