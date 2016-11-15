@@ -615,3 +615,25 @@ details summary span {text-decoration: underline;}
 @media print {
   .print {display:block;}
 }
+
+
+
+.alertbanner {
+	background:#fffbcc;
+	border-left:3px solid #ffed00;
+	display:block;
+	font-weight:bold;
+	padding:15px 15px 10px 15px;
+}
+
+.infobanner {
+	background:url(/public/images/icon-info.gif) 15px center no-repeat;
+	border:2px solid #0065b6;
+	color:#0065b6;
+	display:block;
+	margin:40px 0;
+	padding:15px 15px 15px 75px;
+}
+
+.hide {display:block; outline:none; text-indent:-9999px;}
+.header__logo a:active, .header__logo a:focus {outline:none;}
