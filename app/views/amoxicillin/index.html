@@ -1,0 +1,30 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="index">Amoxicillin</h1>
+      <ul class="list-nav list-nav-bullets">
+        <li><a href="/amoxicillin/single-page">Interface 1</a>
+      </ul>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Medicines</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
