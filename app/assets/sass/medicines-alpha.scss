@@ -95,8 +95,8 @@ body {}
 /**
  * Disclaimer
  */
-.disclaimer {font-size:14px; margin:15px auto 0 auto;}
-.disclaimer p {border-bottom:1px solid $separator; margin:0 15px; padding-bottom:15px;}
+.disclaimer {font-size:18px; margin:15px auto 0 auto;}
+.disclaimer p {border-bottom:1px solid $separator; font-weight:bold; margin:0 15px; padding-bottom:15px;}
 
 @media (min-width: 720px) {
  .disclaimer {max-width:770px;}
