@@ -433,6 +433,12 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
   list-style-type:disc;
 }
 
+.list-nav--nocols {
+  -webkit-columns: auto 1;
+   -moz-columns: auto 1;
+        columns: auto 1;
+}
+
 @media (max-width: 640px) {
   .list-nav {
     -webkit-columns: auto 1;
