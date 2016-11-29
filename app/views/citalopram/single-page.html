@@ -38,6 +38,14 @@ $(document).ready(function () {
 });
 </script>
 
+<script>
+$(document).ready(function () {
+  $('.content a[href^="http"]').click(function(e) {
+    e.preventDefault();
+  });
+});
+</script>
+
 <div class="header__nav-container clear">
   <div class="header__nav-container-wrap clear">
     <div class="header__wrap">
