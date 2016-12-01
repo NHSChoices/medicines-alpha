@@ -644,3 +644,13 @@ details summary span {text-decoration: underline;}
 .hide {display:block; outline:none; text-indent:-9999px;}
 .header__logo a:active, .header__logo a:focus {outline:none;}
 strong {font-weight:bold;}
+
+
+/* tabs */
+.tabs {border-bottom:2px solid #dcdcdc; margin-top:40px;}
+.tab {display:inline;}
+.tab__link {background:#efefef; border:2px solid #dcdcdc; border-bottom:0; display:inline-block; padding:10px 30px; text-decoration:none;}
+.tab__link:hover, .tab__link:focus {text-decoration:underline;}
+.tab__link:focus {background:#fff; outline:none; text-decoration:none;}
+.tab__link--current {background:#fff; font-weight:bold; position:relative; text-decoration:none; top:2px;}
+.hidden {display:none;}
