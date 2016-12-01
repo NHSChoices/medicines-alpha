@@ -1,5 +1,13 @@
 var init = (function() {
 
+  // Move 'more' items
+  if ( ($(window).width() >= 1024) && ($(window).width() <= 1279) ) {
+    $('.nav__list-wrap1 .nav__list-more-item1').appendTo($('.nav__list-wrap1 .nav__list-more'));
+    $('.nav--injected .nav__list-wrap1 .nav__list-more-item').appendTo($('.nav--injected .nav__list-wrap1 .nav__list-more'));
+    $('.nav__list-wrap2 .nav__list-more-item2').appendTo($('.nav__list-wrap2 .nav__list-more'));
+    $('.nav--injected .nav__list-wrap2 .nav__list-more-item').appendTo($('.nav--injected .nav__list-wrap2 .nav__list-more'));
+  }
+
   // duplicate nav for sticky version
   var $navInjected = $('.nav').clone().addClass('nav--injected').removeClass('nav').insertAfter('.nav');
 
@@ -8,15 +16,11 @@ var init = (function() {
       return html.replace(/top nav/g, 'sticky nav');
   });
 
-  // Move 'more' items
-  if ( ($(window).width() >= 1024) && ($(window).width() <= 1279) ) {
-    $('.nav .nav__list-more-item').appendTo($('.nav .nav__list-more'));
-    $('.nav--injected .nav__list-more-item').appendTo($('.nav--injected .nav__list-more'));
-  }
-
   // show nav at bigger screen size
   if ($(window).width() >= 1280) {
-    $('.nav .nav__list-wrap').show();
+    if (!($('.nav .nav__list-wrap').hasClass('hidden'))) {
+      $('.nav .nav__list-wrap').show();
+    }
   }
 
 }());
@@ -30,9 +34,17 @@ var toggleMenu = (function() {
 
   $navToggle.on('click', function() {
     if ($(navSticky).length) {
-      $navWrap = $('.nav--sticky .nav__list-wrap');
+      if ($('.content2').hasClass('hidden')) {
+        $navWrap = $('.nav--sticky .nav__list-wrap1');
+      } else {
+        $navWrap = $('.nav--sticky .nav__list-wrap2');
+      }
     } else {
-      $navWrap = $('.nav .nav__list-wrap');
+      if ($('.content2').hasClass('hidden')) {
+        $navWrap = $('.nav .nav__list-wrap1');
+      } else {
+        $navWrap = $('.nav .nav__list-wrap2');
+      }
     }
     $navWrap.slideToggle();
   });
@@ -193,6 +205,34 @@ var moreNav = (function() {
       $(this).closest(navList).next(navList).hide();
       $(this).text('More');
       $(this).parent().removeClass(arrowUpClass).addClass(arrowDownClass);
+    }
+
+  });
+
+}());
+
+
+// quick and dirty tabs functionality
+var tabs = (function() {
+  var $tabs = $('.tabs a');
+      tabCurrent = 'tab__link--current',
+      hidden = 'hidden';
+
+  $tabs.on('click', function(e) {
+    e.preventDefault();
+    $tabs.removeClass(tabCurrent);
+    $(this).addClass(tabCurrent);
+    var contentID = $(this).attr('href');
+    if ($(contentID).hasClass('hidden')) {
+      $('.tabs-content').addClass('hidden');
+      $(contentID).removeClass('hidden');
+    }
+    if ($(this).hasClass('tab1')) {
+      $('.nav__list-wrap1').removeClass('hidden');
+      $('.nav__list-wrap2').addClass('hidden');
+    } else {
+      $('.nav__list-wrap2').removeClass('hidden');
+      $('.nav__list-wrap1').addClass('hidden');
     }
 
   });
