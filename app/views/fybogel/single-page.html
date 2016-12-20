@@ -1,0 +1,342 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  Fybogel - NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<div class="header__nav-container">
+  <div class="header__nav-container-wrap clear">
+    <div class="header__wrap">
+      <div class="header__content">
+        <h1 class="header__main"><a href="/fybogel" class="link__unstyled">Fybogel</a></h1>
+      </div>
+    </div>
+
+    <nav id="nav" class="nav" role="navigation">
+      <div class="nav__header-wrap">
+        <h2 class="nav__header"><span class="nav__header-title">Fybogel</span> <span class="nav__header-text">contents</span></h2>
+        <div class="nav__dropdown">
+          <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
+        </div>
+      </div>
+      <div id="nav__list-wrap" class="nav__list-wrap" aria-hidden="true">
+        <ul class="nav__list nav__list-nomore nav__list-column3">
+          <li class="nav__list-item"><a href="#key-facts" class="nav__list-link">Key facts</a></li>
+          <li class="nav__list-item"><a href="#how-when" class="nav__list-link">How and when to take</a></li>
+          <li class="nav__list-item"><a href="#side-effects" class="nav__list-link">Side effects</a></li>
+          <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link">Taking with other medicines</a></li>
+          <li class="nav__list-item"><a href="#common-questions" class="nav__list-link">Common questions</a></li>
+          <li class="nav__list-item"><a href="#not-be-able" class="nav__list-link">Who shouldn't take it</a></li>
+          <li class="nav__more arrow-down" aria-hidden="true"><a href="" class="nav__more-link" role="button">More</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#pregnancy" class="nav__list-link">Pregnancy advice</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#more" class="nav__list-link">More info</a></li>
+        </ul>
+        <ul class="nav__list nav__list-more clear">
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<main id="content" role="main" class="content">
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <p>Fybogel is a laxative taken to treat <a href="http://www.nhs.uk/conditions/constipation/Pages/Introduction.aspx">constipation</a>.</p>
+      <p>It comes as plain or fruit-flavoured granules that you mix with water to make a high-fibre drink.</p>
+      <p>Fybogel is available on prescription and to buy from pharmacies and supermarkets.</p>
+      <p>It is also called ispaghula husk.</p>
+      <p>Fybogel isn’t usually for children unless recommended by a doctor.</p>
+
+      <h2 id="key-facts" class="content__h2 noborder">Key facts</h2>
+      <ul class="key-facts">
+        <li>Fybogel is a high-fibre drink that you take in the morning and evening.</li>
+        <li>It works by bulking up poo to make it softer and easier to pass.</li>
+        <li>When taking this type of laxative make sure you drink plenty of fluids, and don't take it just before going to bed.</li>
+        <li>The main side effects are wind and bloating.</li>
+        <li>You should start to poo normally again after two or three days.</li>
+      </ul>
+
+      <div class="disclaimer__info">
+        <span class="disclaimer__info-icon"><span class="disclaimer__info-round">I<span class="disclaimer__info-hide">nfo: </span></span></span>
+        <p class="disclaimer__info-text">Check the leaflet inside your medicine packet for specific information about the brand that you are taking.</p>
+      </div>
+
+
+      <h2 class="content__h2 content__h2--separator" id="how-when">How and when to take</h2>
+      <p>Fybogel comes as sachets of plain, orange or lemon-flavoured granules.</p>
+      <p>The usual dose is one sachet mixed with water which you drink twice a day in the morning and evening. Doses are lower for children.</p>
+      <p>It is best to take Fybogel after a meal or snack.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-1" aria-hidden="false">
+          <p>The normal dose for constipation in:</p>
+          <ul>
+          <li>adults and children aged 13 and over is one sachet of Fybogel granules twice a day</li>
+          <li>children aged 6 to 12 is &frac12; to one level 5ml spoonful of Fybogel granules twice a day</li>
+          <li>children under the age of 6 is &frac12; to one level 5ml spoonful of Fybogel granules twice a day</li>
+          </ul>
+          <h3>How to take it</h3>
+          <p>To make up the medicine, fill a glass with about 150mls (1/4 pint) of cold water and empty in the right amount of granules from the sachet. Stir the solution well and drink it straight away.</p>
+          <p>Try not to breathe in the powder when you make up the Fybogel drink as it can occasionally trigger a mild allergic reaction.</p>
+          <p>Have your evening drink of Fybogel at least an hour before going to bed. Drinking Fybogel just before you go to sleep increases the chances of it causing a blockage in the gut.</p>
+          <p>Aim to drink 6 to 8 glasses of fluid during the day while you are taking Fybogel or the constipation may get worse.</p>
+          <h3>What if I forget to take it?</h3>
+          <p>If you forget a dose of Fybogel, don’t worry, just take the next dose at the usual time.</p>
+          <p>Never take two doses at the same time or an extra dose to make up for a forgotten one.</p>
+          <h3>What if I take too much?</h3>
+          <p>Accidentally taking too much Fybogel is unlikely to harm you. If this happens, drink plenty of water.</p>
+          <p>If you are worried, talk to your doctor or pharmacist for advice.</p>
+        </div>
+      </details>
+
+
+
+
+      <h2 class="content__h2 content__h2--separator" id="side-effects">Side effects</h2>
+      <p>The most common side effects are bloating and wind. These are usually mild and short-lived.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-3" aria-hidden="false">
+          <h3>Common side effects</h3>
+          <p>Like all medicines, Fybogel may cause side effects in some people, but many people have no side effects or only minor ones.</p>
+          <p>The most common side effects, which happen in up to one in 10 people, are wind and bloating. This sometimes happens because of the sudden increase of fibre in your diet. It should ease off after a few days.</p>
+          <p>If side effects carry on, or if you are worried, talk to your doctor or pharmacist.</p>
+          <h3>Mild allergic reaction</h3>
+          <p>It’s possible to have a mild allergic reaction such as itchy eyes, nose or skin.</p>
+          <p>You’re more likely to have a mild allergic reaction to Fybogel if you’ve had an allergic reaction before and if you’re exposed to the powder regularly, for example if you’re a carer.</p>
+          <p>If you think you are having a mild allergic reaction to Fybogel, stop taking it and ask your pharmacist or GP for advice.</p>
+
+          <div class="disclaimer__info">
+            <span class="disclaimer__info-icon"><span class="disclaimer__info-round">I<span class="disclaimer__info-hide">nfo: </span></span></span>
+            <p class="disclaimer__info-text">These are not all the side effects of Fybogel. For a full list see the leaflet inside your medicine packet.</p>
+          </div>
+
+          <h3>Serious allergic reaction</h3>
+          <p><span class="alertbanner"><strong>It's rare to have an allergic reaction to Fybogel but if this happens to you, stop taking the medicine and contact a doctor straight away.</strong></span></p>
+          <p>The warning signs of a <a href="http://www.nhs.uk/conditions/Anaphylaxis/Pages/Introduction.aspx">serious allergic reaction</a> are:</p>
+          <ul>
+          <li>getting a skin rash that may include itchy, red, swollen, blistered or peeling skin</li>
+          <li>wheezing</li>
+          <li>tightness in the chest or throat</li>
+          <li>having trouble breathing or talking</li>
+          <li>swelling of the mouth, face, lips, tongue or throat</li>
+          </ul>
+          <p>Serious allergic reaction is a medical emergency. Contact a doctor straight away if you think you or someone around you is having a serious allergic reaction.</p>
+
+          <div class="disclaimer__info">
+            <span class="disclaimer__info-icon"><span class="disclaimer__info-round">I<span class="disclaimer__info-hide">nfo: </span></span></span>
+            <p class="disclaimer__info-text">If you have a side effect from any medicine, including Fybogel, you can report it using the <a href="http://www.nhs.uk/chq/Pages/1962.aspx?CategoryID=73&amp;SubCategoryID=101">Yellow Card Scheme</a>.</p>
+          </div>
+
+        </div>
+      </details>
+
+
+
+      <h2 class="content__h2 content__h2--separator" id="taking-with-others">Taking Fybogel with other medicines</h2>
+      <p>Fybogel can change the way some medicines work.</p>
+      <p><span class="alertbanner"><strong>Tell your doctor or pharmacist if you’re taking any other medicines, including herbal remedies and supplements, before starting Fybogel.</strong></span></p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-6" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-6" aria-hidden="false">
+          <p>Tell your doctor if you are taking these medicines before starting Fybogel:</p>
+          <ul>
+          <li>carbamazepine (a medicine for <a href="http://www.nhs.uk/conditions/Epilepsy/Pages/Introduction.aspx">epilepsy</a> and mood problems)</li>
+          <li>digoxin (a heart medicine)</li>
+          <li>mesalazine (a medicine to treat gut problems)</li>
+          </ul>
+          <p>There is some evidence that Fybogel stops iron being taken in properly by the body. If you need iron supplements, it’s best to take them at least an hour before, or four hours after, you take Fybogel.</p>
+          <h3>Mixing Fybogel with complementary remedies</h3>
+          <p>There are no known problems with taking herbal and complementary remedies with Fybogel.</p>
+          <p>For safety, speak to your pharmacist or doctor before taking Fybogel if you routinely take any herbal or alternative remedies.</p>
+        </div>
+      </details>
+
+
+
+      <div class="concertinas concertinas--separator" id="common-questions">
+        <div class="concertinas--bg">
+          <h2 class="content__h2 content__h2--inconcertina">Common questions</h2>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-3" tabindex="0" aria-expanded="false">
+              <h3>When will I feel better?</h3>
+            </summary>
+            <div id="questions-3" aria-hidden="true">
+              <p>You should be able to poo normally after a few days.</p>
+              <p>Talk to your doctor if you don't feel any better after three days.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-4" tabindex="0" aria-expanded="false">
+              <h3>Are there any foods I shouldn't eat?</h3>
+            </summary>
+            <div id="questions-4" aria-hidden="true">
+              <p>No, there aren't any foods or drinks that don't mix with Fybogel.</p>
+              <p>But it might be a good idea to stop eating pastries, puddings, sweets, cheese and cake for a while as these foods can make constipation worse.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-6" tabindex="0" aria-expanded="false">
+              <h3>Can I take Fybogel after an operation?</h3>
+            </summary>
+            <div id="questions-6" aria-hidden="true">
+              <p>Yes, you can take Fybogel to relieve constipation after surgery.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-7" tabindex="0" aria-expanded="false">
+              <h3>Can I drink alcohol with it?</h3>
+            </summary>
+            <div id="questions-7" aria-hidden="true">
+              <p>Yes, you can drink alcohol with Fybogel.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-5" tabindex="0" aria-expanded="false">
+              <h3>Can I take it with IBS remedies?</h3>
+            </summary>
+            <div id="questions-5" aria-hidden="true">
+              <p>Yes, you can take Fybogel with IBS remedies such as Buscopan.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-7" tabindex="0" aria-expanded="false">
+              <h3>Can I take two laxatives together?</h3>
+            </summary>
+            <div id="questions-7" aria-hidden="true">
+              <p>For most people, one type of laxative will be enough to relieve constipation.</p>
+              <p>Occasionally, you may need to combine two types of laxatives that work in different ways to get your bowels moving again. Only take two laxatives together on the advice of your doctor or pharmacist as there is an increased chance of side effects.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+
+
+      <h2 class="content__h2 content__h2--separator" id="not-be-able">Who may not be able to take Fybogel</h2>
+      <p>Fybogel may not be suitable for everyone.</p>
+      <p>To make sure Fybogel is safe for you, tell your doctor or pharmacist if you have:</p>
+      <ul>
+      <li>an allergy to this or any other medicine</li>
+      <li>a bowel obstruction</li>
+      <li>muscle weakness of the bowel (colonic atony)</li>
+      <li>a rare genetic illness called <a href="http://www.nhs.uk/conditions/Phenylketonuria/Pages/Introduction.aspx">phenylketonuria</a> </li>
+      </ul>
+      <p>Tell your doctor if this medicine is meant for a child. Laxatives should only be given to children on the advice of a doctor.</p>
+
+
+
+      <h2 class="content__h2 content__h2--separator" id="pregnancy">Pregnancy and breastfeeding</h2>
+      <p>Fybogel is generally safe to take during pregnancy and while breastfeeding.</p>
+      <p>For safety, tell your doctor if you are pregnant or breastfeeding before starting lactulose.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-9" aria-hidden="false">
+          <p>Constipation is common at the end of pregnancy and just after having a baby.</p>
+          <p>If you're pregnant or breastfeeding, it's always better to try to ease constipation without taking a medicine.</p>
+          <p>Your doctor or midwife will first advise that you eat more fibre and drink plenty of fluids. You'll also be encouraged to do gentle exercise.</p>
+          <p>If dietary and lifestyle changes don't work, you may be recommended a laxative such as Fybogel.</p>
+        </div>
+      </details>
+
+
+      <h2 class="content__h2 content__h2--separator content__h2--outconcertina" id="more">More about lactulose</h2>
+      <div class="concertinas">
+        <details role="group">
+          <summary role="button" aria-controls="more-1" tabindex="0" aria-expanded="false">
+            <h3>How Fybogel works</h3>
+          </summary>
+          <div id="more-1" aria-hidden="true">
+            <p>Fybogel is known as a 'bulk laxative' because it helps to bulk up poo with fluid so it's softer and easier to pass.</p>          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-3" tabindex="0" aria-expanded="false">
+            <h3>Are other laxatives any better?</h3>
+          </summary>
+          <div id="more-3" aria-hidden="true">
+            <p>There are other types of laxatives. They work in a different way to Fybogel but are equally good at treating constipation. Some may work more quickly than Fybogel.</p>
+            <ul>
+            <li>Osmotic laxatives, for example lactulose. These draw water from the rest of the body into your bowel to soften poo and make it easier to pass. They take two or three days to work.</li>
+            <li>Stimulant laxatives, for example senna and bisacodyl. These speed up your bowels by stimulating the nerves that control the muscles lining your gut. They work more quickly than other laxatives. If you take them at bedtime, they work overnight.</li>
+            <li>Surface-wetting laxatives, for example arachis oil and docusate sodium. These allow water to get into poo to soften it and make it easier to pass.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-5" tabindex="0" aria-expanded="false">
+            <h3>Non-medical treatment options</h3>
+          </summary>
+          <div id="more-5" aria-hidden="true">
+            <p>It's often possible to relieve constipation without having to use laxatives. Before trying Fybogel, or to stop constipation coming back, it may help to make some lifestyle changes, such as:</p>
+            <ul>
+            <li>eating more fibre – you should aim for about 30g of fibre a day. High-fibre foods include fruit, vegetables and cereals. If you are not used to a high-fibre diet, it may be best to increase the amount of fibre you eat gradually</li>
+            <li>adding bulking agents, such as wheat bran, to your diet. These will help make your poo softer and easier to pass (although bran and fibre can sometimes make bloating worse)</li>
+            <li>drinking plenty of water – to keep poo soft</li>
+            <li>exercising regularly - keeping your body active will help to keep your digestive system moving</li>
+            </ul>
+          </div>
+        </details>
+
+      </div>
+
+
+      <div class="module module--separator module--links">
+        <div class="module__wrap module__wrap--bg">
+          <div class="module__row">
+            <div class="module__col">
+              <h2 class="module__header">Related conditions</h2>
+              <ul class="module__list">
+                <li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/Constipation/Pages/Introduction.aspx">Constipation in adults</a></li>
+								<li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/pregnancy-and-baby/pages/constipation-and-soiling.aspx">Constipation in children</a></li>
+								<li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/Irritable-bowel-syndrome/Pages/Introduction.aspx">Irritable bowel syndrome</a></li>
+								<li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/Ulcerative-colitis/Pages/Introduction.aspx">Ulcerative colitis</a></li>
+								<li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/Diverticular-disease-and-diverticulitis/Pages/Introduction.aspx">Diverticular disease</a></li>
+              </ul>
+            </div>
+            <div class="module__col">
+              <h2 class="module__header module__header--bordertop module__header--nobordertop">Useful resources <span class="header-text__small">(external links)</span></h2>
+              <ul class="module__list">
+                <li class="module__list-item"><a class="link__external" href="http://corecharity.org.uk/wp-content/uploads/2016/06/CORE-PATIENT-INFORMATION-CONSTIPATION.pdf">Core (constipation charity)</a></li>
+								<li class="module__list-item"><a class="link__external" href="http://www.eric.org.uk/">Eric (childhood constipation charity)</a></li>
+								<li class="module__list-item"><a class="link__external" href="https://www.theibsnetwork.org/">IBS Network</a></li>
+								<li class="module__list-item"><a class="link__external" href="https://www.crohnsandcolitis.org.uk/">Crohn&#39;s &amp; Colitis UK</a></li>
+								<li class="module__list-item"><a class="link__external" href="http://www.colostomyassociation.org.uk/">Colostomy Association</a></li>
+								<li class="module__list-item"><a class="link__external" href="https://healthunlocked.com/search/constipation">HealthUnlocked forum</a></li>
+						  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<script src="/public/javascripts/nav.js"></script>
+
+{% endblock %}
