@@ -1,0 +1,353 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  Senna - NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<div class="header__nav-container">
+  <div class="header__nav-container-wrap clear">
+    <div class="header__wrap">
+      <div class="header__content">
+        <h1 class="header__main"><a href="/senna" class="link__unstyled">Senna</a></h1>
+      </div>
+    </div>
+
+    <nav id="nav" class="nav" role="navigation">
+      <div class="nav__header-wrap">
+        <h2 class="nav__header"><span class="nav__header-title">Senna</span> <span class="nav__header-text">contents</span></h2>
+        <div class="nav__dropdown">
+          <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
+        </div>
+      </div>
+      <div id="nav__list-wrap" class="nav__list-wrap" aria-hidden="true">
+        <ul class="nav__list nav__list-nomore nav__list-column3">
+          <li class="nav__list-item"><a href="#key-facts" class="nav__list-link">Key facts</a></li>
+          <li class="nav__list-item"><a href="#how-when" class="nav__list-link">How and when to take</a></li>
+          <li class="nav__list-item"><a href="#side-effects" class="nav__list-link">Side effects</a></li>
+          <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link">Taking with other medicines</a></li>
+          <li class="nav__list-item"><a href="#common-questions" class="nav__list-link">Common questions</a></li>
+          <li class="nav__list-item"><a href="#not-be-able" class="nav__list-link">Who shouldn't take it</a></li>
+          <li class="nav__more arrow-down" aria-hidden="true"><a href="" class="nav__more-link" role="button">More</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#pregnancy" class="nav__list-link">Pregnancy advice</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#more" class="nav__list-link">More info</a></li>
+        </ul>
+        <ul class="nav__list nav__list-more clear">
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<main id="content" role="main" class="content">
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <p>Senna is a natural laxative made from the leaves and fruit of the senna plant. It is used to treat <a href="http://www.nhs.uk/conditions/Constipation/Pages/Introduction.aspx">constipation</a>.</p>
+      <p>Senna comes as tablets and as a syrupy liquid that you swallow.</p>
+      <p>It is available on prescription and to buy from pharmacies and supermarkets.</p>
+      <p>It is also combined with other ingredients in constipation remedies such as Manevac and Senokot Dual Relief tablets.</p>
+      <p>Senna isn’t usually for children unless recommended by a doctor.</p>
+
+
+      <h2 id="key-facts" class="content__h2 noborder">Key facts</h2>
+      <ul class="key-facts">
+        <li>Senna relieves constipation by stimulating muscles in the bowels to contract and push poo out.</li>
+        <li>The most common side effects are stomach cramps and diarrhoea. These are usually mild and short-lived.</li>
+        <li>Don’t take senna for more than a week without consulting a doctor. If you take it for longer, your bowel can start to rely on it to work properly.</li>
+        <li>Pee may turn a red-brown colour while you take senna. This is harmless and returns to normal after treatment has finished.</li>
+      </ul>
+
+      <div class="disclaimer__info">
+        <span class="disclaimer__info-icon"><span class="disclaimer__info-round">I<span class="disclaimer__info-hide">nfo: </span></span></span>
+        <p class="disclaimer__info-text">Check the leaflet inside your medicine packet for specific information about the brand that you are taking.</p>
+      </div>
+
+
+      <h2 class="content__h2 content__h2--separator" id="how-when">How and when to take</h2>
+      <p>Take senna once a day at bedtime.</p>
+      <p>You can take senna with or without food.</p>
+      <p>The usual dose is two tablets, or 5-10 mls of liquid medicine. Doses are lower for children.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-1" aria-hidden="false">
+          <p>The normal dose of senna tablets for constipation in:</p>
+          <ul>
+          <li>adults and children aged 12 and over is two tablets at bedtime</li>
+          <li>children aged between 6 and 11 is one tablet at bedtime</li>
+          </ul>
+          <p>The normal dose of senna syrup for constipation in:</p>
+          <ul>
+          <li>adults and children aged 6 and over is one or two 5ml spoonfuls at bedtime</li>
+          <li>children aged 2 to 5 is half to one 5ml spoonful at bedtime.</li>
+          </ul>
+          <p>Liquid senna comes with a plastic measuring cup or spoon to help you take the right amount. Do not use a kitchen spoon as it will not give the right amount. If you don’t have a dose measuring device, ask your pharmacist for one.</p>
+          <p>Senna takes about eight hours to work. It's best to take it at bedtime so it works overnight.</p>
+          <p>Drink plenty of fluids (6 to 8 glasses a day) while you are taking senna or your constipation may get worse</p>
+          <h3>What if I forget to take it?</h3>
+          <p>If you forget a dose of senna, don’t worry, just take the next dose the following evening.</p>
+          <p>Never take two doses at the same time or an extra dose to make up for a forgotten one.</p>
+          <h3>What if I take too much?</h3>
+          <p>Accidentally taking an extra dose of senna is unlikely to harm you.</p>
+          <p>You may get stomach pain and diarrhoea but this should ease off within a day or two.</p>
+          <p>If you are worried, talk to your doctor or pharmacist. </p>
+        </div>
+      </details>
+
+
+
+
+      <h2 class="content__h2 content__h2--separator" id="side-effects">Side effects</h2>
+      <p>The most common side effects are stomach cramps and diarrhoea. These are usually mild and short-lived.</p>
+      <p>Serious side effects are extremely rare.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-3" aria-hidden="false">
+          <h3>Common side effects</h3>
+          <p>Like all medicines, senna may cause side effects in some people, but many people have no side effects or only minor ones.</p>
+          <p>The most common side effects, which happen in up to one in 10 people, are <a href="http://www.nhs.uk/conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx">stomach cramps</a> and diarrhoea. You are particularly likely to get stomach cramps and diarrhoea with senna if you have constipation related to <a href="http://www.nhs.uk/conditions/Irritable-bowel-syndrome/Pages/Introduction.aspx">irritable bowel syndrome</a>.</p>
+          <p>Pee may turn a red-brown colour while you are taking senna. This is normal and returns to normal after treatment has ended.</p>
+          <p>If any side effects carry on, or if you are worried, talk to your doctor or pharmacist.</p>
+          <h3>Serious side effects</h3>
+          <p>It’s very rare to have a serious side effect from senna.</p>
+          <p>Stop taking senna and tell your doctor straight away if you get a severe raised, red, itchy skin rash on any part or all of your body</p>
+          <h3>Serious allergic reaction</h3>
+          <p><span class="alertbanner">It's rare to have an allergic reaction to senna but if this happens to you, stop taking the medicine and contact a doctor straightaway.</span></p>
+          <p>The warning signs of a <a href="http://www.nhs.uk/conditions/Anaphylaxis/Pages/Introduction.aspx">serious allergic reaction</a> are:</p>
+          <ul>
+          <li>getting a skin rash that may include itchy, red, swollen, blistered or peeling skin</li>
+          <li>wheezing</li>
+          <li>tightness in the chest or throat</li>
+          <li>having trouble breathing or talking</li>
+          <li>swelling of the mouth, face, lips, tongue or throat</li>
+          </ul>
+          <p>Serious allergic reaction is a medical emergency. Contact a doctor straight away if you think you or someone around you is having a serious allergic reaction.</p>
+
+          <div class="disclaimer__info">
+            <span class="disclaimer__info-icon"><span class="disclaimer__info-round">I<span class="disclaimer__info-hide">nfo: </span></span></span>
+            <p class="disclaimer__info-text">These are not all the side effects of senna. For a full list see the leaflet inside your medicine packet.</p>
+          </div>
+
+          <h3>Coping with side effects</h3>
+          <h4>What to do about diarrhoea</h4>
+          <p>Drink plenty of water or other fluids. It may also help to take oral rehydration solutions which you can buy from a pharmacy to prevent <a href="http://www.nhs.uk/conditions/Dehydration/Pages/Introduction.aspx">dehydration</a>.</p>
+          <p>Don’t take any other medicines to treat diarrhoea without speaking to a pharmacist or doctor.</p>
+          <h3>What to do about stomach cramps</h3>
+          <p>If you get stomach cramps, reduce your dose of senna until it goes away.</p>
+
+          <div class="disclaimer__info">
+            <span class="disclaimer__info-icon"><span class="disclaimer__info-round">I<span class="disclaimer__info-hide">nfo: </span></span></span>
+            <p class="disclaimer__info-text">If you have a side effect from any medicine, including senna, you can report it using the <a href="http://www.nhs.uk/chq/Pages/1962.aspx?CategoryID=73&amp;SubCategoryID=101">Yellow Card Scheme</a>.</p>
+          </div>
+
+        </div>
+      </details>
+
+
+
+      <h2 class="content__h2 content__h2--separator" id="taking-with-others">Taking senna with other medicines</h2>
+      <p>There are some medicines that do not mix well with senna and can change the way it works.</p>
+      <p><span class="alertbanner">For safety, tell your doctor or pharmacist if you take any other medicines, including herbal remedies and supplements, before starting senna.</span></p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-6" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-6" aria-hidden="false">
+          <p>Tell your doctor if you are taking these medicines before starting senna:</p>
+          <ul>
+          <li>a heart medicine such as digoxin or quinidine</li>
+          <li>a diuretic (water tablet)</li>
+          <li>steroid tablets</li>
+          <li>liquorice root preparations.</li>
+          </ul>
+          <h3>Mixing senna with complementary remedies</h3>
+          <p>There are no known problems with taking herbal and complementary remedies with senna.</p>
+          <p>For safety, speak to your pharmacist or doctor before taking senna if you routinely take any herbal or alternative remedies.</p>
+        </div>
+      </details>
+
+
+
+
+      <div class="concertinas concertinas--separator" id="common-questions">
+        <div class="concertinas--bg">
+          <h2 class="content__h2 content__h2--inconcertina">Common questions</h2>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-3" tabindex="0" aria-expanded="false">
+              <h3>When will I feel better?</h3>
+            </summary>
+            <div id="questions-3" aria-hidden="true">
+              <p>Senna usually takes 8-10 hours to work, so you should start to feel better within a day of taking it.</p>
+              <p>If you haven't had a poo after taking senna for three days, talk to your doctor.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-4" tabindex="0" aria-expanded="false">
+              <h3>Are there any foods I shouldn't eat?</h3>
+            </summary>
+            <div id="questions-4" aria-hidden="true">
+              <p>There aren't any foods or drinks that don't mix with senna.</p>
+              <p>But it might be a good idea to stop eating pastries, puddings, sweets, cheese and cake for a while as these foods can make constipation worse.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-5" tabindex="0" aria-expanded="false">
+              <h3>Can I take senna after surgery?</h3>
+            </summary>
+            <div id="questions-5" aria-hidden="true">
+              <p>It's quite common to have constipation after surgery. Using a laxative may help relieve the discomfort.</p>
+              <p>If you have constipation after an operation, it's better to use an osmotic laxative like lactulose syrup because it's gentler on your tummy muscles than senna.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-7" tabindex="0" aria-expanded="false">
+              <h3>Can I drink alcohol with it?</h3>
+            </summary>
+            <div id="questions-7" aria-hidden="true">
+              <p>Yes, you can drink alcohol with senna.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-7" tabindex="0" aria-expanded="false">
+              <h3>Can I take two laxatives together?</h3>
+            </summary>
+            <div id="questions-7" aria-hidden="true">
+              <p>For most people, one type of laxative will be enough to relieve constipation.</p>
+              <p>Occasionally, you may need to combine two types of laxatives that work in different ways to get your bowels moving again. Only take two laxatives together on the advice of your doctor or pharmacist as there is an increased chance of side effects.</p>            </div>
+          </details>
+
+        </div>
+      </div>
+
+
+      <h2 class="content__h2 content__h2--separator" id="not-be-able">Who may not be able to take senna?</h2>
+      <p>Senna may not be suitable for everyone.</p>
+      <p>To make sure senna is safe for you, tell your doctor or pharmacist before starting senna if you have:</p>
+      <ul>
+      <li>ever had an allergic reaction to this or any other medicine</li>
+      <li>a bowel obstruction</li>
+      <li>a bowel disorder such as <a href="http://www.nhs.uk/conditions/Crohns-disease/Pages/Introduction.aspx">Crohn’s disease</a> or <a href="http://www.nhs.uk/conditions/Ulcerative-colitis/Pages/Introduction.aspx">ulcerative colitis</a></li>
+      <li><a href="http://www.nhs.uk/conditions/Appendicitis/Pages/Introduction.aspx">appendicitis</a></li>
+      </ul>
+      <p>Tell your doctor if this medicine is meant for a child. Laxatives should only be given to children on the advice of a doctor.</p>
+
+
+
+      <h2 class="content__h2 content__h2--separator" id="pregnancy">Pregnancy and breastfeeding</h2>
+      <p>Senna may not be suitable if you're pregnant or breastfeeding because it's partly absorbed by your digestive system.</p>
+      <p>Lactulose or Fybogel are safer laxatives to take during pregnancy and while breastfeeding.</p>
+      <p>For safety, tell your doctor that you are pregnant or breastfeeding before taking senna.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-9" aria-hidden="false">
+          <p>Constipation is common at the end of pregnancy and just after having a baby.</p>
+          <p>If you're pregnant or breastfeeding, it's always better to try to ease constipation without taking a medicine.</p>
+          <p>Your doctor or midwife will first advise that you eat more fibre and drink plenty of liquids. You'll also be encouraged to do gentle exercise.</p>
+          <p>If dietary and lifestyle changes don't work, you may be recommended a laxative.</p>
+          <p>Laxatives are usually safe for pregnant women to take because most of them aren't absorbed by the digestive system. This means that your baby won't feel the effects of the laxative.</p>
+          <p>Senna may not be suitable because it's partly absorbed by the digestive system.</p>
+          <p>Laxatives that are safer to use during pregnancy and while breastfeeding are lactulose and Fybogel.</p>
+        </div>
+      </details>
+
+
+      <h2 class="content__h2 content__h2--separator content__h2--outconcertina" id="more">More about senna</h2>
+      <div class="concertinas">
+        <details role="group">
+          <summary role="button" aria-controls="more-1" tabindex="0" aria-expanded="false">
+            <h3>How senna works</h3>
+          </summary>
+          <div id="more-1" aria-hidden="true">
+            <p>Senna stimulates the muscles that line your gut, helping them to move poo along your bowel to your anus. It's known as a 'stimulant laxative'.</p>          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-2" tabindex="0" aria-expanded="false">
+            <h3>How long should I take senna for?</h3>
+          </summary>
+          <div id="more-2" aria-hidden="true">
+            <p>Take senna for a few days only. Any longer and your bowel can start to rely on it, rather than working on its own.</p>
+            <p>If you haven't had a poo after taking senna for three days, talk to your doctor.</p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-3" tabindex="0" aria-expanded="false">
+            <h3>Are other laxatives any better?</h3>
+          </summary>
+          <div id="more-3" aria-hidden="true">
+            <p>There are other types of laxatives. They work in a different way to senna but are equally good at treating constipation. Some take longer to work than senna.</p>
+            <ul>
+            <li>bulk-forming laxatives, for example Fybogel and methylcellulose. These increase the 'bulk' or weight of poo which in turn stimulates your bowels to push it out. They take two or three days to work.</li>
+            <li>osmotic laxatives, for example lactulose syrup. These draw water from the rest of the body into your bowel to soften poo and make it easier to pass. They take at least two days to work.</li>
+            <li>surface-wetting laxatives, for example arachis oil and docusate sodium. These let water into poo to soften it and make it easier to pass.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-5" tabindex="0" aria-expanded="false">
+            <h3>Non-medical treatment options</h3>
+          </summary>
+          <div id="more-5" aria-hidden="true">
+            <p>It's often possible to relieve constipation without having to use laxatives. Before trying senna, or to stop constipation coming back, it may help to make some lifestyle changes, such as:</p>
+            <ul>
+            <li>eating more fibre – you should aim for about 30g of fibre a day. High-fibre foods include fruit, vegetables and cereals. If you are not used to a high-fibre diet, it may be best to increase the amount of fibre you eat gradually.</li>
+            <li>adding bulking agents, such as wheat bran, to your diet. These will help make your poo softer and easier to pass (although bran and fibre can sometimes make bloating worse)</li>
+            <li>drinking plenty of water – to keep poo soft.</li>
+            <li>exercising regularly - keeping your body active will help to keep your digestive system moving.</li>
+            </ul>
+          </div>
+        </details>
+
+      </div>
+
+
+      <div class="module module--separator module--links">
+        <div class="module__wrap module__wrap--bg">
+          <div class="module__row">
+            <div class="module__col">
+              <h2 class="module__header">Related conditions</h2>
+              <ul class="module__list">
+                <li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/Constipation/Pages/Introduction.aspx">Constipation in adults</a></li>
+                <li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/pregnancy-and-baby/pages/constipation-and-soiling.aspx">Constipation in children</a></li>
+                <li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/Irritable-bowel-syndrome/Pages/Introduction.aspx">Irritable bowel syndrome</a></li>
+              </ul>
+            </div>
+            <div class="module__col">
+              <h2 class="module__header module__header--bordertop module__header--nobordertop">Useful resources <span class="header-text__small">(external links)</span></h2>
+              <ul class="module__list">
+                <li class="module__list-item"><a class="link__external" href="http://corecharity.org.uk/wp-content/uploads/2016/06/CORE-PATIENT-INFORMATION-CONSTIPATION.pdf">Core (constipation charity)</a></li>
+                <li class="module__list-item"><a class="link__external" href="http://www.eric.org.uk/">Eric (childhood constipation charity)</a></li>
+                <li class="module__list-item"><a class="link__external" href="https://www.theibsnetwork.org/">The IBS Network</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<script src="/public/javascripts/nav.js"></script>
+
+{% endblock %}
