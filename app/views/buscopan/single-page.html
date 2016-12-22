@@ -1,0 +1,377 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  Buscopan - NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<div class="header__nav-container">
+  <div class="header__nav-container-wrap clear">
+    <div class="header__wrap">
+      <div class="header__content">
+        <h1 class="header__main"><a href="/buscopan" class="link__unstyled">Buscopan</a></h1>
+      </div>
+    </div>
+
+    <nav id="nav" class="nav" role="navigation">
+      <div class="nav__header-wrap">
+        <h2 class="nav__header"><span class="nav__header-title">Buscopan</span> <span class="nav__header-text">contents</span></h2>
+        <div class="nav__dropdown">
+          <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
+        </div>
+      </div>
+      <div id="nav__list-wrap" class="nav__list-wrap" aria-hidden="true">
+        <ul class="nav__list nav__list-nomore nav__list-column3">
+          <li class="nav__list-item"><a href="#key-facts" class="nav__list-link">Key facts</a></li>
+          <li class="nav__list-item"><a href="#how-when" class="nav__list-link">How much to take</a></li>
+          <li class="nav__list-item"><a href="#side-effects" class="nav__list-link">Side effects</a></li>
+          <li class="nav__list-item"><a href="#not-be-able" class="nav__list-link">Who shouldn't take it</a></li>
+          <li class="nav__list-item"><a href="#common-questions" class="nav__list-link">Common questions</a></li>
+          <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link">Taking with other medicines</a></li>
+          <li class="nav__more arrow-down" aria-hidden="true"><a href="" class="nav__more-link" role="button">More</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#pregnancy" class="nav__list-link">Pregnancy advice</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#more" class="nav__list-link">More info</a></li>
+        </ul>
+        <ul class="nav__list nav__list-more clear">
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<main id="content" role="main" class="content">
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <p>Buscopan is an antispasmodic medicine often used to relieve painful <a href="http://www.nhs.uk/conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx">tummy cramps</a> and <a href="http://www.nhs.uk/conditions/Irritable-bowel-syndrome/Pages/Introduction.aspx">irritable bowel syndrome</a> (IBS).</p>
+      <p>Buscopan contains the active ingredient, hyoscine butylbromide.<strong><span> </span></strong>It’s not the same as hyoscine hydrobromide, which is a different medicine taken to prevent <a href="http://www.nhs.uk/conditions/Motion-sickness/Pages/Introduction.aspx">travel sickness</a>.</p>
+      <p>Buscopan comes as tablets which are available on prescription and to buy from pharmacies. It can also be given by injection but this is usually only done in hospital.</p>
+      <p>The medicine is also called by brand names Buscopan IBS Relief and Buscopan Cramps.</p>
+      <p>It can be taken by children aged six and over.</p>
+
+      <h2 id="key-facts" class="content__h2 noborder">Key facts</h2>
+      <ul class="key-facts">
+        <li>Buscopan relieves the pain of tummy cramps by helping your digestive system to relax.</li>
+        <li>The medicine works very quickly - you can expect painful cramps to ease within 15 minutes.</li>
+        <li>It's unusual to have any side effects but some people get a dry mouth, constipation and blurred vision.</li>
+        <li>Most people take Buscopan for a few days only, but you can safely take it for many months if your doctor has said it's ok to do so.</li>
+      </ul>
+
+      <div class="disclaimer__info">
+        <span class="disclaimer__info-icon"><span class="disclaimer__info-round">I<span class="disclaimer__info-hide">nfo: </span></span></span>
+        <p class="disclaimer__info-text">Check the leaflet inside your medicine packet for specific information about the brand that you are taking.</p>
+      </div>
+
+
+      <h2 class="content__h2 content__h2--separator" id="how-when">How much to take</h2>
+      <p>Take Buscopan tablets as and when you have painful <a href="http://www.nhs.uk/conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx">tummy cramps</a>.</p>
+      <p>Each tablet contains 10mg of hyoscine butylbromide.</p>
+      <p>The usual dose for adults and children aged six years and over is 1 or 2 tablets taken three or four times a day.</p>
+      <p>Buscopan doesn't upset the stomach so you can take it with or without food.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-1" aria-hidden="false">
+          <p>The usual starting dose in adults and children aged 12 years and over is one tablet taken three times a day. If you need more relief, you can increase the dose to a maximum of two tablets taken four times a day.</p>
+          <p>In children aged between 6 and 11 years old, the usual dose is one tablet taken three times a day.</p>
+          <p>Do not give Buscopan to a child younger than six.</p>
+          <h3>What if I forget to take it?</h3>
+          <p>If you forget to take a dose, take it as soon as you remember. If you don't remember until it is time for the next dose, skip the missed dose.</p>
+          <p>Never take two doses at the same time or an extra dose to make up for a forgotten one.</p>
+          <h3>What if I take too much?</h3>
+          <p>Accidentally taking an extra dose of Buscopan is unlikely to harm you.</p>
+          <p>Speak to your pharmacist or doctor if you are worried, or take more than one extra dose.</p>
+        </div>
+      </details>
+
+
+
+
+      <h2 class="content__h2 content__h2--separator" id="side-effects">Side effects</h2>
+      <p>Not many people get side effects with Buscopan. If they do happen, the most common side effects are dry mouth, constipation, blurred vision and a faster heartbeat.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-3" aria-hidden="false">
+          <p>Like all medicines, Buscopan can cause side effects in some people but most people have no side effects or only minor ones.</p>
+          <p>These side effects happen in up to one in 100 people.</p>
+          <p>Tell your doctor or pharmacist if they bother you or don't go away:</p>
+          <ul>
+          <li>dry mouth</li>
+          <li>constipation</li>
+          <li>blurred vision</li>
+          <li>fast heart rate</li>
+          </ul>
+          <h3>Serious side effects</h3>
+          <p>It happens rarely, but some people may have a serious side effect when taking Buscopan.</p>
+          <p>Stop taking Buscopan and tell a doctor straight away if you:</p>
+          <ul>
+          <li>get a painful red eye with loss of vision (this could be caused by an increase in pressure in your eye)</li>
+          <li>find it hard to pee</li>
+          </ul>
+
+          <div class="disclaimer__info">
+            <span class="disclaimer__info-icon"><span class="disclaimer__info-round">I<span class="disclaimer__info-hide">nfo: </span></span></span>
+            <p class="disclaimer__info-text">These are not all the side effects of Buscopan. For a full list see the leaflet inside your medicine packet.</p>
+          </div>
+
+          <h3>Serious allergic reaction</h3>
+          <p><span class="alertbanner"><strong>It's rare to have an allergic reaction to Buscopan but if this happens to you, stop taking the medicine and contact a doctor straight away.</strong></span></p>
+          <p>The warning signs of a <a href="http://www.nhs.uk/conditions/Anaphylaxis/Pages/Introduction.aspx">serious allergic reaction</a> are:</p>
+          <ul>
+          <li>getting a skin rash that may include itchy, red, swollen, blistered or peeling skin</li>
+          <li>wheezing</li>
+          <li>tightness in the chest or throat</li>
+          <li>having trouble breathing or talking</li>
+          <li>swelling of the mouth, face, lips, tongue or throat</li>
+          </ul>
+
+          <div class="disclaimer__info">
+            <span class="disclaimer__info-icon"><span class="disclaimer__info-round">I<span class="disclaimer__info-hide">nfo: </span></span></span>
+            <p class="disclaimer__info-text">If you have a side effect from any medicine, including Buscopan, you can report it using the <a href="http://www.nhs.uk/chq/Pages/1962.aspx?CategoryID=73&amp;SubCategoryID=101">Yellow Card Scheme</a>.</p>
+          </div>
+
+        </div>
+      </details>
+
+
+      <h2 class="content__h2 content__h2--separator" id="not-be-able">Who may not be able to take Buscopan</h2>
+      <p>Buscopan may not be suitable for everyone.</p>
+      <p>To make sure it is safe for you, tell your doctor or pharmacist before starting Buscopan if you have:</p>
+      <ul>
+      <li>an allergy to the active ingredient, hyoscine butylbromide</li>
+      <li>a rare type of <a href="http://www.nhs.uk/conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx">glaucoma</a> called angle-closure glaucoma (Buscopan can increase the pressure in the eye and make your glaucoma worse)</li>
+      <li>a very enlarged bowel</li>
+      <li><a href="http://www.nhs.uk/conditions/Myasthenia-gravis/Pages/Introduction.aspx">myasthenia gravis</a> (an illness where the muscles become weak and tire easily)</li>
+      </ul>
+      <p>Buscopan tablets are not usually recommended for children under the age of six.</p>
+
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-6" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-6" aria-hidden="false">
+          <p>Check with your doctor or pharmacist before taking Buscopan if you:</p>
+          <ul>
+          <li>are trying for a baby, are pregnant or you are breastfeeding</li>
+          <li>cannot digest some sugars (as Buscopan tablets contain sugars)</li>
+          <li>have a very fast heart rate or any other heart problems (Buscopan tablets may make the heart beat speed up even more)</li>
+          <li>have difficulty peeing, for example men with prostate problems</li>
+          <li>have a gut blockage</li>
+          <li>have an <a href="http://www.nhs.uk/conditions/Thyroid-over-active/Pages/Introduction.aspx">overactive thyroid</a></li>
+          <li>have a temperature above 38C</li>
+          <li>have a digestive problems such as <a href="http://www.nhs.uk/conditions/Gastroesophageal-reflux-disease/Pages/Introduction.aspx">reflux</a> disease, severe <a href="http://www.nhs.uk/conditions/Constipation/Pages/Introduction.aspx">constipation</a> or <a href="http://www.nhs.uk/conditions/ulcerative-colitis/Pages/Introduction.aspx">ulcerative colitis</a></li>
+          </ul>
+          <p>There are some extra safety checks to think about before you take Buscopan Cramps and Buscopan IBS relief.</p>
+          <p>For safety, talk to your doctor or pharmacist before taking Buscopan Cramps and Buscopan IBS if you:</p>
+          <ul>
+          <li>are 40 years or over</li>
+          <li>have recently passed blood in your poo</li>
+          <li>are feeling sick or vomiting</li>
+          <li>have lost your appetite or lost weight</li>
+          <li>are looking pale and feeling tired</li>
+          <li>have unusual vaginal bleeding or <a href="http://www.nhs.uk/conditions/vaginal-discharge/Pages/Introduction.aspx">vaginal discharge</a></li>
+          <li>have recently travelled abroad (in case you have picked up a stomach bug)</li>
+          </ul>
+          <p>Only take Buscopan IBS relief tablets if your doctor has said that you have irritable bowel syndrome.</p>
+        </div>
+      </details>
+
+
+      <div class="concertinas concertinas--separator" id="common-questions">
+        <div class="concertinas--bg">
+          <h2 class="content__h2 content__h2--inconcertina">Common questions</h2>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-3" tabindex="0" aria-expanded="false">
+              <h3>When will I feel better?</h3>
+            </summary>
+            <div id="questions-3" aria-hidden="true">
+              <p>Buscopan tablets start to work within 15 minutes. Talk to your pharmacist or doctor if your symptoms change, get worse or do not get better within two weeks.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-4" tabindex="0" aria-expanded="false">
+              <h3>Can I drink alcohol?</h3>
+            </summary>
+            <div id="questions-4" aria-hidden="true">
+              <p>Yes, you can drink alcohol with Buscopan.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-5" tabindex="0" aria-expanded="false">
+              <h3>Can I drive while taking Buscopan?</h3>
+            </summary>
+            <div id="questions-5" aria-hidden="true">
+              <p>Buscopan can cause blurred vision or dizziness in some people. If this happens to you, don't drive or use machinery or tools until it's worn off.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-6" tabindex="0" aria-expanded="false">
+              <h3>Are there other IBS remedies?</h3>
+            </summary>
+            <div id="questions-6" aria-hidden="true">
+              <p>There are other IBS remedies including peppermint oil (Colpermin) and mebeverine (Colofac).</p>
+              <p>Peppermint oil and mebeverine are also antispasmodic remedies. They work in a similar way to Buscopan to relax tummy muscles and ease painful cramps.</p>
+              <p>Both peppermint oil and mebeverine are available to buy from high street pharmacies. Mebeverine is also available on prescription.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-7" tabindex="0" aria-expanded="false">
+              <h3>Can I take Buscopan with other IBS remedies?</h3>
+            </summary>
+            <div id="questions-7" aria-hidden="true">
+              <p>Usually it's best not to take Buscopan at the same time as peppermint oil or mebeverine – just take one or the other.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-7" tabindex="0" aria-expanded="false">
+              <h3>Can I take Buscopan with painkillers?</h3>
+            </summary>
+            <div id="questions-7" aria-hidden="true">
+              <p>Yes, you can take Buscopan at the same time as everyday painkillers like paracetamol and ibuprofen.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+
+
+      <h2 class="content__h2 content__h2--separator" id="taking-with-others">Taking Buscopan with other medicines</h2>
+      <p>Some medicines and Buscopan can interfere with each other and increase the chances of you having side effects.</p>
+      <p><span class="alertbanner">Tell your doctor or pharmacist if you are taking any other medicines, including herbal remedies and supplements, before starting Buscopan.</span></p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-8" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-8" aria-hidden="false">
+          <p>If you take Buscopan at the same time as some <a href="http://www.nhs.uk/conditions/Motion-sickness/Pages/Introduction.aspx">travel sickness</a> medicines, such as domperidone and metoclopramide, they can cancel each other out and stop each other from working. This is because <strong data-redactor-tag="strong">metoclopramide</strong> and <strong data-redactor-tag="strong">domperidone</strong> increase the movement of the gut, whereas Buscopan reduces it.</p>
+          <p>Some medicines increase the risk of side effects if they're taken at the same time as Buscopan including:</p>
+          <ul>
+          <li>codeine</li>
+          <li>medicines to treat allergies such as antihistamines</li>
+          <li>some antidepressants such as amitriptyline </li>
+          <li>some medicines for mental health problems like <a href="http://www.nhs.uk/conditions/Schizophrenia/Pages/Introduction.aspx">schizophrenia</a> or <a href="http://www.nhs.uk/conditions/Bipolar-disorder/Pages/Introduction.aspx">bipolar disorder</a> such as clozapine or chlorpromazine</li>
+          <li>amantadine (taken for <a href="http://www.nhs.uk/conditions/Parkinsons-disease/Pages/Introduction.aspx">Parkinson’s disease</a>)</li>
+          <li>quinidine or disopyramide (heart medicines)</li>
+          <li>some inhaled <a href="http://www.nhs.uk/conditions/Asthma/Pages/Introduction.aspx">asthma</a> medicines including salbutamol, iptratropium, tiotropium</li>
+          </ul>
+          <h3>Mixing Buscopan with complementary remedies</h3>
+          <p>There are no known problems with taking herbal and complementary remedies at the same time as Buscopan.</p>
+          <p>For safety, speak to your pharmacist before taking Buscopan if you routinely take any herbal or alternative remedies.</p>
+        </div>
+      </details>
+
+      <h2 class="content__h2 content__h2--separator" id="pregnancy">Pregnancy and breastfeeding</h2>
+      <p>Buscopan isn't usually recommended during pregnancy and while breastfeeding.</p>
+      <p><span class="alertbanner">Talk to your doctor before taking Buscopan if you’re trying to become pregnant, are pregnant or you are breastfeeding.</span></p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-9" aria-hidden="false">
+          <p>Buscopan hasn't been fully tested in pregnant women so it's not possible to say it's absolutely safe to take in pregnancy.</p>
+          <p>Talk to your doctor about the pros and cons of taking this medicine in pregnancy.</p>
+          <h3>Buscopan and breastfeeding</h3>
+          <p>Tiny amounts of Buscopan may get into breast milk, but it’s not known whether it harms the baby.</p>
+          <p>There is a small risk that Buscopan may decrease your milk production.</p>
+          <p>Talk to your doctor about the pros and cons of taking this medicine while you are breastfeeding.</p>
+        </div>
+      </details>
+
+
+      <h2 class="content__h2 content__h2--separator content__h2--outconcertina" id="more">More about Buscopan</h2>
+      <div class="concertinas">
+        <details role="group">
+          <summary role="button" aria-controls="more-1" tabindex="0" aria-expanded="false">
+            <h3>How Buscopan works</h3>
+          </summary>
+          <div id="more-1" aria-hidden="true">
+            <p>Buscopan relieves the pain of tummy cramps by helping your digestive system to relax.</p>
+            <p>It does this by reducing the wave-like contractions of the muscle in the walls of the stomach and bowel.</p>
+            <p>Buscopan helps to treat tummy cramps but does not cure them.</p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-2" tabindex="0" aria-expanded="false">
+            <h3>The difference between Buscopan products</h3>
+          </summary>
+          <div id="more-2" aria-hidden="true">
+            <p>Buscopan Cramps and Buscopan IBS Relief both contain the same active ingredient, hyoscine butylbromide 10mg, but they are for different medical problems.</p>
+            <p>Buscopan Cramps is meant for general tummy cramps and for the symptoms of irritable bowel syndrome (IBS). It can be taken by adults and children 6 years old and over.</p>
+            <p>Buscopan IBS Relief is meant only for IBS that has been confirmed by a doctor. It can be taken by adults and children 12 years old and over.</p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-3" tabindex="0" aria-expanded="false">
+            <h3>Taking Buscopan for a long time</h3>
+          </summary>
+          <div id="more-3" aria-hidden="true">
+            <p>It’s safe to take Buscopan for as long as you need to provided that your doctor has said that it’s ok and you aren't having any side effects.</p>
+            <p>Buscopan seems to be a very safe medicine. It's been available for more than 50 years and there haven’t been any problems in people taking it, even for many months.</p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-5" tabindex="0" aria-expanded="false">
+            <h3>Non-medical treatment options</h3>
+          </summary>
+          <div id="more-5" aria-hidden="true">
+            <p>There are a number of lifestyle changes you can make to prevent or ease painful tummy cramps and IBS.</p>
+            <p>It can really help to understand which, if any, foods trigger your cramps and then reduce or remove them from your diet. Common triggers include caffeine, fizzy drinks and fried food. </p>
+            <p>It can also help to control your stress levels, for example by doing breathing exercises or trying a relaxation therapy such as Yoga, pilates or meditation.</p>
+            <p>And aim to exercise three times a week for at least 30 minutes - regular activity is good for your digestive system.</p>
+          </div>
+        </details>
+
+      </div>
+
+
+      <div class="module module--separator module--links">
+        <div class="module__wrap module__wrap--bg">
+          <div class="module__row">
+            <div class="module__col">
+              <h2 class="module__header">Related conditions</h2>
+              <ul class="module__list">
+                <li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx">Stomach cramps</a></li>
+								<li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/irritable-bowel-syndrome/Pages/Introduction.aspx">Irritable bowel syndrome (IBS)</a></li>
+							</ul>
+            </div>
+            <div class="module__col">
+              <h2 class="module__header module__header--bordertop module__header--nobordertop">Useful resources <span class="header-text__small">(external links)</span></h2>
+              <ul class="module__list">
+                <li class="module__list-item"><a class="link__external" href="https://www.theibsnetwork.org/">IBS Network</a></li>
+								<li class="module__list-item"><a class="link__external" href="http://corecharity.org.uk/">CORE Charity</a></li>
+								<li class="module__list-item"><a class="link__external" href="https://www.bda.uk.com/foodfacts/IBSfoodfacts.pdf">British Dietetic Association: IBS and diet</a></li>
+								<li class="module__list-item"><a class="link__external" href="http://painconcern.org.uk/">Pain Concern</a></li>
+								<li class="module__list-item"><a class="link__external" href="https://healthunlocked.com/theibsnetwork">HealthUnlocked IBS forum</a></li>
+							</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<script src="/public/javascripts/nav.js"></script>
+
+{% endblock %}
