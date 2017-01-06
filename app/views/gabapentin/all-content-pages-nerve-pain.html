@@ -6,20 +6,52 @@
 
 {% block content %}
 
+<div class="header__nav-container">
+  <div class="header__nav-container-wrap clear">
+    <div class="header__wrap">
+      <div class="header__content">
+        <h1 class="header__main"><a href="/gabapentin" class="link__unstyled">Gabapentin</a></h1>
+      </div>
+    </div>
+
+    <ol class="nav-types">
+      <li><a href="/gabapentin/all-content-pages-epilepsy">Gabapentin for epilepsy</a></li>
+      <li>Gabapentin for nerve pain</li>
+      <li><a href="/gabapentin/all-content-pages-migraine">Gabapentin for migraine</a></li>
+    </ol>
+
+    <nav id="nav" class="nav nav--pages" role="navigation">
+      <div class="nav__header-wrap">
+        <h2 class="nav__header"><span class="nav__header-title">Gabapentin</span> <span class="nav__header-text">contents</span></h2>
+        <div class="nav__dropdown">
+          <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
+        </div>
+      </div>
+      <div id="nav__list-wrap" class="nav__list-wrap" aria-hidden="true">
+        <ul class="nav__list nav__list-nomore nav__list-column3">
+          <li class="nav__list-item"><a href="#key-facts" class="nav__list-link">Key facts</a></li>
+          <li class="nav__list-item"><a href="#how-when" class="nav__list-link">How and when to take</a></li>
+          <li class="nav__list-item"><a href="#side-effects" class="nav__list-link">Side effects</a></li>
+          <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link">Taking with other medicines</a></li>
+          <li class="nav__list-item"><a href="#common-questions" class="nav__list-link">Common questions</a></li>
+          <li class="nav__list-item"><a href="#not-be-able" class="nav__list-link">Who shouldn't take it</a></li>
+          <li class="nav__more arrow-down" aria-hidden="true"><a href="" class="nav__more-link" role="button">More</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#pregnancy" class="nav__list-link">Pregnancy advice</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#more" class="nav__list-link">More info</a></li>
+        </ul>
+        <ul class="nav__list nav__list-more clear">
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
 <main id="content" role="main">
   <div class="grid-row">
     <div class="column-two-thirds">
-      <h1 class="header__main u-marginbottom30 u-margintop10"><a href="/gabapentin" class="link-no-style">Gabapentin</a></h1>
 
-      <nav class="list-nav list-nav--nocols u-marginbottom30" role="navigation">
-        <ol>
-          <li><a href="/gabapentin/all-content-pages-epilepsy">Gabapentin for epilepsy</a></li>
-          <li>Gabapentin for nerve pain</li>
-          <li><a href="/gabapentin/all-content-pages-migraine">Gabapentin for migraine</a></li>
-        </ol>
-      </nav>
-
-      <h1 class="content__h2 content__h2--separator u-marginbottom20">Gabapentin for nerve pain</h1>
+      <h1 class="content__h2 u-marginbottom20">Gabapentin for nerve pain</h1>
 
       <p>Gabapentin is a type of painkiller that is taken to treat long-lasting nerve pain known as <a href="http://www.nhs.uk/conditions/Peripheral-neuropathy/Pages/Introduction.aspx">peripheral neuropathy</a>. This type of pain can be caused by different illnesses including <a href="http://www.nhs.uk/Conditions/Diabetes/Pages/Diabetes.aspx">diabetes</a>) and <a href="http://www.nhs.uk/conditions/shingles/Pages/Introduction.aspx">shingles</a>.</p>
       <p>Gabapentin is usually only taken by adults.</p>
@@ -373,5 +405,7 @@
     </div>
   </div>
 </main>
+
+<script src="/public/javascripts/nav.js"></script>
 
 {% endblock %}
