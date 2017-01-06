@@ -248,8 +248,11 @@ a:hover {color:#2e8aca;}
 a.link__unstyled {color:#0b0c0c; cursor:text; text-decoration:none;}
 .clear:after {clear:both; content:""; display:block;}
 .margintop20 {margin-top:20px;}
-.u-margintop10 {margin-top:10px;}
-.u-marginbottom20 {margin-bottom:20px;}
+.u-margintop10 {margin-top:10px !important;}
+.u-margintop20 {margin-top:20px !important;}
+.u-margintop30 {margin-top:30px !important;}
+.u-marginbottom10 {margin-bottom:10px !important;}
+.u-marginbottom20 {margin-bottom:20px !important;}
 .u-marginbottom30 {margin-bottom:30px !important;}
 .u-paddingtop40 {padding-top:40px;}
 
@@ -658,3 +661,24 @@ strong {font-weight:bold;}
 .tab__link:focus {background:#fff; outline:none; text-decoration:none;}
 .tab__link--current {background:#fff; font-weight:bold; position:relative; text-decoration:none; top:2px;}
 .hidden {display:none;}
+.clearboth {clear:both;}
+
+
+/* nav types */
+.nav-types {
+  clear:both;
+  list-style-position: outside;
+  list-style-type: decimal;
+  margin:0;
+  padding:20px 0 0 0;
+}
+
+@media (max-width: 640px) {
+  .nav-types {
+    margin-bottom:30px;
+    padding-top:0;
+  }
+}
+
+.nav--pages .nav__header-wrap {float:none; margin-top:0;}
+#content.page-nav-types {padding-bottom:0;}

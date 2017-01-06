@@ -177,18 +177,26 @@ var stickyNav = (function() {
       navStickyClass = 'nav--sticky',
       headerNavContainer = '.header__nav-container',
       headerDislaimerHeights = $('header').height() + $('.disclaimer').height();
-      topOffset = headerDislaimerHeights  + $(headerNavContainer).height();
+
+  if ($('.page-nav-types').length) {
+    extraNavOffset = $('.page-nav-types').height() + 40;
+  } else {
+    extraNavOffset = 0;
+  }
+
+  var topOffset = headerDislaimerHeights  + $(headerNavContainer).height() + extraNavOffset;
+
 
   $navToggle.on('click', function() {
     // reset offset height if menu has been toggled. Need to let the animation finish first before measuring heights
     interval = setTimeout(function() {
-      topOffset = headerDislaimerHeights  + $(headerNavContainer).height();
+      topOffset = headerDislaimerHeights  + $(headerNavContainer).height() + extraNavOffset;
     }, 1000);
   });
 
   $(window).resize(function() {
     // reset offset height if window has been resized
-    topOffset = headerDislaimerHeights  + $(headerNavContainer).height();
+    topOffset = headerDislaimerHeights  + $(headerNavContainer).height() + extraNavOffset;
   });
 
 
@@ -196,7 +204,7 @@ var stickyNav = (function() {
 
     // reset offset height if menu has been opened
     if ($navListWrapNonSticky.css('display') === 'block') {
-      topOffset = headerDislaimerHeights  + $(headerNavContainer).height();
+      topOffset = headerDislaimerHeights  + $(headerNavContainer).height() + extraNavOffset;
     }
 
     if( $(this).scrollTop() > topOffset ) {
