@@ -663,6 +663,16 @@ strong {font-weight:bold;}
 .hidden {display:none;}
 .clearboth {clear:both;}
 
+@media (max-width: 640px) {
+  .tab {
+    margin-left:10px;
+  }
+
+  .tab__link {
+    padding:10px 15px;
+  }
+}
+
 
 /* nav types */
 .nav-types {
