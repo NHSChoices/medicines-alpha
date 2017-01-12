@@ -692,3 +692,100 @@ strong {font-weight:bold;}
 
 .nav--pages .nav__header-wrap {float:none; margin-top:0;}
 #content.page-nav-types {padding-bottom:0;}
+
+/* callout - diagram */
+.callout--diagram {
+  background:#f1f7fc;
+  border-color:#0065b5;
+  border-style:solid;
+  border-width:0 0 0 4px;
+  margin:0 0 30px 0;
+  padding:16px 24px;
+}
+
+.callout--diagram h3 {
+  font-size:20px;
+  margin:0;
+}
+
+.info-pills {
+  list-style:none;
+  list-style-position:inside;
+  margin:20px 0 0 0;
+  padding:0;
+}
+
+.info-pills__item {
+  display:inline-block;
+  margin:0 20px 20px 0;
+  text-align:center;
+}
+
+.info-pills__item:last-child {
+  margin-right:0;
+}
+
+.info-pills__img {
+  float:left;
+  height:35px;
+  width:35px;
+}
+
+.info-pills__time {
+  border:2px solid #000;
+  border-radius:3px;
+  display:inline-block;
+  font-size:16px;
+  font-weight:normal;
+  margin-left:10px;
+  margin-top:3px;
+  padding:3px 5px;
+}
+
+.callout__col {
+  float:left;
+}
+
+.u-font-16 {
+  font-size:16px;
+}
+
+.u-width-45pc {
+  width:45%;
+}
+
+.u-width-10pc {
+  width:10%;
+}
+
+.u-block {
+  display:block;
+}
+
+.u-align-centre {
+  text-align:center;
+}
+
+.u-align-centre .info-pills__item {
+  display:block;
+  margin:0 auto 20px auto;
+}
+
+.u-align-centre .info-pills__img {
+  float:none;
+}
+
+.u-align-centre .info-pills__time {
+  display:inline-block;
+}
+
+
+@media (max-width: 480px) {
+  .callout__col {
+    float:none;
+    width:100%;
+  }
+  .callout__col--middle {
+    margin:40px 0;
+  }
+}
