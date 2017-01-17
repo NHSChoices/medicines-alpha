@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<div class="header__nav-container">
+<div class="header__nav-container header-tabs">
   <div class="header__nav-container-wrap clear">
     <div class="header__wrap u-floatnone">
       <div class="header__content">
@@ -30,11 +30,11 @@
 </div>
 
 <main id="content" role="main" class="content">
-  <div class="grid-row floating-nav" date-module="highlight-active-section-heading">
+  <div class="grid-row floating-nav">
 
-    <div class="column-one-third">
-      <div class=" js-page-contents js-stick-at-top-when-scrolling">
-        <h2 class="page-nav-title">Page contents</h2>
+    <div class="column-one-third page-nav-tab1" date-module="highlight-active-section-heading">
+      <div class=" js-page-contents js-stick-at-top-when-scrolling js-sticky-resize">
+        <h2 class="page-nav-title">Page contents<span class="hidden"> for epilepsy information</h2>
         <ul class="page-nav-list">
           <li class=""><a href="#key-facts">Key facts</a></li>
           <li class=""><a href="#how-when">How and when to take</a></li>
@@ -44,6 +44,22 @@
           <li class=""><a href="#not-be-able">Who shouldn't take it</a></li>
           <li class=""><a href="#pregnancy">Pregnancy advice</a></li>
           <li class=""><a href="#more">More info</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="column-one-third page-nav-tab2 hidden" date-module="highlight-active-section-heading">
+      <div class=" js-page-contents js-stick-at-top-when-scrolling js-sticky-resize">
+        <h2 class="page-nav-title">Page contents<span class="hidden"> for pain and migraine information</h2>
+        <ul class="page-nav-list">
+          <li class=""><a href="#key-facts2">Key facts</a></li>
+          <li class=""><a href="#how-when2">How and when to take</a></li>
+          <li class=""><a href="#side-effects2">Side effects</a></li>
+          <li class=""><a href="#taking-with-others2">Taking with other medicines</a></li>
+          <li class=""><a href="#common-questions2">Common questions</a></li>
+          <li class=""><a href="#not-be-able2">Who shouldn't take it</a></li>
+          <li class=""><a href="#pregnancy2">Pregnancy advice</a></li>
+          <li class=""><a href="#more2">More info</a></li>
         </ul>
       </div>
     </div>
@@ -406,7 +422,6 @@
         </div>
 
 
-
       </div>
       <!-- end content 1 -->
 
@@ -765,6 +780,6 @@
   </div>
 </main>
 
-<script src="/public/javascripts/nav.js"></script>
+<script src="/public/javascripts/tabs.js"></script>
 
 {% endblock %}

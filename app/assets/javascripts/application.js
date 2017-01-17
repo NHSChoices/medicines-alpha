@@ -114,7 +114,7 @@ function ShowHideContent() {
 $(document).ready(function() {
 
   module = new GOVUK.Modules.HighlightActiveSectionHeading();
-  module.start($('.floating-nav'));
+  module.start($('.page-nav-tab1'));
 
   GOVUK.stickAtTopWhenScrolling.init();
   GOVUK.stopScrollingAtFooter.addEl($('.js-stick-at-top-when-scrolling'), $('.js-stick-at-top-when-scrolling').height());

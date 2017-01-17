@@ -68,6 +68,14 @@
         } else {
           self.updateActiveNavItem()
         }
+        $('.page-nav-list a').blur();
+
+        var windowVerticalPosition = self.getWindowPositions().scrollTop;
+
+        if (windowVerticalPosition === 0) {
+          $('.page-nav-list a').removeClass('active');
+        }
+
       }
     }
 
