@@ -48,9 +48,9 @@ var scrollToContent = (function() {
     var $target = $(target);
 
     if ($target.hasClass('noborder')) {
-      extraOffset = 55;
+      extraOffset = 15;
     } else {
-      extraOffset = 20;
+      extraOffset = -20;
     }
 
     // scroll to
