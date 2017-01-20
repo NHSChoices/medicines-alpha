@@ -113,6 +113,13 @@ function ShowHideContent() {
 
 $(document).ready(function() {
 
+  module = new GOVUK.Modules.HighlightActiveSectionHeading();
+  module.start($('.page-nav-tab1'));
+
+  GOVUK.stickAtTopWhenScrolling.init();
+  GOVUK.stopScrollingAtFooter.addEl($('.js-stick-at-top-when-scrolling'), $('.js-stick-at-top-when-scrolling').height());
+
+
   // Use GOV.UK selection-buttons.js to set selected
   // and focused states for block labels
   var $blockLabels = $(".block-label input[type='radio'], .block-label input[type='checkbox']");

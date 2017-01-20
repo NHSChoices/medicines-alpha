@@ -1,6 +1,6 @@
 // Colours
 $nhs-blue: #0072c6;
-$separator: #dcdcdc;
+$separator: #999;
 $lightblue-bg: #f1f7fc;
 $icon-blue: #0065b6;
 $light-grey: #f5f5f5;
@@ -255,6 +255,7 @@ a.link__unstyled {color:#0b0c0c; cursor:text; text-decoration:none;}
 .u-marginbottom20 {margin-bottom:20px !important;}
 .u-marginbottom30 {margin-bottom:30px !important;}
 .u-paddingtop40 {padding-top:40px;}
+.u-floatnone {float:none !important;}
 
 
 /**
@@ -788,4 +789,96 @@ strong {font-weight:bold;}
   .callout__col--middle {
     margin:40px 0;
   }
+}
+
+
+/* stickAtTopWhenScrolling */
+
+.content-fixed {
+  position: fixed;
+  top: 0;
+}
+.shim {
+  display: block;
+}
+
+.page-nav-list .active {
+  font-weight:bold;
+}
+
+.page-nav-title {
+  font-size:19px;
+  margin:10px 0 10px 0;
+  padding:0;
+}
+
+.content-fixed .page-nav-title {
+  margin-top:20px;
+}
+
+.page-nav-list {
+  list-style:none;
+  margin:0 0 0 15px;
+  padding:0;
+}
+
+.page-nav-list li {
+  font-size:16px;
+  margin:0 0 5px 0;
+}
+
+.page-nav-list li::before {
+  content: "–";
+  display: block;
+  float: left;
+  margin-left: -15px;
+  width: 15px;
+}
+
+.page-nav-list li a {
+  text-decoration:none;
+}
+
+.page-nav-list li a:hover, .page-nav-list li a:active, .page-nav-list li a:focus {
+  text-decoration:underline;
+}
+
+.content-intro {
+  font-size:19px;
+}
+
+.tabs--bigger {
+  margin-top:30px;;
+}
+
+.tabs--bigger .tab__link {
+  font-size:19px;
+}
+
+.header-tabs .header__nav-container-wrap {
+  border-bottom:0;
+}
+
+.floating-nav .column-one-third {
+  border-top:0;
+  margin-bottom:30px;
+  margin-top:0;
+  padding-top:0;
+}
+
+@media (max-width:768px) {
+  .floating-nav .column-one-third {
+    margin-left:15px;
+    margin-right:15px;
+  }
+}
+
+.nav-types--floating-nav {
+  border-bottom: 1px solid #999;
+  margin-bottom: 40px;
+  padding-bottom: 35px;
+}
+
+.nav-types--floating-nav li {
+  font-size:19px;
 }
