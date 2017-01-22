@@ -192,11 +192,17 @@ $(document).ready(function() {
 
   });
 
-  $('summary').on('click', function(e) {
-    if ($(this).find('span').text() === 'More information') {
-      $(this).find('span').text('Less information');
-    } else {
-      $(this).find('span').text('More information');
+  $('summary').each(function(){
+    var $this = $(this).find('span');
+    $this.data('originalText',$this.html());
+  });
+  $('summary').click(function() {
+    var $this = $(this).find('span');
+    if ($this.text() === "Less information") {
+      $this.html($this.data('originalText'));
+    }
+    else {
+      $this.text("Less information");
     }
   });
 
