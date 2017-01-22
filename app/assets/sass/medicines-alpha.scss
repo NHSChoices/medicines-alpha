@@ -285,6 +285,12 @@ summary + div > h3:first-child {margin-top:0;}
 .concertinas summary h3 {font-size:21px; font-weight:normal; line-height:1.15; margin:0;}
 .concertinas summary h3::after {content:"+ "; position:absolute; right:10px; top:12px;}
 .concertinas summary[aria-expanded="true"] h3::after {content:"- ";}
+
+@media (min-width: 641px) {
+  .concertinas summary h3::after {font-size:28px; top:9px;}
+  .concertinas summary[aria-expanded="true"] h3::after {right:14px;}
+}
+
 .concertinas summary + div {margin-top:10px; padding:0 !important;}
 .concertinas details h3 {border-top:1px dotted #ccc; padding-bottom:10px; padding-top:10px;}
 .concertinas details:first-child h3 {border-top:0;}
