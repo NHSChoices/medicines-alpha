@@ -1,0 +1,35 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="index">Isotretenoin</h1>
+      <ul class="list-nav list-nav-bullets list-nav--nocols">
+        <li><a href="/isotretenoin/single-page">Interface 1</a></li>
+        <li><a href="/isotretenoin/single-page-tabbed2">Interface 2</a></li>
+        <li><a href="/isotretenoin/all-content-pages-gel-nav3">Interface 3</a></li>
+        <li><a href="/isotretenoin/single-page-moreless">Interface 4</a></li>
+        <li><a href="/isotretenoin/single-page-tabbed2-moreless">Interface 5</a></li>
+        <li><a href="/isotretenoin/all-content-pages-gel-nav3-moreless">Interface 6</a></li>
+      </ul>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Medicines</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
