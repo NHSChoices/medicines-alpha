@@ -889,3 +889,18 @@ strong {font-weight:bold;}
 .nav-types--floating-nav li {
   font-size:19px;
 }
+
+@media (max-width:640px) {
+  .tab-med {
+    display:none;
+  }
+
+  .tab-formulation {
+    text-transform: capitalize;
+  }
+
+  .show-mob {
+    display:block;
+    visibility:visible;
+  }
+}
