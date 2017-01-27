@@ -6,6 +6,7 @@ $icon-blue: #0065b6;
 $light-grey: #f5f5f5;
 $dark-grey: #ccc;
 
+@import "utilities";
 
 body {}
 #global-header {
@@ -261,7 +262,7 @@ a.link__unstyled {color:#0b0c0c; cursor:text; text-decoration:none;}
 /**
  * Typography
  */
-.content__h2 {font-size:32px; font-weight:bold;}
+.content__h2 {font-size:32px; font-weight:bold; margin-top:0;}
 .content__h2--separator {border-top:1px solid $separator; margin-top:25px; padding-top:35px;}
 .content__h2--inconcertina {margin-bottom:10px; margin-top:10px;}
 .content__h2--outconcertina {margin-bottom:15px;}
@@ -299,7 +300,7 @@ summary + div > h3:first-child {margin-top:0;}
 /**
  * PIL disclaimer
  */
-.disclaimer__info {border:2px solid $icon-blue; margin-bottom:40px; margin-top:40px; padding:15px; position:relative;}
+.disclaimer__info {border:2px solid $icon-blue; margin-bottom:30px; margin-top:30px; padding:15px; position:relative;}
   .disclaimer__info-icon {left:20px; position:absolute;}
     .disclaimer__info-round {background:$icon-blue; border:.1em solid $icon-blue; border-radius:50%; color:#fff; display:inline-block; font-family:serif; font-size:1.6em; font-weight:bold; font-style:italic; padding-left:.5em; text-transform:lowercase; width:.8em;}
     .disclaimer__info-hide {display:none;}

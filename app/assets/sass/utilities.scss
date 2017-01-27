@@ -1,0 +1,79 @@
+$section-margin: 60px;
+$section-padding: 60px;
+$section-margin-sm: 30px;
+$section-margin-md: 40px;
+$section-margin-xs: 20px;
+$section-padding-sm: 30px;
+$section-padding-md: 40px;
+
+.u-section-separator {
+  border-bottom:1px solid $separator;
+}
+
+.u-section-separator--withmorelink {
+  margin-bottom: $section-margin;
+  padding-bottom: $section-padding;
+}
+
+.u-section-separator--nomorelink {
+  padding-bottom: $section-padding-md;
+}
+
+.u-section-margintop {
+  margin-top: $section-margin;
+}
+
+.u-section-margintop-xs {
+  margin-top: $section-margin-xs;
+}
+
+.u-section-marginbottom {
+  margin-bottom: $section-margin;
+}
+
+.u-section-marginbottom-sm {
+  margin-bottom: $section-margin-sm;
+}
+
+.u-section-marginbottom-md {
+  margin-bottom: $section-margin-md;
+}
+
+.u-section-paddingbottom {
+  padding-bottom: $section-padding;
+}
+
+.u-section-paddingbottom-sm {
+  padding-bottom: $section-padding-sm;
+}
+
+@media (max-width:640px) {
+  .u-section-separator--withmorelink {
+    margin-bottom: $section-margin - 20;
+    padding-bottom: $section-padding - 20;
+  }
+
+  .u-section-separator--nomorelink {
+    padding-bottom: $section-padding-md - 20;
+  }
+
+  .u-section-margintop {
+    margin-top: $section-margin - 20;
+  }
+
+  .u-section-marginbottom {
+    margin-bottom: $section-margin - 20;
+  }
+
+  .u-section-marginbottom-sm {
+    margin-bottom: $section-margin-sm - 20;
+  }
+
+  .u-section-paddingbottom {
+    padding-bottom: $section-padding - 20;
+  }
+
+  .u-section-paddingbottom-sm {
+    padding-bottom: $section-padding-sm - 20;
+  }
+}
