@@ -6,6 +6,7 @@ $icon-blue: #0065b6;
 $light-grey: #f5f5f5;
 $dark-grey: #ccc;
 
+@import "objects";
 @import "utilities";
 
 body {}
@@ -267,35 +268,6 @@ a.link__unstyled {color:#0b0c0c; cursor:text; text-decoration:none;}
 .content__h2--inconcertina {margin-bottom:10px; margin-top:10px;}
 .content__h2--outconcertina {margin-bottom:15px;}
 
-/**
- * Details/summary
- */
-.more-info .arrow {display:inline;}
-summary + div {padding:15px 0 0 0!important;}
-summary + div > h3:first-child {margin-top:0;}
-.content details summary::-webkit-details-marker {display:inline;}
-
-/**
- * Concertinas
- */
-.concertinas--separator {border-top:1px solid $separator; margin-top:20px; padding-top:25px;}
-.concertinas--bg {background:$lightblue-bg; padding:5px 10px;}
-.concertinas details .arrow {display:none;}
-.concertinas details summary::-webkit-details-marker {display:none;}
-.concertinas summary {display:block; margin:0; padding:0;}
-.concertinas summary h3 {font-size:21px; font-weight:normal; line-height:1.15; margin:0;}
-.concertinas summary h3::after {content:"+ "; position:absolute; right:10px; top:12px;}
-.concertinas summary[aria-expanded="true"] h3::after {content:"- ";}
-
-@media (min-width: 641px) {
-  .concertinas summary h3::after {font-size:28px; top:9px;}
-  .concertinas summary[aria-expanded="true"] h3::after {right:14px;}
-}
-
-.concertinas summary + div {margin-top:10px; padding:0 !important;}
-.concertinas details h3 {border-top:1px dotted #ccc; padding-bottom:10px; padding-top:10px;}
-.concertinas details:first-child h3 {border-top:0;}
-
 
 /**
  * PIL disclaimer
@@ -316,7 +288,7 @@ summary + div > h3:first-child {margin-top:0;}
     .module__header--bordertop {border-top:1px solid $separator; padding-top:25px;}
       .header-text__small {font-size:14px;}
     .module__list {list-style:none; margin:0 0 30px 0;}
-    .module__list-nomarginbottom {margin-bottom:0;}
+    .module__list-nomarginbottom {margin-bottom:0 !important;}
       .module__list-item {margin-left:0;}
 
 @media (min-width: 641px) {
@@ -516,7 +488,6 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
   padding-bottom: 5px;
 }
 
-/* concertinas */
 .content-normal summary h2 {border:0; font-size:28px; font-weight:normal; margin:0; padding:0 20px 0 0;}
 
 .content-normal summary h2:after {
@@ -531,12 +502,6 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
 }
 
 .content-normal summary {border-top: 1px solid #b9d2dc; display:block; padding:20px 10px;}
-details .arrow {display:none;}
-details summary {margin-bottom:0;}
-details summary::-webkit-details-marker {display:none;}
-details summary:focus {border-top:0; outline: 3px solid #b9d2dc;}
-details summary:hover h2 {text-decoration: underline;}
-summary + div {margin-top:0; padding:10px;}
 
 @media (max-width: 640px) {
   .content-normal h1 {font-size:40px;}
@@ -554,7 +519,6 @@ summary + div {margin-top:0; padding:10px;}
 .content-shrunk details summary::-webkit-details-marker {display:inline;}
 .content-shrunk h2 {margin-top:25px; padding-top:35px;}
 .content-shrunk summary + div {margin-top:15px; padding:0;}
-details summary span {font-weight:bold; text-decoration: underline;}
 
 .dl-quick-info dt {font-size:20px;}
 .dl-quick-info dd {margin-bottom:20px;}
