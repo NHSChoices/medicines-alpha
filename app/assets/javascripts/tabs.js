@@ -50,7 +50,7 @@ var scrollToContent = (function() {
     if ($target.hasClass('noborder')) {
       extraOffset = 15;
     } else {
-      extraOffset = -20;
+      extraOffset = 15;
     }
 
     // scroll to

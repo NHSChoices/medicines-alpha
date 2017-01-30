@@ -56,6 +56,11 @@ app.use(function (req, res, next) {
 // Add variables that are available in all views
 app.use(function (req, res, next) {
   res.locals.serviceName=config.serviceName;
+  res.locals.moreinfoHowWhen="More information";
+  res.locals.moreinfoSideEffects="More information";
+  res.locals.moreinfoWhoCanTake="More information";
+  res.locals.moreinfoTakingWithOther="More information";
+  res.locals.moreinfoPregnancy="More information";
   next();
 });
 
