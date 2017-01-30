@@ -507,7 +507,7 @@ summary + div {margin-top:0; padding:10px;}
 .content-shrunk details summary::-webkit-details-marker {display:inline;}
 .content-shrunk h2 {margin-top:25px; padding-top:35px;}
 .content-shrunk summary + div {margin-top:15px; padding:0;}
-details summary span {text-decoration: underline;}
+details summary span {font-weight:bold; text-decoration: underline;}
 
 .dl-quick-info dt {font-size:20px;}
 .dl-quick-info dd {margin-bottom:20px;}
@@ -641,7 +641,7 @@ details summary span {text-decoration: underline;}
 
 .alertbanner {
 	background:#fffbcc;
-	border-left:3px solid #ffed00;
+	border-left:6px solid #ffed00;
 	display:block;
 	font-weight:bold;
 	padding:15px 15px 10px 15px;
