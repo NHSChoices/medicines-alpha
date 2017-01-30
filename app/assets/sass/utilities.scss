@@ -4,15 +4,13 @@ $section-padding: 50px;
 
 @media (max-width:640px) {
   .u-section-separator {
-    border-bottom: 1px solid $separator;
-    margin-bottom: $section-margin - 20;
-    padding-bottom: $section-padding - 20;
+    margin-bottom: $section-margin - 15;
+    padding-bottom: $section-padding - 15;
   }
 }
 
 @media (min-width:641px) {
   .u-section-separator {
-    border-bottom: 1px solid $separator;
     margin-bottom: $section-margin;
     padding-bottom: $section-padding;
   }

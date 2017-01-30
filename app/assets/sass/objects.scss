@@ -1,0 +1,69 @@
+$separator: #999;
+$section-padding: 50px;
+
+
+/* concertinas */
+section details .arrow {display:none;}
+section details summary[aria-expanded='true'] {margin-bottom:25px;}
+section details summary::-webkit-details-marker {display:none;}
+section details summary:focus {border-top:0; outline: 3px solid #b9d2dc;}
+section details summary:hover h2 {text-decoration: underline;}
+details summary span {font-weight:bold; text-decoration: underline;}
+
+section .concertinas details {padding-bottom:0;}
+section .concertinas details summary[aria-expanded='true'] {margin-bottom:0;}
+
+section details:last-child summary[aria-expanded='true'] + div:after {
+  border-bottom: 1px solid $separator;
+  content: "";
+  display: block;
+  position: relative;
+  top:48px;
+  width:100%;
+}
+
+@media (max-width:640px) {
+  section details:last-child summary[aria-expanded='true'] + div:after {
+    top:36px;
+  }
+}
+
+section .concertinas summary + div {
+  border:0;
+  padding-bottom:20px;
+}
+
+section .module--links .module__list {margin-bottom:30px;}
+
+/**
+ * Details/summary
+ */
+.more-info .arrow {display:inline;}
+/* summary + div {padding:15px 0 0 0!important;} */
+summary + div > h3:first-child {margin-top:0;}
+.content details summary::-webkit-details-marker {display:inline;}
+
+/**
+ * Concertinas
+ */
+.concertinas--separator {border-top:1px solid $separator; margin-top:20px; padding-top:25px;}
+.concertinas--bg {background:$lightblue-bg; padding:5px 10px;}
+.concertinas details .arrow {display:none;}
+.concertinas details summary::-webkit-details-marker {display:none;}
+.concertinas summary {display:block; margin:0; padding:0;}
+.concertinas summary h3 {font-size:21px; font-weight:normal; line-height:1.15; margin:0;}
+.concertinas summary h3::after {content:"+ "; position:absolute; right:10px; top:12px;}
+.concertinas summary[aria-expanded="true"] h3::after {content:"- ";}
+
+@media (min-width: 641px) {
+  .concertinas summary h3::after {font-size:28px; top:9px;}
+  .concertinas summary[aria-expanded="true"] h3::after {right:14px;}
+}
+
+.concertinas details h3 {border-top:1px dotted #ccc; padding-bottom:10px; padding-top:10px;}
+.concertinas details:first-child h3 {border-top:0;}
+
+
+/* TO BE REMOVED WHEN REFACTORED */
+summary + div {padding-top:15px;}
+section summary + div {padding-top:0;}
