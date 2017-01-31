@@ -19,13 +19,13 @@ section details:last-child summary[aria-expanded='true'] + div:after {
   content: "";
   display: block;
   position: relative;
-  top:48px;
+  top:28px;
   width:100%;
 }
 
 @media (max-width:640px) {
   section details:last-child summary[aria-expanded='true'] + div:after {
-    top:36px;
+    top:30px;
   }
 }
 
