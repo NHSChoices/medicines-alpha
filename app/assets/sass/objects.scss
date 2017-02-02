@@ -1,6 +1,7 @@
 $separator: #999;
 $section-padding: 50px;
 $lightblue-bg: #f1f7fc;
+$nhs-blue: #0072c6;
 
 
 /* concertinas */
@@ -71,3 +72,36 @@ summary + div > h3:first-child {margin-top:0;}
 /* TO BE REMOVED WHEN REFACTORED */
 summary + div {padding-top:15px;}
 section summary + div {padding-top:0;}
+
+/* --- */
+
+@media (min-width: 641px) {
+  .back-to-top {
+    position:absolute;
+    left:-99999px;
+  }
+}
+
+@media (max-width: 640px) {
+  .back-to-top {
+    background-color:$nhs-blue;
+    background-image:url("/public/images/back-to-top-arrow.png");
+    background-position: 10px 15px;
+    background-repeat: no-repeat;
+    bottom: 15px;
+    display: none;
+    font-size: 14px;
+    height:48px;
+    position: fixed;
+    right: 15px;
+    text-decoration: none;
+    text-indent:-99999px;
+    width:48px;
+    z-index: 1;
+  }
+
+  .back-to-top:focus {
+    background-color:$nhs-blue;
+    outline: none;
+  }
+}
