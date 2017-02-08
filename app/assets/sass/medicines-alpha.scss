@@ -286,7 +286,7 @@ a.link__unstyled {color:#0b0c0c; cursor:text; text-decoration:none;}
  * Module box
  */
 .module {margin-top:30px;}
-.module--links {margin-top:75px;}
+.module--links {margin-top:60px;}
 .module--border {border:1px solid $dark-grey; padding:15px;}
 .module--separator {border-top:4px solid $dark-grey; padding-top:40px;}
   .module__wrap--bg {background:$light-grey; padding:15px;}
@@ -306,6 +306,12 @@ a.link__unstyled {color:#0b0c0c; cursor:text; text-decoration:none;}
       .module__list {margin:0;}
 }
 
+
+@media (max-width: 640px) {
+  .module--links {
+    margin-top:40px;
+  }
+}
 
 /**
  * Responsive videos
