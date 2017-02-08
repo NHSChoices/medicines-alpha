@@ -1,0 +1,93 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  Isotretenoin - NHS Medicines beta
+{% endblock %}
+
+{% block content %}
+
+{% set moreinfoHowWhen = 'More information on how and when to take' %}
+{% set moreinfoSideEffects = 'More information on side effects' %}
+{% set moreinfoWhoCanTake = 'More information on who can take isotretinoin' %}
+{% set moreinfoTakingWithOther = 'More information on taking with other medicines' %}
+{% set moreinfoPregnancy = 'More information on pregnancy and breastfeeding' %}
+
+<div class="header__nav-container header-tabs">
+  <div class="header__nav-container-wrap clear">
+    <div class="header__wrap u-floatnone">
+      <div class="header__content">
+        <h1 class="header__main header__main--tabs"><a href="/isotretinoin" class="link__unstyled">Isotretinoin gel (Isotrex)</a></h1>
+      </div>
+    </div>
+
+    <ul class="tabs tabs--bigger clear">
+      <li class="tab"><a href="#content-tab1" class="tab__link tab__link--current tab1"><span class="tab-formulation">Gel</span></a></li>
+      <li class="tab"><a href="/isotretinoin/tabbed-capsules-numbered" class="tab__link tab2"><span class="tab-formulation">Capsules</span></a></li>
+    </ul>
+
+  </div>
+</div>
+
+<main id="content" role="main" class="content">
+  <div class="grid-row floating-nav">
+
+    <div class="column-one-third page-nav-tab1" date-module="highlight-active-section-heading">
+      <div class=" js-page-contents js-stick-at-top-when-scrolling js-sticky-resize">
+        <h2 class="page-nav-title">Isotretinoin gel</h2>
+        <ol class="page-nav-list page-nav-list--numbered list-numbered">
+          <li class=""><a href="#key-facts">Key facts</a></li>
+          <li class=""><a href="#how-when">How and when to take</a></li>
+          <li class=""><a href="#side-effects">Side effects</a></li>
+          <li class=""><a href="#taking-with-others">Taking with other medicines</a></li>
+          <li class=""><a href="#common-questions">Common questions</a></li>
+          <li class=""><a href="#who-can-take">Who can take it</a></li>
+          <li class=""><a href="#pregnancy">Important advice for women</a></li>
+          <li class=""><a href="#more">More about</a></li>
+        </ol>
+      </div>
+    </div>
+
+
+    <div class="column-two-thirds">
+
+      <!-- start content 1 -->
+      <div id="content-tab1" class="content1 tabs-content">
+        {% include "./includes/gel/intro.html" %}
+        <ol class="list-numbered">
+          <li>
+            {% include "./includes/gel/keyfacts.html" %}
+          </li>
+          <li>
+            {% include "./includes/gel/how-when-to-take.html" %}
+          </li>
+          <li>
+            {% include "./includes/gel/side-effects.html" %}
+          </li>
+          <li>
+            {% include "./includes/gel/taking-with-others.html" %}
+          </li>
+          <li>
+            {% include "./includes/gel/common-questions.html" %}
+          </li>
+          <li>
+            {% include "./includes/gel/who-can-take.html" %}
+          </li>
+          <li>
+            {% include "./includes/gel/pregnancy-breastfeeding.html" %}
+          </li>
+          <li>
+            {% include "./includes/gel/more-about.html" %}
+          </li>
+        </ol>
+        {% include "./includes/gel/links.html" %}
+      </div>
+      <!-- end content 1 -->
+
+    </div>
+
+  </div>
+</main>
+
+<script src="/public/javascripts/scroll-to-content.js"></script>
+
+{% endblock %}
