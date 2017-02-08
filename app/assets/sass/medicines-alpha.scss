@@ -854,6 +854,18 @@ strong {font-weight:bold;}
   margin:0 0 5px 0;
 }
 
+.page-nav-list li::before {
+  content: "–";
+  display: block;
+  float: left;
+  margin-left: -15px;
+  width: 15px;
+}
+
+.page-nav-list--numbered li::before {
+  content: "";
+}
+
 .page-nav-list li a {
   text-decoration:none;
 }
@@ -861,6 +873,7 @@ strong {font-weight:bold;}
 .page-nav-list li a:hover, .page-nav-list li a:active, .page-nav-list li a:focus {
   text-decoration:underline;
 }
+
 
 .content-intro {
   font-size:19px;
