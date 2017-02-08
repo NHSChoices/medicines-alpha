@@ -20,7 +20,7 @@ section details:last-child summary[aria-expanded='true'] + div:after {
   content: "";
   display: block;
   position: relative;
-  top:28px;
+  top:45px;
   width:100%;
 }
 
@@ -71,7 +71,7 @@ summary + div > h3:first-child {margin-top:0;}
 
 /* TO BE REMOVED WHEN REFACTORED */
 summary + div {padding-top:15px;}
-section summary + div {padding-top:0;}
+section summary + div {margin-bottom:30px !important; padding-top:0;}
 
 /* --- */
 

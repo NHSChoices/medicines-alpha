@@ -1,0 +1,51 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  Isotretenoin - NHS Medicines beta
+{% endblock %}
+
+{% block content %}
+
+
+<div class="header__nav-container header-tabs">
+  <div class="header__nav-container-wrap clear">
+    <div class="header__wrap u-floatnone">
+      <div class="header__content">
+        <h1 class="header__main header__main--hub"><a href="/isotretinoin" class="link__unstyled">Isotretinoin</a></h1>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="content-intro column-two-thirds content-hub u-margintop20">
+        <p class="u-margintop10">Isotretinoin is a medicine for acne (spots).</p>
+        <p>It comes as a gel that you put on your skin and as capsules that you swallow.</p>
+        <p>Choose the type of medicine that you want information on:</p>
+
+        <ul class="hub-list">
+          <li class="hub-list__item"><a href="/isotretinoin/tabbed-gel-numbered" class="hub-list__link">Isotretinoin gel</a></li>
+          <li class="hub-list__item"><a href="/isotretinoin/tabbed-capsules-numbered" class="hub-list__link">Isotretinoin capsules</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<main id="content" role="main" class="content">
+  <div class="grid-row floating-nav">
+
+
+    <div class="column-two-thirds">
+
+      <!-- start content 1 -->
+      <div id="content-tab1" class="content1 tabs-content">
+      </div>
+      <!-- end content 1 -->
+
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}
