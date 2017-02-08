@@ -951,7 +951,7 @@ strong {font-weight:bold;}
 .tabs-content .list-numbered > li {
   font-size: 1.684em;
   font-weight: bold;
-  margin-left: 1.05em;
+  margin-left: 32px;
   padding-left: 20px;
 }
 
@@ -959,6 +959,13 @@ strong {font-weight:bold;}
   font-size: .594em;
   font-weight: normal;
 }
+
+@media (max-width:640px) {
+ .o-section-content {
+   margin-left:-32px;
+ }
+}
+
 
 .hub-list {
 }
@@ -1000,8 +1007,17 @@ strong {font-weight:bold;}
 
 
 @media (max-width:640px) {
+
+  .header__main {
+    font-size:36px;
+  }
+
   .content__h2 {
     font-size:26px;
+  }
+
+  .concertinas summary h3 {
+    font-size:19px;
   }
 
   .tabs-content .list-numbered > li {
