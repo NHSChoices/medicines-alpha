@@ -966,12 +966,6 @@ strong {font-weight:bold;}
   font-weight: normal;
 }
 
-@media (max-width:640px) {
- .o-section-content {
-   margin-left:-32px;
- }
-}
-
 
 .hub-list {
 }
@@ -1033,6 +1027,30 @@ strong {font-weight:bold;}
 
   h3 {
     font-size:20px;
+  }
+
+  .list-numbered {
+    counter-reset: item;
+  }
+
+  .list-numbered > li {
+    display:block;
+    margin-left: 0 !important;
+  }
+
+  .list-numbered > li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    width: 0;
+    display: inline-block;
+  }
+
+  .list-numbered > li > section {
+    margin-top:-2em;
+  }
+
+  .list-numbered > li > section > h2 {
+    margin-left:1em;
   }
 
 }
