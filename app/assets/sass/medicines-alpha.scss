@@ -692,6 +692,7 @@ strong {font-weight:bold;}
 .tab__link:hover, .tab__link:focus {text-decoration:underline;}
 .tab__link:focus {background:#fff; outline:none; text-decoration:none;}
 .tab__link--current {background:#fff; font-weight:bold; position:relative; text-decoration:none; top:2px;}
+.tab__link--current:hover, .tab__link--current:active, .tab__link--current:focus {color:#005ea5; cursor:text; text-decoration: none;}
 .hidden {display:none;}
 .clearboth {clear:both;}
 
