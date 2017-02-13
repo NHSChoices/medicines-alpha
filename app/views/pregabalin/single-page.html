@@ -6,60 +6,390 @@
 
 {% block content %}
 
-{% set moreinfoHowWhen = 'More information on how and when to take' %}
-{% set moreinfoSideEffects = 'More information on side effects' %}
-{% set moreinfoWhoCanTake = 'More information on who can take pregabalin' %}
-{% set moreinfoTakingWithOther = 'More information on taking with other medicines' %}
-{% set moreinfoPregnancy = 'More information on pregnancy and breastfeeding' %}
-
 <div class="header__nav-container">
   <div class="header__nav-container-wrap clear">
-    <div class="header__wrap u-floatnone">
+    <div class="header__wrap">
       <div class="header__content">
         <h1 class="header__main"><a href="/pregabalin" class="link__unstyled">Pregabalin</a></h1>
       </div>
     </div>
+
+    <nav id="nav" class="nav" role="navigation">
+      <div class="nav__header-wrap">
+        <h2 class="nav__header"><span class="nav__header-title">Pregabalin</span> <span class="nav__header-text">contents</span></h2>
+        <div class="nav__dropdown">
+          <a role="button" aria-expanded="false" aria-controls="nav__list-container" href="#toggle-nav" class="nav__toggle"><span class="sr-only">Toggle navigation</span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span><span class="nav__burger-bar"></span></a>
+        </div>
+      </div>
+      <div id="nav__list-wrap" class="nav__list-wrap" aria-hidden="true">
+        <ul class="nav__list nav__list-nomore nav__list-column3">
+          <li class="nav__list-item"><a href="#key-facts" class="nav__list-link">Key facts</a></li>
+          <li class="nav__list-item"><a href="#how-when" class="nav__list-link">How and when to take</a></li>
+          <li class="nav__list-item"><a href="#side-effects" class="nav__list-link">Side effects</a></li>
+          <li class="nav__list-item"><a href="#how-to-cope" class="nav__list-link">Coping with side effects</a></li>
+          <li class="nav__list-item"><a href="#taking-with-others" class="nav__list-link">Taking with other medicines</a></li>
+          <li class="nav__list-item"><a href="#common-questions" class="nav__list-link">Common questions</a></li>
+          <li class="nav__list-item"><a href="#not-be-able" class="nav__list-link">Who can take it</a></li>
+          <li class="nav__more arrow-down" aria-hidden="true"><a href="" class="nav__more-link" role="button">More</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#pregnancy" class="nav__list-link">Pregnancy advice</a></li>
+          <li class="nav__list-item nav__list-more-item"><a href="#more" class="nav__list-link">More about</a></li>
+        </ul>
+        <ul class="nav__list nav__list-more clear">
+        </ul>
+      </div>
+    </nav>
   </div>
 </div>
 
 <main id="content" role="main" class="content">
-  <div class="grid-row floating-nav">
+  <div class="grid-row">
 
-    <div class="column-one-third page-nav" date-module="highlight-active-section-heading">
-      <div class=" js-page-contents js-stick-at-top-when-scrolling js-sticky-resize">
-        <h2 class="page-nav-title">Pregabalin</h2>
-        <ol class="page-nav-list page-nav-list--numbered list-numbered">
-          <li class=""><a href="#key-facts">Key facts</a></li>
-          <li class=""><a href="#how-when">How and when to take</a></li>
-          <li class=""><a href="#side-effects">Side effects</a></li>
-          <li class=""><a href="#how-to-cope">How to cope with side effects</a></li>
-          <li class=""><a href="#taking-with-others">Taking with other medicines</a></li>
-          <li class=""><a href="#common-questions">Common questions</a></li>
-          <li class=""><a href="#who-can-take">Who can take it</a></li>
-          <li class=""><a href="#pregnancy">Pregnancy and breastfeeding</a></li>
-          <li class=""><a href="#more">More about</a></li>
-        </ol>
+    <div class="column-two-thirds">
+
+      <p>Pregabalin is used to treat <a href="http://www.nhs.uk/CONDITIONS/EPILEPSY/Pages/Introduction.aspx">epilepsy</a> and <a href="http://www.nhs.uk/conditions/Anxiety/Pages/Introduction.aspx">anxiety</a>.</p>
+      <p>It is also taken to treat nerve pain. This type of pain can be caused by different illnesses including <a href="http://www.nhs.uk/Conditions/Diabetes/Pages/Diabetes.aspx">diabetes</a> and <a href="http://www.nhs.uk/conditions/shingles/Pages/Introduction.aspx">shingles</a> or an injury.</p>
+      <p>Pregabalin is only available on prescription. It can be taken as capsules or a liquid that you drink.</p>
+      <p>The medicine is also called by various brand names, including Lyrica, Alzain, Lecaent and Rewisca.</p>
+
+      <h2 id="key-facts" class="content__h2 noborder">Key facts</h2>
+      <ul>
+        <li>Pregabalin is usually taken 2 or 3 times a day. You can take it with or without food.</li>
+        <li>The side effects of pregabalin are usually mild and go away by themselves. The most common ones are feeling sleepy, dizziness and headaches.</li>
+        <li>It takes at least a few weeks for pregabalin to work.</li>
+        <li>You don’t have to have epilepsy for pregabalin to help with pain or anxiety.</li>
+        <li>You can drink alcohol while taking pregabalin but it may make you feel sleepy or tired.</li>
+      </ul>
+      <p><span class="infobanner">Check the leaflet inside your medicine packet for information about the brand that you are taking.</span></p>
+
+      <h2 class="content__h2 content__h2--separator" id="how-when">How and when to take</h2>
+      <p>Pregabalin is a prescription medicine. It's important to take it as instructed by your doctor.</p>
+      <p>The usual dose of pregabalin is between 150mg and 600mg a day, taken in 2 or 3 separate doses.</p>
+      <p>If you are taking pregabalin as a liquid, 2.5ml is the same as taking a single 50mg capsule.</p>
+      <p>Try to space your doses evenly through the day.</p>
+      <p>You can take pregabalin with or without food, but it’s best to be consistent each day.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-1" aria-hidden="false">
+          <p>To prevent side effects, your doctor will prescribe a low dose to start with and then increase it over a few days.</p>
+          <p>Swallow pregabalin capsules whole with a drink of water or juice. Do not chew them.</p>
+          <p>If you are taking pregabalin as a liquid, it will come with a syringe or spoon to measure your dose. If you don’t have a syringe or spoon, ask your pharmacist for one.</p>
+          <h3>Will my dose go up or down?</h3>
+          <p>Pregabalin capsules come in a variety of different strengths.</p>
+          <p>The dose of pregabalin you have been prescribed depends on your illness, your age, how well your kidneys work, and how severe your symptoms are.</p>
+          <p>When you first start taking pregabalin your dose might be gradually increased. This is to let your body get used to it and find a dose that works well for you.</p>
+          <p>Once you find a dose that suits you your dose will not usually change any more.</p>
+          <h3>How long will I take it for?</h3>
+          <p>If you have epilepsy, it is likely that once your illness is under control you will continue to take pregabalin for many years.</p>
+          <p>If you have nerve pain or anxiety it is likely that once your symptoms have gone you will continue to take pregabalin for several months to stop them coming back.</p>
+          <h3>What if I forget to take it?</h3>
+          <p>If you forget a dose, take it as soon as you remember. If it is within 2 hours of the next dose, it is better to leave out the missed dose and take your next dose as normal.</p>
+          <p>Never take two doses at the same time. Never take an extra dose to make up for a forgotten one.</p>
+          <p>If you have epilepsy, it’s important to take the medicine regularly as recommended by your doctor. Missing doses may trigger a seizure. If you forget doses often, it may help to get a special pillbox or a watch with an alarm to remind you.</p>
+          <h3>What if I take too much?</h3>
+          <p>Taking too much pregabalin by accident may cause unpleasant side effects. These include feeling sleepy, confused or agitated, seizures, and passing out.</p>
+          <p>If this happens, call your doctor straight away, or go to the nearest hospital accident and emergency department.</p>
+          <p>Take with you any pregabalin that you have left, and the labelled container so the hospital can see what you have taken.</p>
+        </div>
+      </details>
+
+      <h2 class="content__h2 content__h2--separator" id="side-effects">Side effects</h2>
+      <p>Not everyone will get side effects with pregabalin, it seems to be a very safe medicine.</p>
+      <h3>Common side effects</h3>
+      <p>These very common side effects may happen in more than one in 10 people. They are usually mild and go away by themselves. Keep taking the medicine but tell your doctor if they bother you or don't go away:</p>
+      <ul>
+        <li>headaches</li>
+        <li>feeling sleepy</li>
+        <li>dizziness</li>
+        <li>diarrhoea</li>
+        <li>mood changes</li>
+        <li>feeling sick</li>
+        <li>swollen hands, arms, legs and feet</li>
+        <li>blurred vision</li>
+        <li>for men, difficulties with getting an erection</li>
+      </ul>
+      <p>You may find you put on weight because pregabalin can make you feel hungry.</p>
+      <p>If you have diabetes, pregabalin can upset your blood sugar control. Monitor your blood sugar more often for the first few weeks of treatment with pregabalin and adjust your diabetes treatment if you need to. Talk to your doctor or diabetes nurse if you want more advice on what to do.</p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-3" aria-hidden="false">
+          <h3>Serious side effects</h3>
+          <p>Very few people taking pregabalin have serious problems. </p>
+          <p>Tell a doctor straight away if notice a serious side effect. These are:</p>
+          <ul>
+            <li>thoughts of harming or killing yourself. A small number of people taking pregabalin have had suicidal thoughts. They can happen after only a week of treatment.</li>
+            <li>finding if difficult to breathe</li>
+            <li>severe dizziness or passing out</li>
+            <li>problems going to the toilet, including blood in your pee, needing to pee more often, or constipation</li>
+          </ul>
+          <h4>Serious allergic reaction</h4>
+          <p>The warning signs of a <a href="http://www.nhs.uk/conditions/Anaphylaxis/Pages/Introduction.aspx">serious allergic reaction</a> are:</p>
+          <ul>
+            <li>a skin rash that may include itchy, red, swollen, blistered or peeling skin</li>
+            <li>wheezing</li>
+            <li>tightness in the chest or throat</li>
+            <li>having trouble breathing or talking</li>
+            <li>swelling of the mouth, face, lips, tongue or throat</li>
+          </ul>
+          <p>Serious allergic reaction is an emergency. Contact a doctor straight away if you think you or someone around you is having a serious allergic reaction.</p>
+          <p><span class="infobanner">These are not all the side effects of pregabalin. For a full list see the leaflet inside your medicine packet.</span></p>
+        </div>
+      </details>
+
+
+      <h2 class="content__h2 content__h2--separator" id="how-to-cope">How to cope with side effects</h2>
+      <h3>What to do about feeling sleepy, tired or dizzy</h3>
+      <p>Don’t drive or use tools or machinery if you are feeling this way.</p>
+      <p>As your body gets used to pregabalin, these side effects should wear off.</p>
+      <p>If they don’t wear off within a week or two, your doctor may reduce your dose or increase it more slowly. If that doesn’t work you may need to switch to a different medicine.</p>
+      <h3>What to do about feeling sick</h3>
+      <p>Take pregabalin with or after a meal or snack to ease feelings of sickness. It may also help if you don’t eat rich or spicy food while you're taking this medicine.</p>
+      <h3>What to do about diarrhoea and vomiting</h3>
+      <p>Have small but frequent sips of water if you have diarrhoea or you are vomiting. It may also help to take oral rehydration solutions which you can buy from a pharmacy or supermarket to prevent dehydration.</p>
+      <p>Don’t take any other medicines to treat diarrhoea or vomiting without speaking to a pharmacist or doctor.</p>
+      <h3>What to do about constipation</h3>
+      <p>If you have constipation, eat more high-fibre foods such as fresh fruit and vegetables and cereals, and try to drink several glasses of water or other fluid each day. It may also help to exercise more regularly, for example, by going for a daily walk or run.</p>
+      <h3>What to do about weight gain</h3>
+      <p>Pregabalin can make you hungrier so it can be quite a challenge to stop yourself putting on weight.</p>
+      <p>Try to eat a healthy balanced diet without increasing your portion sizes. Don’t snack on foods that contain a lot of calories, such as crisps, cakes, biscuits and sweets.</p>
+      <p>If you feel hungry between meals, eat fruit and vegetables and low-calorie foods.</p>
+      <p>Regular exercise will also help to keep your weight stable.</p>
+      <h3>What to do about a dry mouth</h3>
+      <p>Try chewing sugar-free gum or sucking sugar-free sweets.</p>
+      <p><span class="infobanner">You can <a href="https://yellowcard.mhra.gov.uk/">report any suspected side effect</a> to a UK safety scheme.</span></p>
+
+
+      <h2 class="content__h2 content__h2--separator" id="taking-with-others">Taking pregabalin with other medicines</h2>
+      <p>Pregabalin can usually be safely mixed with other medicines.</p>
+      <p>You can safely use any type of contraception, including contraceptive pills, alongside pregabalin.</p>
+      <p>The side effects of pregabalin can make you feel sleepy or dizzy. Taking pregabalin at the same time as other medicines which also make you sleepy or dizzy might make these side effects worse.</p>
+      <p>Before taking pregabalin, tell your doctor if you are taking strong painkillers such as morphine.</p>
+      <p><span class="alertbanner">Tell your doctor or pharmacist if you’re taking any other medicine, including herbal remedies and supplements, before starting pregabalin.</span></p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-9" aria-hidden="false">
+          <h3>Mixing pregabalin with herbal remedies and supplements</h3>
+          <p>There are no known problems with taking herbal remedies and supplements with pregabalin.</p>
+          <p>However, for safety, speak to your pharmacist before taking pregabalin if you routinely take any herbal or alternative remedies.</p>
+        </div>
+      </details>
+
+
+
+      <div class="concertinas concertinas--separator" id="common-questions">
+        <div class="concertinas--bg">
+          <h2 class="content__h2 content__h2--inconcertina">Common questions</h2>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-1" tabindex="0" aria-expanded="false">
+              <h3>Can I drink alcohol?</h3>
+            </summary>
+            <div id="questions-1" aria-hidden="true">
+              <p>You can drink alcohol with pregabalin but it may make you feel sleepy or make you lose your focus. During the first few days of taking pregabalin, it might be best to stop drinking alcohol until you see how the medicine affects you.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-2" tabindex="0" aria-expanded="false">
+              <h3>Can I drive or ride a bike?</h3>
+            </summary>
+            <div id="questions-2" aria-hidden="true">
+              <p>You may feel sleepy, tired or dizzy when you first start taking pregabalin. This can also happen if your dose has increased. If this happens to you, don't drive or ride a bike until you feel more alert.</p>
+              <p>If you have epilepsy, you are not allowed to drive until you have had no seizures for 1 year, or if you only have seizures while you are asleep. You are also not supposed to drive if your epilepsy medicine has changed and for 6 months after.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-3" tabindex="0" aria-expanded="false">
+              <h3>When will I feel better?</h3>
+            </summary>
+            <div id="questions-3" aria-hidden="true">
+              <p>It takes at least a few weeks for pregabalin to work properly. You may still have seizures or pain during this time.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-4" tabindex="0" aria-expanded="false">
+              <h3>Are there similar medicines to pregabalin?</h3>
+            </summary>
+            <div id="questions-4" aria-hidden="true">
+              <p>Gabapentin (also called Neurontin) is a medicine that works in a similar way to pregabalin. Like pregabalin, it is taken to treat epilepsy and nerve pain. It is also be taken for migraines.</p>
+              <p>However, there are other differences between pregabalin and gabapentin. Gabapentin is taken in different doses to pregabalin.</p>
+              <p>If you need to change to gabapentin treatment, your doctor will explain how to safely swap from pregabalin.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-5" tabindex="0" aria-expanded="false">
+              <h3>Should I stick to the same brand of pregabalin?</h3>
+            </summary>
+            <div id="questions-5" aria-hidden="true">
+              <p>Most people don’t have to stay on the same brand of pregabalin as there is very little difference between brands. Talk to your doctor if you have been asked to switch to a different brand and you are worried about that.</p>
+              <p>If you are taking pregabalin to treat epilepsy, your doctor may tell you to always take the same brand. For example, if you have not had a seizure in a long time and the brand is working well for you.</p>
+            </div>
+          </details>
+
+          <details role="group">
+            <summary role="button" aria-controls="questions-6" tabindex="0" aria-expanded="false">
+              <h3>Is it safe to take for a long time?</h3>
+            </summary>
+            <div id="questions-6" aria-hidden="true">
+              <p>There's no evidence that pregabalin has lasting harmful effects even if you take it for many months or years.</p>
+            </div>
+          </details>
+
+        </div>
       </div>
+
+
+      <h2 class="content__h2 content__h2--separator" id="not-be-able">Who can take pregabalin</h2>
+      <p>Pregabalin capsules contain gelatin so they are not suitable for vegetarians and vegans.</p>
+      <p>Pregabalin liquid contains sodium. If you are on a controlled sodium diet, or your kidneys don’t work well, speak to your doctor before taking this liquid.</p>
+      <p>To make sure pregabalin is safe for you, tell your doctor if you:</p>
+      <ul>
+        <li>have ever had an allergic reaction to pregabalin or another medicine</li>
+        <li>have kidney problems</li>
+        <li>have ever abused or been addicted to a medicine</li>
+        <li>are trying to become pregnant, are already pregnant or are breastfeeding</li>
+      </ul>
+
+
+      <h2 class="content__h2 content__h2--separator" id="pregnancy">Pregnancy and breastfeeding</h2>
+      <p>There is no firm evidence that pregabalin is harmful to an unborn baby but for safety women are usually advised to take it in pregnancy only if the benefits outweigh the risks.  </p>
+      <p><span class="alertbanner">Tell your doctor immediately if you’re trying to get pregnant or become pregnant while taking this medicine.</span></p>
+
+      <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-11" tabindex="0" aria-expanded="true">
+          <span>More information</span>
+        </summary>
+        <div id="details-content-11" aria-hidden="false">
+          <p>If you take pregabalin for epilepsy and become pregnant, do not stop the medicine without talking to your doctor first. It is very important that epilepsy is treated during pregnancy as seizures can harm you and your unborn baby.</p>
+          <p>Women who are trying to get pregnant or have become pregnant are routinely recommended to take at least 400mcg of a vitamin called folic acid every day. It helps the unborn baby grow normally.</p>
+          <p>Pregabalin has not been linked with low folic acid levels. However, all pregnant women who take medicines that can be used to treat epilepsy are recommended to take a higher dose of folic acid. Your doctor might prescribe a high dose of folic acid (5mg a day) for you to take during the first 12 weeks of pregnancy.</p>
+          <p>If you take pregabalin around the time of giving birth, your baby may need extra monitoring for a few days after they’re born because they may have pregabalin withdrawal symptoms.</p>
+          <h3>Pregabalin and breastfeeding</h3>
+          <p>Tiny amounts of pregabalin can get into breast milk, but it is not clear whether it has any side effects on babies.</p>
+          <p>Talk to your doctor, as other drugs might be better while you are breastfeeding.</p>
+        </div>
+      </details>
+
+
+      <h2 class="content__h2 content__h2--separator content__h2--outconcertina" id="more">More about pregabalin</h2>
+      <div class="concertinas">
+        <details role="group">
+          <summary role="button" aria-controls="more-1" tabindex="0" aria-expanded="false">
+            <h3>How pregabalin works</h3>
+          </summary>
+          <div id="more-1" aria-hidden="true">
+            <p>It’s not clear exactly how pregabalin works.</p>
+            <p>In epilepsy, it’s thought that it stops seizures by reducing the abnormal electrical activity in the brain.</p>
+            <p>With nerve pain, it’s thought to block pain by interfering with pain messages travelling through the brain and down the spine.</p>
+            <p>In anxiety, it’s thought that it stops your brain from releasing the chemicals that make you feel anxious.</p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-2" tabindex="0" aria-expanded="false">
+            <h3>Coming off pregabalin</h3>
+          </summary>
+          <div id="more-2" aria-hidden="true">
+            <p><span class="alertbanner">Don't stop taking pregabalin without talking to your doctor. Stopping pregabalin suddenly can cause serious problems.</span></p>
+            <p>Do not stop taking pregabalin suddenly even if you feel fine.</p>
+            <p>If you have epilepsy, stopping pregabalin suddenly can cause seizures that will not stop.</p>
+            <p>If you are taking it for any reason and stop suddenly, you may have a severe withdrawal syndrome. This can have unpleasant symptoms that include:</p>
+            <ul>
+              <li>anxiety</li>
+              <li>difficulty sleeping</li>
+              <li>feeling sick</li>
+              <li>pain</li>
+              <li>sweating</li>
+            </ul>
+            <p>It's possible to prevent withdrawal seizures and other symptoms by reducing the dose of pregabalin bit by bit.</p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-3" tabindex="0" aria-expanded="false">
+            <h3>Pregabalin and addiction</h3>
+          </summary>
+          <div id="more-3" aria-hidden="true">
+            <p>Some people have become addicted to pregabalin after taking it for a long time. If this happens, you will have withdrawal symptoms after you stop taking the medicine.</p>
+            <p>Talk to your doctor if you’re concerned you are becoming physically dependant on pregabalin.</p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-5" tabindex="0" aria-expanded="false">
+            <h3>Pregabalin and street drugs</h3>
+          </summary>
+          <div id="more-5" aria-hidden="true">
+            <p>Pregabalin can make you feel relaxed, calm and ‘high’. It can also intensify the highs of street drugs like cannabis and heroin. So, if you use street drugs alongside pregabalin, there may be more chance of unpleasant side effects like panic attacks, anxiety and memory loss.</p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-6" tabindex="0" aria-expanded="false">
+            <h3>Pregabalin and contraception</h3>
+          </summary>
+          <div id="more-6" aria-hidden="true">
+            <p>Pregabalin doesn't stop contraception working. You can safely use any type of contraception, including contraceptive pills, alongside pregabalin.</p>
+          </div>
+        </details>
+
+        <details role="group">
+          <summary role="button" aria-controls="more-7" tabindex="0" aria-expanded="false">
+            <h3>Pregabalin and fertility</h3>
+          </summary>
+          <div id="more-7" aria-hidden="true">
+            <p>Pregabalin does not reduce fertility in men or women.</p>
+          </div>
+        </details>
+
+      </div>
+
+
+      <div class="module module--separator module--links">
+        <div class="module__wrap module__wrap--bg">
+          <div class="module__row">
+            <div class="module__col">
+              <h2 class="module__header">Related conditions</h2>
+              <ul class="module__list">
+                <li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/Conditions/epilepsy/Pages/Introduction.aspx">Epilepsy</a></li>
+                <li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/Anxiety/Pages/Introduction.aspx">Anxiety</a></li>
+                <li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/Conditions/Diabetes/Pages/Diabetes.aspx">Diabetes</a></li>
+                <li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/Peripheral-neuropathy/Pages/Introduction.aspx">Peripheral neuropathy</a></li>
+                <li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/conditions/postherpetic-neuralgia/Pages/Introduction.aspx">Post-herpetic neuralgia</a></li>
+                <li class="module__list-item"><a class="link__external" href="http://www.nhs.uk/Conditions/Shingles/Pages/Introduction.aspx">Shingles</a></li>
+              </ul>
+            </div>
+            <div class="module__col">
+              <h2 class="module__header module__header--bordertop module__header--nobordertop">Useful resources <span class="header-text__small">(external links)</span></h2>
+              <ul class="module__list module__list-nomarginbottom">
+                <li class="module__list-item"><a class="link__external" href="https://www.anxietyuk.org.uk/">Anxiety UK</a></li>
+                <li class="module__list-item"><a class="link__external" href="https://www.diabetes.org.uk/">Diabetes UK</a></li>
+                <li class="module__list-item"><a class="link__external" href="https://www.epilepsy.org.uk/">Epilepsy Action</a></li>
+                <li class="module__list-item"><a class="link__external" href="http://herpes.org.uk/shingles-support-society/">Shingles Support Society</a></li>
+                <li class="module__list-item"><a class="link__external" href="http://www.healthtalk.org/peoples-experiences/nerves-brain/epilepsy/topics">healthtalk.org: epilepsy real stories</a></li>
+                <li class="module__list-item"><a class="link__external" href="http://www.healthtalk.org/peoples-experiences/long-term-conditions/chronic-pain/medication-antidepressants-and-antiepileptics">healthtalk.org: nerve pain medicine real stories</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="column-two-thirds tabs-content">
-{% include "./includes/intro.html" %}
-<ol class="list-numbered">
-<li>{% include "./includes/keyfacts.html" %}</li>
-<li>{% include "./includes/how-when-to-take.html" %}</li>
-<li>{% include "./includes/side-effects.html" %}</li>
-<li>{% include "./includes/how-to-cope.html" %}</li>
-<li>{% include "./includes/taking-with-others.html" %}</li>
-<li>{% include "./includes/common-questions.html" %}</li>
-<li>{% include "./includes/who-can-take.html" %}</li>
-<li>{% include "./includes/pregnancy-breastfeeding.html" %}</li>
-<li>{% include "./includes/more-about.html" %}
-</ol>
-{% include "./includes/links.html" %}
-    </div>
   </div>
 </main>
 
-<script src="/public/javascripts/scroll-to-content.js"></script>
+<script src="/public/javascripts/nav.js"></script>
 
 {% endblock %}
