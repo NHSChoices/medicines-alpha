@@ -4,6 +4,19 @@
   Prednisolone - NHS Medicines alpha
 {% endblock %}
 
+{% block hotjar %}
+<script>
+  (function(h,o,t,j,a,r){
+  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+  h._hjSettings={hjid:265857,hjsv:5};
+  a=o.getElementsByTagName('head')[0];
+  r=o.createElement('script');r.async=1;
+  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  a.appendChild(r);
+  })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+{% endblock %}
+
 {% block content %}
 
 <script>
@@ -355,6 +368,7 @@ $(document).ready(function () {
           	<p>Some vaccines are not suitable for you while you are taking prednisolone.</p>
             <p>Taking prednisolone lowers your immune system. If you have a 'live' vaccine, like the shingles vaccine, while you are taking prednisolone your immune system might not be able to handle it. This may lead to an infection. Inactive vaccinations, like the flu vaccine, are safe.</p>
             <p>If you need any vaccinations, mention that you are taking a steroid.</p>
+          </div>
         </details>
 
         <details role="group">
@@ -366,6 +380,7 @@ $(document).ready(function () {
             <p>The card is the size of a credit card and fits in your wallet or purse. It gives advice on how you can reduce the risks of side effects. It also gives details of your doctor, how much prednisolone you take and how long the treatment will last for.</p>
             <p class="callout">If you need any medical or dental treatment show your blue steroid card to the doctor or dentist so they know that you are taking prednisolone. This is because you may need to take a higher dose of prednisolone for a short while.</p>
             <p>If you don’t have a blue steroid card, ask your doctor or pharmacist for one.</p>
+          </div>
         </details>
 
         <details role="group">
@@ -402,6 +417,7 @@ $(document).ready(function () {
               <li>joint pain</li>
             </ul>
             <p>Withdrawal problems are most likely to happen if you have taken prednisolone for more than a few weeks or you take more than 40mg daily.</p>
+          </div>
         </details>
 
         <details role="group">
@@ -425,7 +441,7 @@ $(document).ready(function () {
       </div>
 
 
-      <div class="module module--separator">
+      <div class="module module--separator module--links">
         <div class="module__wrap module__wrap--bg">
           <div class="module__row">
             <div class="module__col">
