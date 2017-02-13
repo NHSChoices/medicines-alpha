@@ -1,0 +1,65 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  Gabapentin - NHS Medicines beta
+{% endblock %}
+
+{% block content %}
+
+{% set moreinfoHowWhen = 'More information on how and when to take' %}
+{% set moreinfoSideEffects = 'More information on side effects' %}
+{% set moreinfoWhoCanTake = 'More information on who can take gabapentin' %}
+{% set moreinfoTakingWithOther = 'More information on taking with other medicines' %}
+{% set moreinfoPregnancy = 'More information on pregnancy and breastfeeding' %}
+
+<div class="header__nav-container">
+  <div class="header__nav-container-wrap clear">
+    <div class="header__wrap u-floatnone">
+      <div class="header__content">
+        <h1 class="header__main"><a href="/gabapentin" class="link__unstyled">Gabapentin</a></h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="content" role="main" class="content">
+  <div class="grid-row floating-nav">
+
+    <div class="column-one-third page-nav" date-module="highlight-active-section-heading">
+      <div class=" js-page-contents js-stick-at-top-when-scrolling js-sticky-resize">
+        <h2 class="page-nav-title">Gabapentin</h2>
+        <ol class="page-nav-list page-nav-list--numbered list-numbered">
+          <li class=""><a href="#key-facts">Key facts</a></li>
+          <li class=""><a href="#how-when">How and when to take</a></li>
+          <li class=""><a href="#side-effects">Side effects</a></li>
+          <li class=""><a href="#how-to-cope">How to cope with side effects</a></li>
+          <li class=""><a href="#taking-with-others">Taking with other medicines</a></li>
+          <li class=""><a href="#common-questions">Common questions</a></li>
+          <li class=""><a href="#who-can-take">Who can take it</a></li>
+          <li class=""><a href="#pregnancy">Pregnancy and breastfeeding</a></li>
+          <li class=""><a href="#more">More about</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="column-two-thirds tabs-content">
+{% include "./includes/intro.html" %}
+<ol class="list-numbered">
+<li>{% include "./includes/keyfacts.html" %}</li>
+<li>{% include "./includes/how-when-to-take.html" %}</li>
+<li>{% include "./includes/side-effects.html" %}</li>
+<li>{% include "./includes/how-to-cope.html" %}</li>
+<li>{% include "./includes/taking-with-others.html" %}</li>
+<li>{% include "./includes/common-questions.html" %}</li>
+<li>{% include "./includes/who-can-take.html" %}</li>
+<li>{% include "./includes/pregnancy-breastfeeding.html" %}</li>
+<li>{% include "./includes/more-about.html" %}
+</ol>
+{% include "./includes/links.html" %}
+    </div>
+  </div>
+</main>
+
+<script src="/public/javascripts/scroll-to-content.js"></script>
+
+{% endblock %}
