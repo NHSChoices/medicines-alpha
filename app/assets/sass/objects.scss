@@ -68,6 +68,7 @@ summary + div > h3:first-child {margin-top:0;}
 
 .concertinas details h3 {border-top:1px dotted #ccc; padding-bottom:10px; padding-top:10px;}
 .concertinas details:first-child h3 {border-top:0;}
+.concertinas summary + div {padding-top:0;}
 
 
 /* TO BE REMOVED WHEN REFACTORED */
