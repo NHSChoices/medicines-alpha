@@ -7,6 +7,7 @@ $light-grey: #f5f5f5;
 $dark-grey: #ccc;
 
 @import "objects";
+@import "callouts";
 @import "utilities";
 
 body {}
@@ -257,6 +258,7 @@ a.link__unstyled {color:#0b0c0c; cursor:text; text-decoration:none;}
 .u-margintop10 {margin-top:10px !important;}
 .u-margintop20 {margin-top:20px !important;}
 .u-margintop30 {margin-top:30px !important;}
+.u-margintop40 {margin-top:40px !important;}
 .u-marginbottom10 {margin-bottom:10px !important;}
 .u-marginbottom20 {margin-bottom:20px !important;}
 .u-marginbottom30 {margin-bottom:30px !important;}
@@ -580,8 +582,6 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
     width: 23px;
 }
 
-.callout {background:#fffbcc; border-left:3px solid #ffed00; font-weight:bold; padding:15px 15px 10px 15px;}
-.callout-less {font-weight:bold;}
 .content-layout .quick-info-horizontal {margin-bottom:30px;}
 .more-concertina details .arrow {display:none;}
 .more-concertina details summary::-webkit-details-marker {display:none;}
@@ -726,161 +726,6 @@ strong {font-weight:bold;}
 .nav--pages .nav__header-wrap {float:none; margin-top:0;}
 #content.page-nav-types {padding-bottom:0;}
 
-/* callout - diagram */
-.callout--diagram {
-  background:#f1f7fc;
-  border-color:#0065b5;
-  border-style:solid;
-  display:table;
-  border-width:0 0 0 6px;
-  margin:0 0 30px 0;
-  padding:26px 0 16px 0;
-  width:100%;
-}
-
-.callout--diagram h3 {
-  font-size:20px;
-  margin:0;
-}
-
-.callout--diagram__container-right {
-  border-right:2px solid #000;
-  position:relative;
-}
-
-.callout--diagram__container-left {
-  border-left:2px solid #000;
-  position:relative;
-}
-
-.callout--diagram__notch--top-right {
-  background:#000;
-  display:block;
-  height:2px;
-  position:absolute;
-  right:0;
-  width:10px;
-}
-
-.callout--diagram__notch--bottom-right {
-  background:#000;
-  bottom:0;
-  display:block;
-  height:2px;
-  position:absolute;
-  right:0;
-  width:10px;
-}
-
-.callout--diagram__notch--top-left {
-  background:#000;
-  display:block;
-  height:2px;
-  position:absolute;
-  left:0;
-  width:10px;
-}
-
-.callout--diagram__notch--bottom-left {
-  background:#000;
-  bottom:0;
-  display:block;
-  height:2px;
-  position:absolute;
-  left:0;
-  width:10px;
-}
-
-.callout__text-top {
-  left:45%;
-  position:absolute;
-  top:0;
-}
-
-.callout__text-middle {
-  position:relative;
-}
-
-.notch-left {
-  background:#000;
-  display:block;
-  height:2px;
-  left:0;
-  position:absolute;
-  top:1.3em;
-  width:30px;
-}
-
-.notch-right {
-  background:#000;
-  bottom:1.3em;
-  display:block;
-  height:2px;
-  right:0;
-  position:absolute;
-  width:30px;
-}
-
-@media (min-width: 1280px) {
-  .notch-left {
-    width:50px;
-  }
-
-  .notch-right {
-    width:50px;
-  }
-}
-
-.info-pills {
-  list-style:none;
-  list-style-position:inside;
-  margin:20px 0 0 0;
-  padding:0;
-}
-
-.info-pills__item {
-  display:inline-block;
-  margin:0 8px 20px 0;
-  text-align:center;
-}
-
-.info-pills__item:last-child {
-  margin-right:0;
-}
-
-.info-pills__img {
-  float:left;
-  height:35px;
-  width:35px;
-}
-
-.info-pills__time {
-  border:2px solid #000;
-  border-radius:3px;
-  display:inline-block;
-  font-size:16px;
-  font-weight:normal;
-  margin-left:10px;
-  margin-top:3px;
-  padding:4px 5px 3px 5px;
-}
-
-.callout__col {
-  display:table-cell;
-}
-
-.callout__col--middle {
-  position:relative;
-  vertical-align:middle;
-}
-
-.callout__caption {
-  display:none;
-}
-
-.callout--diagram__col {
-  display:none;
-}
 
 .u-font-16 {
   font-size:16px;
@@ -916,91 +761,6 @@ strong {font-weight:bold;}
 
 .u-align-centre {
   text-align:center;
-}
-
-.u-align-centre .info-pills__item {
-  display:block;
-  margin:0 auto 10px auto;
-}
-
-.u-align-centre .info-pills__img {
-  float:none;
-}
-
-.u-align-centre .info-pills__time {
-  display:inline-block;
-  margin-left:0;
-}
-
-
-@media (max-width: 480px) {
-  .callout__col {
-    float:none;
-    width:100%;
-  }
-  .callout__col--middle {
-    margin:40px 0;
-  }
-}
-
-.callout__col--row {
-  display:table-cell;
-  width:34%;
-}
-
-@media (max-width: 640px) {
-
-  .callout__col {
-    width:60%;
-  }
-
-  .callout--diagram .callout__col--row:last-child h3 {
-    margin-top:40px;
-  }
-
-  .callout__col--middle {
-    display:none;
-  }
-
-  .callout__col--row {
-    display:table-row;
-  }
-
-  .callout--diagram__container-right {
-    position:relative;
-  }
-
-  .callout--diagram__notch-middle {
-    background:#000;
-    display:block;
-    height:2px;
-    position:absolute;
-    margin-top:15px;
-    width:8%;
-  }
-
-  .callout__caption {
-    display:block;
-  }
-
-  .callout--diagram__col {
-    display:table-cell;
-    text-align:center;
-    vertical-align:middle;
-    width:40%;
-  }
-
-  .callout--diagram__container-left {
-    border-left:0;
-    border-right:2px solid #000;
-  }
-
-  .callout--diagram__notch--top-left,
-  .callout--diagram__notch--bottom-left {
-    left:auto;
-    right:0;
-  }
-
 }
 
 
