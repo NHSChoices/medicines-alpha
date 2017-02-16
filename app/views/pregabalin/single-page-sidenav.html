@@ -44,6 +44,30 @@
 
     <div class="column-two-thirds tabs-content">
 {% include "./includes/intro.html" %}
+
+<details>
+  <summary>Show/Hide me</summary>
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</details>
+
+<details role="group">
+  <summary class="more-info" role="button" aria-controls="details-content-test" tabindex="0" aria-expanded="true">
+    Show hide with attributes
+  </summary>
+  <div id="details-content-test" aria-hidden="false">
+    <p>Content inside a div with aria-hidden attribute</p>
+  </div>
+</details>
+
+<details role="group">
+  <summary class="more-info" role="button" aria-controls="details-content-test" tabindex="0" aria-expanded="true">Show hide with attributes and no space between summary tag</summary>
+  <div id="details-content-test" aria-hidden="false">
+    <p>Content inside a div with aria-hidden attribute and no space in summary tag</p>
+  </div>
+</details>
+
+
+
 <ol class="list-numbered">
 <li>{% include "./includes/keyfacts.html" %}</li>
 <li>{% include "./includes/how-when-to-take.html" %}</li>
