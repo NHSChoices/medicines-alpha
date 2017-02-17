@@ -47,7 +47,9 @@
 
 <details>
   <summary>Show/Hide me</summary>
+  <div>
   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+  </div>
 </details>
 
 <br /><br /><br />
@@ -88,7 +90,7 @@
 
 <details role="group">
   <summary class="more-info" role="button" aria-controls="details-content-how" tabindex="0" aria-expanded="true">
-    Show hide without span
+    <span>Show hide without span</span>
   </summary>
   <div id="details-content-how" aria-hidden="false">
     <p>To prevent side effects, your doctor will prescribe a low dose to start with and then increase it over a few days.</p>
@@ -97,6 +99,8 @@
   </div>
 </details>
 </section>
+
+<br /><br /><br />
 
 
 <ol class="list-numbered">
@@ -114,6 +118,21 @@
     </div>
   </div>
 </main>
+
+<script>
+  /* window.addEventListener('touchstart', function() {
+    $('summary').blur();
+  }); */
+$('summary > span').on("click", function() {
+  $(this).blur();
+});
+/*
+$('summary').on("click", function() {
+  console.log('clicked');
+  $(this).blur();
+});
+*/
+</script>
 
 <script src="/public/javascripts/scroll-to-content.js"></script>
 
