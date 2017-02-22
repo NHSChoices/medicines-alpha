@@ -1,6 +1,37 @@
 .callout {background:#fffbcc; border-left:3px solid #ffed00; font-weight:bold; padding:15px 15px 10px 15px;}
 .callout-less {font-weight:bold;}
 
+.callout--info {
+  background:#f1f7fc;
+  border-color:#0065b5;
+  border-style:solid;
+  border-width:0 0 0 3px;
+  font-size:16px;
+  font-weight:normal;
+  margin-bottom:30px;
+  padding:20px 16px !important;
+  width:33.333%
+}
+
+.callout--info h3 {
+  font-size:19px;
+}
+
+
+@media (max-width: 480px) {
+
+  .callout--info {
+    padding:10px !important;
+  }
+
+  .callout--info h3 {
+    font-size:16px;
+    margin-bottom:10px;
+  }
+
+}
+
+
 .callout--diagram {
   background:#f1f7fc;
   border-color:#0065b5;
