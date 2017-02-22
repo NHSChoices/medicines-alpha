@@ -246,6 +246,11 @@ body {}
   #content {max-width:1280px; padding:0 15px;}
 }
 
+@media (max-width: 640px) {
+  main p, main li {font-size:17px; line-height:24px;}
+  .list-numbered > li {line-height:1.25;}
+}
+
 /**
  * Helpers
  */
@@ -669,7 +674,7 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
 	border-left:6px solid #ffed00;
 	display:block;
 	font-weight:bold;
-	padding:15px 15px 10px 15px;
+	padding:30px 35px;
 }
 
 .infobanner {
@@ -678,6 +683,18 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
 	display:block;
 	margin:40px 0;
 	padding:30px 20px 30px 85px;
+}
+
+@media (max-width: 640px) {
+
+  .alertbanner {
+  	padding:15px;
+  }
+
+  .infobanner {
+  	padding:18px 18px 18px 85px;
+  }
+
 }
 
 .hide {display:block; outline:none; text-indent:-9999px;}
@@ -957,7 +974,8 @@ strong {font-weight:bold;}
   }
 
   .concertinas summary h3 {
-    font-size:19px;
+    font-size:17px;
+    padding:12px 25px 12px 0;
   }
 
   .tabs-content .list-numbered > li {
