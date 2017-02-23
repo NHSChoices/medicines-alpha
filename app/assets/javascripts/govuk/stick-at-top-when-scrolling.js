@@ -76,7 +76,7 @@
 
           if (scrolledFrom && windowVerticalPosition < scrolledFrom) {
             sticky.release($el)
-          } else if (windowDimensions.width > 1024 && windowVerticalPosition >= sticky.getElementOffset($el).top) {
+          } else if (windowDimensions.width > 1023 && windowVerticalPosition >= sticky.getElementOffset($el).top) {
             sticky.stick($el)
           }
         })
@@ -100,7 +100,7 @@
             $el.css('width', elParentWidth)
           }
 
-          if (windowDimensions.width <= 1024) {
+          if (windowDimensions.width <= 1023) {
             sticky.release($el)
           }
         })
