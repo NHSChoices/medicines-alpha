@@ -10,3 +10,44 @@ $section-padding: 30px;
 section :last-child {
   margin-bottom:0;
 }
+
+.u-clear {
+  clear:both;
+}
+
+.u-nomargintop {
+  margin-top:0;
+}
+
+.u-font16 {
+  font-size:16px;
+}
+
+.u-floatleft {
+  float:left;
+}
+
+.u-floatright {
+  float:right;
+}
+
+.u-marginleft30 {
+  margin-left:30px;
+}
+
+.list-nobullet {
+  list-style:none;
+}
+
+.list-item-dash {
+  margin-left:1em;
+  margin-bottom:5px;
+}
+
+.list-item-dash:before {
+  content:"–";
+  display:block;
+  float:left;
+  margin-left:-15px;
+  width:15px;
+}
