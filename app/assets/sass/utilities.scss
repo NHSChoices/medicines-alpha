@@ -11,6 +11,10 @@ section :last-child {
   margin-bottom:0;
 }
 
+td {
+  vertical-align: top;
+}
+
 .u-clear {
   clear:both;
 }
@@ -34,6 +38,11 @@ section :last-child {
 .u-marginleft30 {
   margin-left:30px;
 }
+
+.u-marginbottom40 {
+  margin-bottom:40px;
+}
+
 
 .list-nobullet {
   list-style:none;
