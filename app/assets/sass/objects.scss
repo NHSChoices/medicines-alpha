@@ -57,7 +57,7 @@ summary + div > h3:first-child {margin-top:0;}
 .concertinas details .arrow {display:none;}
 .concertinas details summary::-webkit-details-marker {display:none;}
 .concertinas summary {display:block; margin:0; padding:0;}
-.concertinas summary h3 {font-size:21px; font-weight:normal; line-height:1.15; margin:0;}
+.concertinas summary h3 {font-size:19px; font-weight:normal; line-height:1.15; margin:0; padding:12px 25px 12px 0;}
 .concertinas summary h3::after {content:"+ "; position:absolute; right:10px; top:12px;}
 .concertinas summary[aria-expanded="true"] h3::after {content:"- ";}
 
@@ -109,4 +109,14 @@ section > p {margin-top:0;}
     background-color:$nhs-blue;
     outline: none;
   }
+}
+
+
+
+/* print icon */
+.link-print {
+  background-image:url(/public/images/printer.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding:5px 0 5px 30px;
 }

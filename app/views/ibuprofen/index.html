@@ -1,0 +1,35 @@
+{% extends "templates/layout.html" %}
+
+{% block page_title %}
+  NHS Medicines alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="index">Ibuprofen</h1>
+      <ul class="list-nav list-nav-bullets list-nav--nocols">
+        <li><a href="/ibuprofen/single-page-adults">Interface 1 (Adults)</a>
+        <li><a href="/ibuprofen/single-page-children">Interface 2 (Children)</a>
+        <li><a href="/ibuprofen/single-page-adults-expanded">Interface 3 (Adults expanded)</a>
+        <li><a href="/ibuprofen/single-page-children-expanded">Interface 4 (Children expanded)</a>
+        <li><a href="/ibuprofen/single-page-adults-print">Interface 5 (Adults print)</a>
+        <li><a href="/ibuprofen/single-page-children-print">Interface 6 (Children print)</a>
+      </ul>
+
+      <nav role="navigation" class="pagination">
+        <div class="previous-page">
+          <a href="/">
+            <span class="prefix">Previous page:</span>
+            <span class="title">Medicines</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

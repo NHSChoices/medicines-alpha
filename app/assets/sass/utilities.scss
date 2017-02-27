@@ -11,6 +11,10 @@ section :last-child {
   margin-bottom:0;
 }
 
+td {
+  vertical-align: top;
+}
+
 .u-clear {
   clear:both;
 }
@@ -31,8 +35,30 @@ section :last-child {
   float:right;
 }
 
+.u-alignright {
+  text-align:right;
+}
+
 .u-marginleft30 {
   margin-left:30px;
+}
+
+.u-marginbottom20 {
+  margin-bottom:20px;
+}
+
+.u-marginbottom40 {
+  margin-bottom:40px;
+}
+
+.u-noborder {
+  border:0 !important;
+}
+
+@media (max-width: 640px) {
+  .u-hide-mobile {
+    display:none;
+  }
 }
 
 .list-nobullet {
