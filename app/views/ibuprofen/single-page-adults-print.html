@@ -14,12 +14,12 @@
   <div class="header__nav-container-wrap u-noborder clear">
     <div class="header__wrap u-floatnone">
       <div class="header__content">
-        <h1 class="header__main"><a href="/Ibuprofen" class="link__unstyled">Ibuprofen for children</a></h1>
+        <h1 class="header__main"><a href="/Ibuprofen" class="link__unstyled">Ibuprofen for adults <span class="u-block">(including Nurofen)</span></a></h1>
       </div>
     </div>
-    <ul class="tabs tabs--bigger clear">
-      <li class="tab"><a href="/ibuprofen/single-page-adults" class="tab__link">Adults</a></li>
-      <li class="tab"><a href="#content-tab" class="tab__link tab__link--current">Children</a></li>
+    <ul class="tabs tabs--bigger u-marginbottom20 clear">
+      <li class="tab"><a href="#content-tab" class="tab__link tab__link--current">Adults</a></li>
+      <li class="tab"><a href="/ibuprofen/single-page-children" class="tab__link">Children</a></li>
     </ul>
     <p class="u-marginbottom10 u-alignright u-hide-mobile"><a href="#" onclick="window.print()" class="link-print">Print this information</a></p>
   </div>
@@ -34,28 +34,31 @@
         <ol class="page-nav-list page-nav-list--numbered list-numbered">
           <li class=""><a href="#how-when">How and when to take</a></li>
           <li class=""><a href="#side-effects">Side effects</a></li>
+          <li class=""><a href="#how-to-cope">How to cope with side effects</a></li>
           <li class=""><a href="#who-can-take">Who can take ibuprofen</a></li>
-          <li class=""><a href="#cautions">Giving ibuprofen with other painkillers</a></li>
+          <li class=""><a href="#cautions">Cautions with other medicines</a></li>
+          <li class=""><a href="#pregnancy">Pregnancy and breastfeeding</a></li>
           <li class=""><a href="#common-questions">Common questions</a></li>
         </ol>
       </div>
     </div>
 
     <div class="column-two-thirds tabs-content">
-{% include "./includes/children/intro.html" %}
-{% include "./includes/children/keyfacts.html" %}
+{% include "./includes/adults/intro.html" %}
+{% include "./includes/adults/keyfacts.html" %}
 <ol class="list-numbered">
-<li>{% include "./includes/children/how-when-to-take.html" %}</li>
-<li>{% include "./includes/children/side-effects.html" %}</li>
-<li>{% include "./includes/children/who-can-take.html" %}</li>
-<li>{% include "./includes/children/cautions.html" %}</li>
-<li>{% include "./includes/children/common-questions.html" %}</li>
+<li>{% include "./includes/adults/how-when-to-take.html" %}</li>
+<li>{% include "./includes/adults/side-effects.html" %}</li>
+<li>{% include "./includes/adults/how-to-cope.html" %}</li>
+<li>{% include "./includes/adults/who-can-take.html" %}</li>
+<li>{% include "./includes/adults/cautions.html" %}</li>
+<li>{% include "./includes/adults/pregnancy-breastfeeding.html" %}</li>
+<li>{% include "./includes/adults/common-questions.html" %}</li>
 </ol>
 
 <p class="u-font16 u-hide-mobile"><a href="#" onclick="window.print()" class="link-print">Print this information</a></p>
 
-{% include "./includes/children/links.html" %}
-
+{% include "./includes/adults/links.html" %}
     </div>
   </div>
 </main>
