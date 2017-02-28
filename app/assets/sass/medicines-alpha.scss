@@ -1028,3 +1028,29 @@ strong {font-weight:bold;}
     margin-left:38px;
   }
 }
+
+
+.list-numbered--leftalign {
+  counter-reset: item;
+}
+
+.list-numbered--leftalign > li {
+  display:block;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.list-numbered--leftalign > li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  width: 0;
+  display: inline-block;
+}
+
+.list-numbered--leftalign > li > section {
+  margin-top:-2em;
+}
+
+.list-numbered--leftalign > li > section > h2 {
+  margin-left:1em;
+}
