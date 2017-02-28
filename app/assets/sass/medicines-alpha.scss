@@ -956,6 +956,16 @@ strong {font-weight:bold;}
   color:#fff;
 }
 
+
+.list-nobullet {
+  list-style:none;
+}
+
+.list-inline li {
+  display:inline;
+  margin-right:20px;
+}
+
 @media (max-width:567px) {
   .hub-list__link {
     min-height:140px;

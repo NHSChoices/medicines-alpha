@@ -19,6 +19,10 @@ td {
   clear:both;
 }
 
+.u-relative {
+  position:relative;
+}
+
 .u-nomargintop {
   margin-top:0;
 }
@@ -53,6 +57,10 @@ td {
 
 .u-noborder {
   border:0 !important;
+}
+
+.u-inline {
+  display:inline;
 }
 
 @media (max-width: 640px) {
