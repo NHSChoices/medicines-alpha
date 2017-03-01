@@ -63,7 +63,7 @@
       }
     },
     onScroll: function(){
-      if (stopScrollingAtFooter._isPolling === false) { 
+      if (stopScrollingAtFooter._isPolling === false) {
         stopScrollingAtFooter.startPolling();
       }
     },
@@ -120,7 +120,7 @@
     },
     stick: function(el){
       if(el.state === 'fixed' && el.$fixedEl.css('position') === 'fixed'){
-        el.$fixedEl.css({ 'position': 'absolute', 'top': stopScrollingAtFooter.footerTop - el.fixedTop });
+        //el.$fixedEl.css({ 'position': 'absolute', 'top': stopScrollingAtFooter.footerTop - el.fixedTop });
         el.state = 'absolute';
       }
     },
