@@ -35,6 +35,17 @@ td {
   font-size:14px;
 }
 
+.u-font-small {
+  font-size:16px;
+}
+
+
+@media (max-width: 640px) {
+  .u-font-small {
+    font-size:14px;
+  }
+}
+
 .u-floatleft {
   float:left;
 }
