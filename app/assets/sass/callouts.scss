@@ -171,7 +171,13 @@
   font-weight:normal;
   margin-left:10px;
   margin-top:3px;
-  padding:4px 5px 3px 5px;
+  padding:4px 10px 3px 10px;
+}
+
+.info-pills__dosage {
+  display:block;
+  font-size:14px;
+  font-weight:normal;
 }
 
 .callout__col {
@@ -198,7 +204,7 @@
 
 .u-align-centre .info-pills__item {
   display:block;
-  margin:0 auto 10px auto;
+  margin:0 auto 15px auto;
 }
 
 .u-align-centre .info-pills__img {
@@ -318,6 +324,14 @@
   .callout--diagram__notch--bottom-left {
     left:auto;
     right:0;
+  }
+
+  .callout__col--second {
+    padding-top:40px;
+  }
+
+  .callout__col--full h4 {
+    font-size:19px;
   }
 
 }
