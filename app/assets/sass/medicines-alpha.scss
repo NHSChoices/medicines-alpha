@@ -670,17 +670,35 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
 
 
 .alertbanner {
-	background:#fffbcc;
-	border-left:6px solid #ffed00;
+	background-color:#fffbcc;
+  background-image:url(/public/images/yellow-exclamation.svg);
+  background-position: 20px center;
+  background-repeat: no-repeat;
+  border:6px solid #ffed00;
 	display:block;
 	font-weight:bold;
-	padding:30px 35px;
+	padding:30px 20px 30px 85px;
 }
 
 .infobanner {
-	background:url(/public/images/icon-info.gif) 20px center no-repeat;
+  background-image:url(/public/images/blue-info.svg);
+  background-position: 20px center;
+  background-repeat: no-repeat;
 	border:6px solid #0065b6;
 	display:block;
+  font-weight:bold;
+	margin:40px 0;
+	padding:30px 20px 30px 85px;
+}
+
+.emergencybanner {
+  background-color: #fbe8e6;
+  background-image:url(/public/images/red-exclamation.svg);
+  background-position: 20px center;
+  background-repeat: no-repeat;
+	border:6px solid #d81e05;
+	display:block;
+  font-weight:bold;
 	margin:40px 0;
 	padding:30px 20px 30px 85px;
 }
@@ -688,10 +706,14 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
 @media (max-width: 640px) {
 
   .alertbanner {
-  	padding:15px;
+  	padding:18px 18px 18px 85px;
   }
 
   .infobanner {
+  	padding:18px 18px 18px 85px;
+  }
+
+  .emergencybanner {
   	padding:18px 18px 18px 85px;
   }
 
