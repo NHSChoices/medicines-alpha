@@ -712,14 +712,17 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
 @media (max-width: 640px) {
 
   .alertbanner {
-  	padding:18px 18px 18px 85px;
+    background-position:20px 18px;
+    padding:18px 18px 18px 85px;
   }
 
   .infobanner {
+    background-position:20px 18px;
   	padding:18px 18px 18px 85px;
   }
 
   .emergencybanner {
+    background-position:20px 18px;
   	padding:18px 18px 18px 85px;
   }
 
