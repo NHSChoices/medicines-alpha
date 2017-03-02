@@ -53,7 +53,7 @@ summary + div > h3:first-child {margin-top:0;}
  * Concertinas
  */
 .concertinas--separator {border-top:1px solid $separator; margin-top:20px; padding-top:25px;}
-.concertinas--bg {background:$lightblue-bg; padding:5px 10px;}
+.concertinas--bg {background:$lightblue-bg; padding:5px 15px;}
 .concertinas details .arrow {display:none;}
 .concertinas details summary::-webkit-details-marker {display:none;}
 .concertinas summary {display:block; margin:0; padding:0;}
