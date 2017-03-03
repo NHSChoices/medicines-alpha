@@ -6,9 +6,8 @@
 
 {% block content %}
 
-{% set moreinfoHowWhen = 'Show more on how to take and forgetting doses' %}
-{% set moreinfoSideEffects = 'Show serious side effects' %}
-{% set moreinfoCautions = 'Show more on other medicines' %}
+{% set tabLinkAdults = '/ibuprofen/single-page-adults-expanded' %}
+{% set tabLinkChildren = '/ibuprofen/single-page-children-expanded' %}
 
 <div class="header__nav-container">
   <div class="header__nav-container-wrap u-noborder clear">
@@ -18,9 +17,12 @@
       </div>
     </div>
     <ul class="tabs tabs--bigger clear">
+      <li class="tab"><a href="/ibuprofen/single-page-children-expanded" class="tab__link">Children</a></li>
       <li class="tab"><a href="#content-tab" class="tab__link tab__link--current">Adults</a></li>
-      <li class="tab"><a href="/ibuprofen/single-page-children" class="tab__link">Children</a></li>
     </ul>
+    <div class="u-alignright u-hide-mobile">
+    {% include "./includes/share-print.html" %}
+    </div>
   </div>
 </div>
 
@@ -29,7 +31,7 @@
 
     <div class="column-one-third page-nav" date-module="highlight-active-section-heading">
       <div class=" js-page-contents js-stick-at-top-when-scrolling js-sticky-resize">
-        <h2 class="page-nav-title">Ibuprofen</h2>
+        <h2 class="page-nav-title">Ibuprofen for adults <span class="u-block">(including Nurofen)</span></h2>
         <ol class="page-nav-list page-nav-list--numbered list-numbered">
           <li class=""><a href="#how-when">How and when to take</a></li>
           <li class=""><a href="#side-effects">Side effects</a></li>
@@ -43,18 +45,23 @@
     </div>
 
     <div class="column-two-thirds tabs-content">
-{% include "./includes/adults/intro.html" %}
-{% include "./includes/adults/keyfacts.html" %}
+{% include "./includes/adults-expanded/intro.html" %}
+{% include "./includes/adults-expanded/keyfacts.html" %}
 <ol class="list-numbered">
-<li>{% include "./includes/adults/how-when-to-take.html" %}</li>
-<li>{% include "./includes/adults/side-effects.html" %}</li>
-<li>{% include "./includes/adults/how-to-cope.html" %}</li>
-<li>{% include "./includes/adults/who-can-take.html" %}</li>
-<li>{% include "./includes/adults/cautions.html" %}</li>
-<li>{% include "./includes/adults/pregnancy-breastfeeding.html" %}</li>
-<li>{% include "./includes/adults/common-questions.html" %}</li>
+<li>{% include "./includes/adults-expanded/how-when-to-take.html" %}</li>
+<li>{% include "./includes/adults-expanded/side-effects.html" %}</li>
+<li>{% include "./includes/adults-expanded/how-to-cope.html" %}</li>
+<li>{% include "./includes/adults-expanded/who-can-take.html" %}</li>
+<li>{% include "./includes/adults-expanded/cautions.html" %}</li>
+<li>{% include "./includes/adults-expanded/pregnancy-breastfeeding.html" %}</li>
+<li>{% include "./includes/adults-expanded/common-questions.html" %}</li>
 </ol>
-{% include "./includes/adults/links.html" %}
+
+<div class="u-font16 u-hide-mobile list-nobullet u-relative">
+{% include "./includes/share-print.html" %}
+</div>
+
+{% include "./includes/adults-expanded/links.html" %}
     </div>
   </div>
 </main>

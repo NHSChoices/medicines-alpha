@@ -10,6 +10,9 @@
 {% set moreinfoSideEffects = 'Show serious side effects' %}
 {% set moreinfoCautions = 'Show more on other medicines' %}
 
+{% set tabLinkAdults = '/ibuprofen/single-page-adults' %}
+{% set tabLinkChildren = '/ibuprofen/single-page-children' %}
+
 <div class="header__nav-container">
   <div class="header__nav-container-wrap u-noborder clear">
     <div class="header__wrap u-floatnone">
@@ -18,9 +21,12 @@
       </div>
     </div>
     <ul class="tabs tabs--bigger clear">
-      <li class="tab"><a href="#content-tab" class="tab__link tab__link--current">Adults</a></li>
       <li class="tab"><a href="/ibuprofen/single-page-children" class="tab__link">Children</a></li>
+      <li class="tab"><a href="#content-tab" class="tab__link tab__link--current">Adults</a></li>
     </ul>
+    <div class="u-alignright u-hide-mobile">
+    {% include "./includes/share-print.html" %}
+    </div>
   </div>
 </div>
 
@@ -29,7 +35,7 @@
 
     <div class="column-one-third page-nav" date-module="highlight-active-section-heading">
       <div class=" js-page-contents js-stick-at-top-when-scrolling js-sticky-resize">
-        <h2 class="page-nav-title">Ibuprofen</h2>
+        <h2 class="page-nav-title">Ibuprofen for adults <span class="u-block">(including Nurofen)</span></h2>
         <ol class="page-nav-list page-nav-list--numbered list-numbered">
           <li class=""><a href="#how-when">How and when to take</a></li>
           <li class=""><a href="#side-effects">Side effects</a></li>
@@ -54,6 +60,11 @@
 <li>{% include "./includes/adults/pregnancy-breastfeeding.html" %}</li>
 <li>{% include "./includes/adults/common-questions.html" %}</li>
 </ol>
+
+<div class="u-font16 u-hide-mobile list-nobullet u-relative">
+{% include "./includes/share-print.html" %}
+</div>
+
 {% include "./includes/adults/links.html" %}
     </div>
   </div>

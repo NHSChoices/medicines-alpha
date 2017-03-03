@@ -8,29 +8,35 @@
 
 {% set moreinfoHowWhen = 'Show more on how to take and forgetting doses' %}
 {% set moreinfoSideEffects = 'Show serious side effects' %}
+{% set moreinfoWhoCanTake = "Show who can't take ibuprofen" %}
 {% set moreinfoCautions = 'Show more on other medicines' %}
+
+{% set tabLinkAdults = '/ibuprofen/single-page-adults2' %}
+{% set tabLinkChildren = '/ibuprofen/single-page-children2' %}
 
 <div class="header__nav-container">
   <div class="header__nav-container-wrap u-noborder clear">
     <div class="header__wrap u-floatnone">
       <div class="header__content">
-        <h1 class="header__main"><a href="/ibuprofen" class="link__unstyled">Ibuprofen for children</a></h1>
+        <h1 class="header__main"><a href="/ibuprofen" class="link__unstyled">Ibuprofen for children <span class="u-block">(including Nurofen for children)</span></a></h1>
       </div>
     </div>
-    <ul class="tabs tabs--bigger u-marginbottom20 clear">
-      <li class="tab"><a href="/ibuprofen/single-page-adults" class="tab__link">Adults</a></li>
+    <ul class="tabs tabs--bigger clear">
       <li class="tab"><a href="#content-tab" class="tab__link tab__link--current">Children</a></li>
+      <li class="tab"><a href="/ibuprofen/single-page-adults2" class="tab__link">Adults</a></li>
     </ul>
-    <p class="u-marginbottom10 u-alignright u-hide-mobile"><a href="#" onclick="window.print()" class="link-print">Print this information</a></p>
+    <div class="u-alignright u-hide-mobile">
+    {% include "./includes/share-print.html" %}
+    </div>
   </div>
 </div>
 
-<main id="content" role="main" class="content u-margintop20">
+<main id="content" role="main" class="content">
   <div class="grid-row floating-nav">
 
     <div class="column-one-third page-nav" date-module="highlight-active-section-heading">
       <div class=" js-page-contents js-stick-at-top-when-scrolling js-sticky-resize">
-        <h2 class="page-nav-title">Ibuprofen</h2>
+        <h2 class="page-nav-title">Ibuprofen for children <span class="u-block">(including Nurofen for children)</span></h2>
         <ol class="page-nav-list page-nav-list--numbered list-numbered">
           <li class=""><a href="#how-when">How and when to take</a></li>
           <li class=""><a href="#side-effects">Side effects</a></li>
@@ -44,7 +50,7 @@
     <div class="column-two-thirds tabs-content">
 {% include "./includes/children/intro.html" %}
 {% include "./includes/children/keyfacts.html" %}
-<ol class="list-numbered">
+<ol class="list-numbered list-numbered--leftalign">
 <li>{% include "./includes/children/how-when-to-take.html" %}</li>
 <li>{% include "./includes/children/side-effects.html" %}</li>
 <li>{% include "./includes/children/who-can-take.html" %}</li>
@@ -52,7 +58,9 @@
 <li>{% include "./includes/children/common-questions.html" %}</li>
 </ol>
 
-<p class="u-font16 u-hide-mobile"><a href="#" onclick="window.print()" class="link-print">Print this information</a></p>
+<div class="u-font16 u-hide-mobile list-nobullet u-relative">
+{% include "./includes/share-print.html" %}
+</div>
 
 {% include "./includes/children/links.html" %}
 
