@@ -23,6 +23,14 @@
   <script src="/public/javascripts/scrollspy.js"></script>
   <script src="/public/javascripts/application.js"></script>
 
+  <script>
+  $(document).ready(function () {
+    $('.link-list a[href^="http"]').click(function(e) {
+      e.preventDefault();
+    });
+  });
+  </script>
+
   {% block hotjar %}{% endblock %}
 </head>
 
