@@ -103,9 +103,14 @@ td {
 }
 
 @media (max-width: 640px) {
+
   .u-hide-mobile {
     display:none;
   }
+
+}
+
+@media (max-width: 1024px) {
 
   .u-mob-margintop20 {
     margin-top:20px;
