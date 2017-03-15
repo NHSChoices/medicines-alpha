@@ -675,7 +675,7 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
 
 
 
-.alertbanner {
+.alertbanner, .c-callout__alert {
 	background-color:#fffbcc;
   background-image:url(/public/images/yellow-exclamation.svg);
   background-position: 20px center;
@@ -686,7 +686,7 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
 	padding:30px 20px 30px 85px;
 }
 
-.infobanner {
+.infobanner, .c-callout__info {
   background-image:url(/public/images/blue-info.svg);
   background-position: 20px center;
   background-repeat: no-repeat;
@@ -697,7 +697,7 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
 	padding:30px 20px 30px 85px;
 }
 
-.emergencybanner {
+.emergencybanner, .c-callout__emergency {
   background-color: #fbe8e6;
   background-image:url(/public/images/red-exclamation.svg);
   background-position: 20px center;
@@ -711,17 +711,17 @@ a.link-no-style {color:#0b0c0c; cursor:text; text-decoration: none;}
 
 @media (max-width: 640px) {
 
-  .alertbanner {
+  .alertbanner, .c-callout__alert {
     background-position:20px 18px;
     padding:18px 18px 18px 85px;
   }
 
-  .infobanner {
+  .infobanner, .c-callout__info {
     background-position:20px 18px;
   	padding:18px 18px 18px 85px;
   }
 
-  .emergencybanner {
+  .emergencybanner, .c-callout__emergency {
     background-position:20px 18px;
   	padding:18px 18px 18px 85px;
   }
